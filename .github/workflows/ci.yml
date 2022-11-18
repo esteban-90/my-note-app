@@ -1,0 +1,32 @@
+name: 'CI'
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  app-ci:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Run eslint
+        run: yarn lint
+
+      - name: Run prettier
+        run: yarn format
+
+      - name: Run tests
+        run: yarn test
+
+      - name: Publish to Chromatic
+        uses: chromaui/action@v1
+
+        with:
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
