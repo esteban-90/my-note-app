@@ -1,0 +1,14 @@
+// Vitest Snapshot v1
+
+exports[`Header > should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="css-1e5pweq"
+    data-testid="app-header"
+  >
+    <h1>
+      Note App
+    </h1>
+  </div>
+</DocumentFragment>
+`;

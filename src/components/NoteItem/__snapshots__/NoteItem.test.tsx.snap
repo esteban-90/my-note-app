@@ -1,0 +1,27 @@
+// Vitest Snapshot v1
+
+exports[`NoteItem > should match snapshot 1`] = `
+<DocumentFragment>
+  <a
+    data-testid="note-99lbu9v0lamm3mmf"
+    href="/notes/note-99lbu9v0lamm3mmf"
+    role="link"
+  >
+    <div
+      class="css-14m53i8"
+    >
+      <h3>
+        Testing
+      </h3>
+      <p>
+        <span>
+          December 17, 1995 at 3:24:05 AM
+        </span>
+        <span>
+           Note item
+        </span>
+      </p>
+    </div>
+  </a>
+</DocumentFragment>
+`;
