@@ -1,0 +1,57 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:storybook/recommended",
+    "plugin:import/recommended",
+    "prettier"
+  ],
+  "overrides": [],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "warnOnUnsupportedTypeScriptVersion": false
+  },
+  "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier", "jest"],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "quotes": ["error", "single", { "avoidEscape": true }],
+    "capitalized-comments": "warn",
+    "consistent-return": "error",
+    "default-case": "warn",
+    "dot-notation": "error",
+    "eqeqeq": "error",
+    "no-empty-pattern": "warn",
+    "prefer-arrow-callback": "warn",
+    "prefer-const": "warn",
+    "prefer-destructuring": "warn",
+    "no-else-return": "warn",
+    "import/no-duplicates": "warn",
+    "import/order": [
+      "warn",
+      {
+        "newlines-between": "never",
+        "groups": ["type", "builtin", "external", "internal", "parent", "sibling", "index", "object"]
+      }
+    ],
+    "@typescript-eslint/consistent-type-imports": "warn",
+    "jest/no-disabled-tests": "warn",
+    "jest/no-identical-title": "error",
+    "jest/valid-expect": "error"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    },
+    "react": {
+      "version": "detect"
+    }
+  }
+}
