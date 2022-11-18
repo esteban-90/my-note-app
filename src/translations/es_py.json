@@ -1,0 +1,30 @@
+{
+  "note-detail.add-note.text": "¿Agregar nota?",
+  "note-detail.update-note.text": "¿Actualizar nota?",
+  "note-detail.remove-note.text": "¿Eliminar nota?",
+
+  "note-detail.submit.text": "Sí",
+  "note-detail.cancel.text": "No",
+
+  "note-detail.profanity.text": "¡No se permiten malas palabras!",
+  "note-detail.profanity.confirm": "De acuerdo",
+
+  "note-detail.go-back.title": "Volver a inicio",
+  "note-detail.add-note.title": "Agregar nota",
+  "note-detail.remove-note.title": "Eliminar nota",
+
+  "note-list.heading": "Mis notas",
+  "note-list.change-language.title": "Cambiar idioma",
+  "note-list.add-note.title": "Nueva nota",
+
+  "note-list.change-theme.day.title": "Modo día",
+  "note-list.change-theme.night.title": "Modo noche",
+
+  "not-found.heading": "Página no encontrada",
+  "not-found.go-back.title": "Volver a inicio",
+
+  "reload-prompt.offline-ready.text": "App lista para funcionar fuera de línea",
+  "reload-prompt.new-content.text": "Nuevo contenido disponible, click en recargar para actualizar",
+  "reload-prompt.reload-button.text": "Recargar",
+  "reload-prompt.close-button.text": "Cerrar"
+}

@@ -1,0 +1,30 @@
+{
+  "note-detail.add-note.text": "Add note?",
+  "note-detail.update-note.text": "Update note?",
+  "note-detail.remove-note.text": "Remove note?",
+
+  "note-detail.submit.text": "Yes",
+  "note-detail.cancel.text": "No",
+
+  "note-detail.profanity.text": "Profanity is not allowed!",
+  "note-detail.profanity.confirm": "OK",
+
+  "note-detail.go-back.title": "Back to home",
+  "note-detail.add-note.title": "Add note",
+  "note-detail.remove-note.title": "Remove note",
+
+  "note-list.heading": "My notes",
+  "note-list.change-language.title": "Change language",
+  "note-list.add-note.title": "New note",
+
+  "note-list.change-theme.day.title": "Day mode",
+  "note-list.change-theme.night.title": "Night mode",
+
+  "not-found.heading": "Page not found",
+  "not-found.go-back.title": "Back to home",
+
+  "reload-prompt.offline-ready.text": "App ready to work offline",
+  "reload-prompt.new-content.text": "New content available, click on reload to update",
+  "reload-prompt.reload-button.text": "Reload",
+  "reload-prompt.close-button.text": "Close"
+}
