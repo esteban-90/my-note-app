@@ -1,0 +1,270 @@
+// Vitest Snapshot v1
+
+exports[`NoteDetail > creation of a new note: > should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="css-1ubh0lm"
+  >
+    <div
+      class="css-1fz6r0x"
+    >
+      <svg
+        aria-labelledby="svg-inline--fa-title-Veg6iMWJQCBE"
+        class="svg-inline--fa fa-left-long fa-xl "
+        data-icon="left-long"
+        data-prefix="fas"
+        role="img"
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title
+          id="svg-inline--fa-title-Veg6iMWJQCBE"
+        >
+          Back to home
+        </title>
+        <path
+          d="M177.5 98c-8.8-3.8-19-2-26 4.6l-144 136C2.7 243.1 0 249.4 0 256s2.7 12.9 7.5 17.4l144 136c7 6.6 17.2 8.4 26 4.6s14.5-12.5 14.5-22l0-88 288 0c17.7 0 32-14.3 32-32l0-32c0-17.7-14.3-32-32-32l-288 0 0-88c0-9.6-5.7-18.2-14.5-22z"
+          fill="currentColor"
+        />
+      </svg>
+      <svg
+        aria-labelledby="svg-inline--fa-title-YJ0ct4O0Jbsc"
+        class="svg-inline--fa fa-check fa-xl "
+        data-icon="check"
+        data-prefix="fas"
+        role="img"
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title
+          id="svg-inline--fa-title-YJ0ct4O0Jbsc"
+        >
+          Add note
+        </title>
+        <path
+          d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+    <textarea
+      aria-label="note content"
+      class="css-my340b"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`NoteDetail > deletion of a note: > should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="css-1ubh0lm"
+  >
+    <div
+      class="css-1fz6r0x"
+    >
+      <svg
+        aria-labelledby="svg-inline--fa-title-55viPc2sgn4W"
+        class="svg-inline--fa fa-left-long fa-xl "
+        data-icon="left-long"
+        data-prefix="fas"
+        role="img"
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title
+          id="svg-inline--fa-title-55viPc2sgn4W"
+        >
+          Back to home
+        </title>
+        <path
+          d="M177.5 98c-8.8-3.8-19-2-26 4.6l-144 136C2.7 243.1 0 249.4 0 256s2.7 12.9 7.5 17.4l144 136c7 6.6 17.2 8.4 26 4.6s14.5-12.5 14.5-22l0-88 288 0c17.7 0 32-14.3 32-32l0-32c0-17.7-14.3-32-32-32l-288 0 0-88c0-9.6-5.7-18.2-14.5-22z"
+          fill="currentColor"
+        />
+      </svg>
+      <svg
+        aria-labelledby="svg-inline--fa-title-tgjW4cXFKJUX"
+        class="svg-inline--fa fa-trash-can fa-xl "
+        data-icon="trash-can"
+        data-prefix="fas"
+        role="img"
+        viewBox="0 0 448 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title
+          id="svg-inline--fa-title-tgjW4cXFKJUX"
+        >
+          Remove note
+        </title>
+        <path
+          d="M135.2 17.7C140.6 6.8 151.7 0 163.8 0H284.2c12.1 0 23.2 6.8 28.6 17.7L320 32h96c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 96 0 81.7 0 64S14.3 32 32 32h96l7.2-14.3zM32 128H416V448c0 35.3-28.7 64-64 64H96c-35.3 0-64-28.7-64-64V128zm96 64c-8.8 0-16 7.2-16 16V432c0 8.8 7.2 16 16 16s16-7.2 16-16V208c0-8.8-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16V432c0 8.8 7.2 16 16 16s16-7.2 16-16V208c0-8.8-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16V432c0 8.8 7.2 16 16 16s16-7.2 16-16V208c0-8.8-7.2-16-16-16z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+    <textarea
+      aria-label="note content"
+      class="css-my340b"
+    >
+      Hello test 1
+Testing 1
+    </textarea>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`NoteDetail > edition of an existing note: > should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="css-1ubh0lm"
+  >
+    <div
+      class="css-1fz6r0x"
+    >
+      <svg
+        aria-labelledby="svg-inline--fa-title-JZ4SjNiIawhq"
+        class="svg-inline--fa fa-left-long fa-xl "
+        data-icon="left-long"
+        data-prefix="fas"
+        role="img"
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title
+          id="svg-inline--fa-title-JZ4SjNiIawhq"
+        >
+          Back to home
+        </title>
+        <path
+          d="M177.5 98c-8.8-3.8-19-2-26 4.6l-144 136C2.7 243.1 0 249.4 0 256s2.7 12.9 7.5 17.4l144 136c7 6.6 17.2 8.4 26 4.6s14.5-12.5 14.5-22l0-88 288 0c17.7 0 32-14.3 32-32l0-32c0-17.7-14.3-32-32-32l-288 0 0-88c0-9.6-5.7-18.2-14.5-22z"
+          fill="currentColor"
+        />
+      </svg>
+      <svg
+        aria-labelledby="svg-inline--fa-title-PqdoskLPB4nE"
+        class="svg-inline--fa fa-trash-can fa-xl "
+        data-icon="trash-can"
+        data-prefix="fas"
+        role="img"
+        viewBox="0 0 448 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title
+          id="svg-inline--fa-title-PqdoskLPB4nE"
+        >
+          Remove note
+        </title>
+        <path
+          d="M135.2 17.7C140.6 6.8 151.7 0 163.8 0H284.2c12.1 0 23.2 6.8 28.6 17.7L320 32h96c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 96 0 81.7 0 64S14.3 32 32 32h96l7.2-14.3zM32 128H416V448c0 35.3-28.7 64-64 64H96c-35.3 0-64-28.7-64-64V128zm96 64c-8.8 0-16 7.2-16 16V432c0 8.8 7.2 16 16 16s16-7.2 16-16V208c0-8.8-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16V432c0 8.8 7.2 16 16 16s16-7.2 16-16V208c0-8.8-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16V432c0 8.8 7.2 16 16 16s16-7.2 16-16V208c0-8.8-7.2-16-16-16z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+    <textarea
+      aria-label="note content"
+      class="css-my340b"
+    >
+      Hello test 1
+Testing 1
+    </textarea>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`NoteDetail > if url param is a valid id but the note associated with it doesn't exist: > should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="css-1ev01vr"
+  >
+    <h2>
+      Page not found
+    </h2>
+    <svg
+      aria-hidden="true"
+      class="svg-inline--fa fa-face-sad-tear fa-fade fa-5x "
+      data-icon="face-sad-tear"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 256C0 397.4 114.6 512 256 512s256-114.6 256-256S397.4 0 256 0S0 114.6 0 256zm240 80c0-8.8 7.2-16 16-16c45 0 85.6 20.5 115.7 53.1c6 6.5 5.6 16.6-.9 22.6s-16.6 5.6-22.6-.9c-25-27.1-57.4-42.9-92.3-42.9c-8.8 0-16-7.2-16-16zm-80 80c-26.5 0-48-21-48-47c0-20 28.6-60.4 41.6-77.7c3.2-4.4 9.6-4.4 12.8 0C179.6 308.6 208 349 208 369c0 26-21.5 47-48 47zM303.6 208c0-17.7 14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32s-32-14.3-32-32zm-128 32c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z"
+        fill="currentColor"
+      />
+    </svg>
+    <a
+      class="css-1gs37er"
+      href="/"
+      style="bottom: 1.5rem;"
+      title="Back to home"
+    >
+      <svg
+        aria-hidden="true"
+        class="svg-inline--fa fa-house fa-inverse fa-xl "
+        data-icon="house"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        viewBox="0 0 576 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"
+          fill="currentColor"
+        />
+      </svg>
+    </a>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`NoteDetail > if url param is not a valid id: > should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="css-1ev01vr"
+  >
+    <h2>
+      Page not found
+    </h2>
+    <svg
+      aria-hidden="true"
+      class="svg-inline--fa fa-face-sad-tear fa-fade fa-5x "
+      data-icon="face-sad-tear"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 256C0 397.4 114.6 512 256 512s256-114.6 256-256S397.4 0 256 0S0 114.6 0 256zm240 80c0-8.8 7.2-16 16-16c45 0 85.6 20.5 115.7 53.1c6 6.5 5.6 16.6-.9 22.6s-16.6 5.6-22.6-.9c-25-27.1-57.4-42.9-92.3-42.9c-8.8 0-16-7.2-16-16zm-80 80c-26.5 0-48-21-48-47c0-20 28.6-60.4 41.6-77.7c3.2-4.4 9.6-4.4 12.8 0C179.6 308.6 208 349 208 369c0 26-21.5 47-48 47zM303.6 208c0-17.7 14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32s-32-14.3-32-32zm-128 32c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z"
+        fill="currentColor"
+      />
+    </svg>
+    <a
+      class="css-1gs37er"
+      href="/"
+      style="bottom: 1.5rem;"
+      title="Back to home"
+    >
+      <svg
+        aria-hidden="true"
+        class="svg-inline--fa fa-house fa-inverse fa-xl "
+        data-icon="house"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        viewBox="0 0 576 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"
+          fill="currentColor"
+        />
+      </svg>
+    </a>
+  </div>
+</DocumentFragment>
+`;
