@@ -267,7 +267,7 @@ describe(NoteDetail.name, () => {
       const updateAlert = await screen.findByText(/^update note\?$/i)
       expect(updateAlert).toBeInTheDocument()
 
-      const confirmButton = screen.getByText(/^yes$/i)
+      const confirmButton = await screen.findByText(/^yes$/i)
       await userEvent.click(confirmButton)
 
       expect(navigator.vibrate).toHaveBeenCalled()
@@ -348,7 +348,7 @@ describe(NoteDetail.name, () => {
       const removeAlert = await screen.findByText(/^remove note\?$/i)
       expect(removeAlert).toBeInTheDocument()
 
-      const confirmButton = screen.getByText(/^yes$/i)
+      const confirmButton = await screen.findByText(/^yes$/i)
       await userEvent.click(confirmButton)
 
       expect(navigator.vibrate).toHaveBeenCalled()

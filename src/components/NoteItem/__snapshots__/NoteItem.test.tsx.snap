@@ -3,8 +3,8 @@
 exports[`NoteItem > should match snapshot 1`] = `
 <DocumentFragment>
   <a
-    data-testid="note-99lbu9v0lamm3mmf"
-    href="/notes/note-99lbu9v0lamm3mmf"
+    data-testid="note-99lbu3vwlamz3isf"
+    href="/notes/note-99lbu3vwlamz3isf"
     role="link"
   >
     <div
