@@ -1,0 +1,16 @@
+// Vitest Snapshot v1
+
+exports[`LanguageProvider > should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    role="presentation"
+  >
+    <p>
+      en-US
+    </p>
+    <button>
+      Change language
+    </button>
+  </div>
+</DocumentFragment>
+`;

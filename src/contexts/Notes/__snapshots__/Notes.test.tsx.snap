@@ -1,0 +1,63 @@
+// Vitest Snapshot v1
+
+exports[`NoteProvider > should match snapshot 1`] = `
+<DocumentFragment>
+  <ul>
+    <li>
+      <p>
+        Hello test 1
+      </p>
+      <p>
+         Testing 1
+      </p>
+      <p>
+        December 17, 1995 at 3:24:00 AM
+      </p>
+    </li>
+    <li>
+      <p>
+        Hello test 2
+      </p>
+      <p>
+         Testing 2
+      </p>
+      <p>
+        December 17, 1995 at 3:24:01 AM
+      </p>
+    </li>
+    <li>
+      <p>
+        Hello test 3
+      </p>
+      <p>
+         Testing 3
+      </p>
+      <p>
+        December 17, 1995 at 3:24:02 AM
+      </p>
+    </li>
+    <li>
+      <p>
+        Hello test 4
+      </p>
+      <p>
+         Testing 4
+      </p>
+      <p>
+        December 17, 1995 at 3:24:03 AM
+      </p>
+    </li>
+    <li>
+      <p>
+        Hello test 5
+      </p>
+      <p>
+         Testing 5
+      </p>
+      <p>
+        December 17, 1995 at 3:24:04 AM
+      </p>
+    </li>
+  </ul>
+</DocumentFragment>
+`;

@@ -1,0 +1,14 @@
+// Vitest Snapshot v1
+
+exports[`ThemeProvider > should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="night"
+    role="presentation"
+  >
+    <button>
+      Change theme
+    </button>
+  </div>
+</DocumentFragment>
+`;
