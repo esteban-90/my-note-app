@@ -56,6 +56,7 @@
     "@vitejs/plugin-react": "^2.2.0",
     "@vitest/coverage-c8": "^0.25.2",
     "babel-loader": "^8.3.0",
+    "chromatic": "^6.11.4",
     "dpdm": "^3.10.0",
     "eslint": "^8.27.0",
     "eslint-config-prettier": "^8.5.0",
@@ -75,5 +76,7 @@
     "vite-plugin-pwa": "^0.13.3",
     "vite-tsconfig-paths": "^3.5.2",
     "vitest": "^0.25.2"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "my-note-app@0.0.0"
 }
