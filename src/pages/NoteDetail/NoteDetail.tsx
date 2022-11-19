@@ -1,5 +1,5 @@
-import type { FC, ChangeEventHandler } from 'react'
-import { useState, useEffect } from 'react'
+import type { FC } from 'react'
+import { useRef } from 'react'
 import { useIntl } from 'react-intl'
 import { useNavigate, useParams } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -14,21 +14,12 @@ export const NoteDetail: FC = () => {
   const { formatMessage } = useIntl()
   const navigate = useNavigate()
 
+  const noteRef = useRef<HTMLTextAreaElement>(null)
   const { getNote, addNote, updateNote, removeNote } = useNotes()
 
   const noteIsNew = !id
   const note = getNote(id)
   const noteExists = !!note
-
-  const [noteContent, setNoteContent] = useState<string>('')
-
-  const typingHandler: ChangeEventHandler<HTMLTextAreaElement> = (event) => {
-    setNoteContent(event.target.value)
-  }
-
-  useEffect(() => {
-    setNoteContent(note?.content ?? '')
-  }, [])
 
   const addNoteText = formatMessage({ id: 'note-detail.add-note.text' })
   const updateNoteText = formatMessage({ id: 'note-detail.update-note.text' })
@@ -53,15 +44,15 @@ export const NoteDetail: FC = () => {
   }
 
   const add = () => {
-    const newNoteContent = noteContent.trim()
+    const addedNoteContent = noteRef.current?.value.trim()
 
-    if (newNoteContent) {
-      if (!hasBadWords(newNoteContent)) {
+    if (addedNoteContent) {
+      if (!hasBadWords(addedNoteContent)) {
         confirm(
           { text: addNoteText, ...options },
           () => {
             navigator.vibrate(100)
-            addNote(newNoteContent)
+            addNote(addedNoteContent)
             navigate(-1)
           },
           () => navigate(-1)
@@ -75,11 +66,11 @@ export const NoteDetail: FC = () => {
   }
 
   const update = () => {
-    const updatedNoteContent = noteContent.trim()
+    const updatedNoteContent = noteRef.current?.value.trim()
 
     if (updatedNoteContent) {
       if (!hasBadWords(updatedNoteContent)) {
-        if (noteContent !== note?.content) {
+        if (updatedNoteContent !== note?.content) {
           confirm(
             { text: updateNoteText, ...options },
             () => {
@@ -124,7 +115,7 @@ export const NoteDetail: FC = () => {
           onClick={noteIsNew ? add : remove}
         />
       </Content>
-      <TextBox aria-label='note content' value={noteContent} onChange={typingHandler} autoFocus={noteIsNew} />
+      <TextBox aria-label='note content' defaultValue={note?.content} autoFocus={noteIsNew} ref={noteRef} />
     </Wrapper>
   ) : (
     <NotFound />
