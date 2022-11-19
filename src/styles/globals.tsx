@@ -3,7 +3,7 @@ import { Global, css } from '@emotion/react'
 import { setOptions } from 'notie'
 import normalizedStyles from 'normalize.css'
 import notieStyles from 'notie/dist/notie.min.css'
-import { SecularOne, Acme } from '@/fonts'
+import { Acme } from '@/fonts'
 
 setOptions({ overlayOpacity: 0, positions: { confirm: 'bottom', force: 'bottom' } })
 
@@ -36,11 +36,6 @@ const styles = css`
   }
 
   @font-face {
-    font-family: SecularOne;
-    src: url(${SecularOne});
-  }
-
-  @font-face {
     font-family: Acme;
     src: url(${Acme});
   }
@@ -59,7 +54,7 @@ const styles = css`
 
   body {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
   }
 
   a {
