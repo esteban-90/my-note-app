@@ -29,7 +29,7 @@ export const List = styled.div`
     display: none;
   }
 
-  @media ((not(hover)) or (not(pointer)) or (pointer: coarse)) {
+  @media (not(hover)) or (not(pointer)) or (pointer: coarse) {
     & a:last-child > div {
       margin-bottom: 5rem;
     }
