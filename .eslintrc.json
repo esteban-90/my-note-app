@@ -32,6 +32,7 @@
     "prefer-arrow-callback": "warn",
     "prefer-const": "warn",
     "prefer-destructuring": "warn",
+    "prefer-template": "warn",
     "no-else-return": "warn",
     "import/no-duplicates": "warn",
     "import/order": [
