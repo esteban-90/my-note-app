@@ -28,12 +28,12 @@ describe(NotFound.name, () => {
     })
 
     it('there should be a title with value of "Page not Found"', () => {
-      const notFoundHeading = screen.getByRole('heading', { name: /^page not found/i })
+      const notFoundHeading = screen.getByRole('heading', { name: /^page not found$/i })
       expect(notFoundHeading).toBeInTheDocument()
     })
 
     it('there should be a link with title "Back to home", which should be able to redirect to Home page', () => {
-      const homeLink = screen.getByRole('link', { name: /^back to home/i })
+      const homeLink = screen.getByRole('link', { name: /^back to home$/i })
       expect(homeLink).toBeInTheDocument()
       expect(homeLink).toHaveAttribute('href', '/')
     })
@@ -62,7 +62,7 @@ describe(NotFound.name, () => {
     })
 
     it('there should be a link with title "Volver a inicio", which should be able to redirect to Home page', () => {
-      const homeLink = screen.getByRole('link', { name: /^volver a inicio/i })
+      const homeLink = screen.getByRole('link', { name: /^volver a inicio$/i })
       expect(homeLink).toBeInTheDocument()
       expect(homeLink).toHaveAttribute('href', '/')
     })

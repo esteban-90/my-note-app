@@ -8,19 +8,19 @@ describe('helpers test cases:', () => {
   describe(getTitle.name, () => {
     describe('should get the title from a note by retrieving:', () => {
       it('its content until the first line break', () => {
-        const { content } = makeMockNote(mockContentPart1 + '\n' + mockContentPart2)
+        const { content } = makeMockNote(`${mockContentPart1}\n${mockContentPart2}`)
         const title = getTitle(content)
         expect(title).toBe(mockContentPart1)
       })
 
       it('its first six words if there is not line break', () => {
-        const { content } = makeMockNote(mockContentPart1 + ' ' + mockContentPart2)
+        const { content } = makeMockNote(`${mockContentPart1} ${mockContentPart2}`)
         const title = getTitle(content)
         expect(title).toBe(mockContentPart1)
       })
 
       it('its first six words if there is a line break after more than that number of words', () => {
-        const { content } = makeMockNote(mockContentPart1 + ' ' + mockContentPart2 + '\n' + '...')
+        const { content } = makeMockNote(`${mockContentPart1} ${mockContentPart2}\n...`)
         const title = getTitle(content)
         expect(title).toBe(mockContentPart1)
       })
@@ -30,13 +30,13 @@ describe('helpers test cases:', () => {
   describe(getBody.name, () => {
     describe('should get the body from a note by retrieving:', () => {
       it('its content after the first line break', () => {
-        const { content } = makeMockNote(mockContentPart1 + '\n' + mockContentPart2)
+        const { content } = makeMockNote(`${mockContentPart1}\n${mockContentPart2}`)
         const body = getBody(content)
-        expect(body).toBe(' ' + mockContentPart2)
+        expect(body).toBe(` ${mockContentPart2}`)
       })
 
       it('its content after its first six words if there is not line break', () => {
-        const { content } = makeMockNote(mockContentPart1 + ' ' + mockContentPart2)
+        const { content } = makeMockNote(`${mockContentPart1} ${mockContentPart2}`)
         const title = getTitle(content)
         expect(title).toBe(mockContentPart1)
       })

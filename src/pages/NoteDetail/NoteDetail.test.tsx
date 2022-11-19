@@ -118,7 +118,7 @@ describe(NoteDetail.name, () => {
       const addAlert = await screen.findByText(/^add note\?$/i)
       expect(addAlert).toBeInTheDocument()
 
-      const confirmButton = screen.getByText(/^yes$/i)
+      const confirmButton = await screen.findByText(/^yes$/i)
       await userEvent.click(confirmButton)
 
       expect(navigator.vibrate).toHaveBeenCalled()
@@ -142,7 +142,7 @@ describe(NoteDetail.name, () => {
       const addAlert = await screen.findByText(/^add note\?$/i)
       expect(addAlert).toBeInTheDocument()
 
-      const confirmButton = screen.getByText(/^yes$/i)
+      const confirmButton = await screen.findByText(/^yes$/i)
       await userEvent.click(confirmButton)
 
       expect(navigator.vibrate).toHaveBeenCalled()
@@ -163,10 +163,10 @@ describe(NoteDetail.name, () => {
       const addLink = screen.getByText(/^add note$/i)
       await userEvent.click(addLink)
 
-      const profanityWarn = screen.getByText(/^profanity is not allowed!$/i)
+      const profanityWarn = await screen.findByText(/^profanity is not allowed!$/i)
       expect(profanityWarn).toBeInTheDocument()
 
-      const profanityConfirm = screen.getByText(/^ok$/i)
+      const profanityConfirm = await screen.findByText(/^ok$/i)
       await userEvent.click(profanityConfirm)
 
       expect(navigator.vibrate).toHaveBeenCalled()
@@ -199,7 +199,7 @@ describe(NoteDetail.name, () => {
       const addAlert = await screen.findByText(/^add note\?$/i)
       expect(addAlert).toBeInTheDocument()
 
-      const cancelButton = screen.getByText(/^no$/i)
+      const cancelButton = await screen.findByText(/^no$/i)
       await userEvent.click(cancelButton)
 
       const savedNotes = localStorage.getItem(mockNoteKey) as string
@@ -299,10 +299,10 @@ describe(NoteDetail.name, () => {
       const homeLink = screen.getByText(/^back to home$/i)
       await userEvent.click(homeLink)
 
-      const profanityWarn = screen.getByText(/^profanity is not allowed!$/i)
+      const profanityWarn = await screen.findByText(/^profanity is not allowed!$/i)
       expect(profanityWarn).toBeInTheDocument()
 
-      const profanityConfirm = screen.getByText(/^ok$/i)
+      const profanityConfirm = await screen.findByText(/^ok$/i)
       await userEvent.click(profanityConfirm)
 
       expect(navigator.vibrate).toHaveBeenCalled()

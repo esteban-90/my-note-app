@@ -1,5 +1,5 @@
 import { mockThemeKey, mockNightTheme, mockDayTheme } from '@/mocks'
-import { screen, render, fireEvent, configure } from '@/tests'
+import { screen, render, userEvent, configure } from '@/tests'
 import { ThemeProvider, useTheme } from './Themes'
 
 describe(ThemeProvider.name, () => {
@@ -33,9 +33,9 @@ describe(ThemeProvider.name, () => {
   })
 
   it('should provide a specific theme at a time to child elements and save it to storage', () => {
-    const childElement = screen.getByRole('presentation')
-    expect(childElement).toHaveClass(mockNightTheme)
-    expect(childElement).not.toHaveClass(mockDayTheme)
+    const themedElement = screen.getByRole('presentation')
+    expect(themedElement).toHaveClass(mockNightTheme)
+    expect(themedElement).not.toHaveClass(mockDayTheme)
 
     const savedTheme = localStorage.getItem(mockThemeKey)
     expect(savedTheme).not.toBeNull()
@@ -43,13 +43,13 @@ describe(ThemeProvider.name, () => {
     expect(savedTheme).toContain(mockNightTheme)
   })
 
-  it('should be able to change theme and save it to storage with the new value', () => {
-    const changeThemeButton = screen.getByRole('button', { name: /^change theme/i })
-    fireEvent.click(changeThemeButton)
+  it('should be able to change theme and save it to storage with the new value', async () => {
+    const button = screen.getByRole('button', { name: /^change theme$/i })
+    await userEvent.click(button)
 
-    const childElement = screen.getByRole('presentation')
-    expect(childElement).not.toHaveClass(mockNightTheme)
-    expect(childElement).toHaveClass(mockDayTheme)
+    const themedElement = await screen.findByRole('presentation')
+    expect(themedElement).not.toHaveClass(mockNightTheme)
+    expect(themedElement).toHaveClass(mockDayTheme)
 
     const savedTheme = localStorage.getItem(mockThemeKey)
     expect(savedTheme).not.toBeNull()

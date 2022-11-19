@@ -32,7 +32,7 @@ exports[`NoteList > when the language set is Spanish: > should match snapshot 1`
     </p>
   </div>
   <div
-    class="css-kfrurf"
+    class="css-gosra1"
   />
   <button
     class="css-1gs37er"
@@ -134,7 +134,7 @@ exports[`NoteList > when the language set is the one that comes by default (Engl
     </p>
   </div>
   <div
-    class="css-kfrurf"
+    class="css-gosra1"
   />
   <button
     class="css-1gs37er"
@@ -236,11 +236,11 @@ exports[`NoteList > when there are more than zero notes: > should match snapshot
     </p>
   </div>
   <div
-    class="css-kfrurf"
+    class="css-gosra1"
   >
     <a
-      data-testid="note-99lbu3vwlamz31ru"
-      href="/notes/note-99lbu3vwlamz31ru"
+      data-testid="note-99lbu8iclaoa29ol"
+      href="/notes/note-99lbu8iclaoa29ol"
       role="link"
     >
       <div
@@ -260,8 +260,8 @@ exports[`NoteList > when there are more than zero notes: > should match snapshot
       </div>
     </a>
     <a
-      data-testid="note-99lbu3vwlamz31rv"
-      href="/notes/note-99lbu3vwlamz31rv"
+      data-testid="note-99lbu8iclaoa29om"
+      href="/notes/note-99lbu8iclaoa29om"
       role="link"
     >
       <div
@@ -281,8 +281,8 @@ exports[`NoteList > when there are more than zero notes: > should match snapshot
       </div>
     </a>
     <a
-      data-testid="note-99lbu3vwlamz31rw"
-      href="/notes/note-99lbu3vwlamz31rw"
+      data-testid="note-99lbu8iclaoa29on"
+      href="/notes/note-99lbu8iclaoa29on"
       role="link"
     >
       <div
@@ -302,8 +302,8 @@ exports[`NoteList > when there are more than zero notes: > should match snapshot
       </div>
     </a>
     <a
-      data-testid="note-99lbu3vwlamz31rx"
-      href="/notes/note-99lbu3vwlamz31rx"
+      data-testid="note-99lbu8iclaoa29oo"
+      href="/notes/note-99lbu8iclaoa29oo"
       role="link"
     >
       <div
@@ -323,8 +323,8 @@ exports[`NoteList > when there are more than zero notes: > should match snapshot
       </div>
     </a>
     <a
-      data-testid="note-99lbu3vwlamz31ry"
-      href="/notes/note-99lbu3vwlamz31ry"
+      data-testid="note-99lbu8iclaoa29op"
+      href="/notes/note-99lbu8iclaoa29op"
       role="link"
     >
       <div
@@ -444,7 +444,7 @@ exports[`NoteList > when there are no notes: > should match snapshot 1`] = `
     </p>
   </div>
   <div
-    class="css-kfrurf"
+    class="css-gosra1"
   />
   <button
     class="css-1gs37er"

@@ -1,5 +1,5 @@
 import { mockLanguageKey, mockENLanguage, mockESLanguage } from '@/mocks'
-import { screen, render, fireEvent, configure } from '@/tests'
+import { screen, render, userEvent, configure } from '@/tests'
 import { LanguageProvider, useLanguage } from './Languages'
 
 describe(LanguageProvider.name, () => {
@@ -34,8 +34,8 @@ describe(LanguageProvider.name, () => {
   })
 
   it('should provide a specific language at a time to child elements and save it to storage', () => {
-    const childElement = screen.getByText(mockENLanguage)
-    expect(childElement).toBeInTheDocument()
+    const providedLanguage = screen.getByText(mockENLanguage)
+    expect(providedLanguage).toBeInTheDocument()
 
     const savedLanguage = localStorage.getItem(mockLanguageKey)
     expect(savedLanguage).not.toBeNull()
@@ -43,12 +43,12 @@ describe(LanguageProvider.name, () => {
     expect(savedLanguage).toContain(mockENLanguage)
   })
 
-  it('should be able to change language and save it to storage with the new value', () => {
-    const buttonElement = screen.getByRole('button', { name: /^change language/i })
-    fireEvent.click(buttonElement)
+  it('should be able to change language and save it to storage with the new value', async () => {
+    const button = screen.getByRole('button', { name: /^change language$/i })
+    await userEvent.click(button)
 
-    const childElement = screen.getByText(mockESLanguage)
-    expect(childElement).toBeInTheDocument()
+    const providedLanguage = await screen.findByText(mockESLanguage)
+    expect(providedLanguage).toBeInTheDocument()
 
     const savedLanguage = localStorage.getItem(mockLanguageKey)
     expect(savedLanguage).not.toBeNull()

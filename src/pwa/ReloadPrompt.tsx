@@ -18,7 +18,7 @@ export const ReloadPrompt: FC = () => {
     updateServiceWorker,
   } = useRegisterSW({
     onRegistered(registration) {
-      console.info('SW Registered: ' + registration)
+      console.info(`SW Registered: ${registration}`)
     },
     onRegisterError(error) {
       console.error('SW registration error', error)

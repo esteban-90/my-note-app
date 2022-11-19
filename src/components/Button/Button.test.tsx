@@ -8,7 +8,7 @@ describe(Button.name, () => {
     ;({ asFragment } = render(<Button icon='home' />))
   })
 
-  it('should take a snapshot', () => {
+  it('should match snapshot', () => {
     expect(asFragment()).toMatchSnapshot()
   })
 })

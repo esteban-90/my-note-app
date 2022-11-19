@@ -9,7 +9,7 @@ import {
   mockNightTheme,
   formatMockDate,
 } from '@/mocks'
-import { screen, fireEvent, customRender, configure } from '@/tests'
+import { screen, customRender, userEvent, configure } from '@/tests'
 import { NoteList } from './NoteList'
 
 describe(NoteList.name, () => {
@@ -104,18 +104,18 @@ describe(NoteList.name, () => {
     })
 
     it('there should be a title with value of "My notes"', () => {
-      const noteListHeading = screen.getByRole('heading', { name: /^my notes/i })
+      const noteListHeading = screen.getByRole('heading', { name: /^my notes$/i })
       expect(noteListHeading).toBeInTheDocument()
     })
 
     describe('there should be a button with title of:', () => {
       it('"Change language"', () => {
-        const changeLanguageButton = screen.getByRole('button', { name: /^change language/i })
+        const changeLanguageButton = screen.getByRole('button', { name: /^change language$/i })
         expect(changeLanguageButton).toBeInTheDocument()
       })
 
       it('"New note", which should be able to redirect to note detail page if no id', () => {
-        const addNoteButton = screen.getByRole('button', { name: /^new note/i })
+        const addNoteButton = screen.getByRole('button', { name: /^new note$/i })
         expect(addNoteButton).toBeInTheDocument()
         expect(addNoteButton).toHaveAttribute('href', '/notes')
       })
@@ -126,11 +126,11 @@ describe(NoteList.name, () => {
           expect(dayThemeButton).toBeInTheDocument()
         })
 
-        it('"Night mode" otherwise', () => {
+        it('"Night mode" otherwise', async () => {
           const dayThemeButton = screen.getByRole('button', { name: /^day mode$/i })
-          fireEvent.click(dayThemeButton)
+          await userEvent.click(dayThemeButton)
 
-          const nightThemeButton = screen.getByRole('button', { name: /^night mode/i })
+          const nightThemeButton = await screen.findByRole('button', { name: /^night mode$/i })
           expect(nightThemeButton).toBeInTheDocument()
         })
       })
@@ -157,33 +157,33 @@ describe(NoteList.name, () => {
     })
 
     it('there should be a title with value of "Mis notas"', () => {
-      const noteListHeading = screen.getByRole('heading', { name: /^mis notas/i })
+      const noteListHeading = screen.getByRole('heading', { name: /^mis notas$/i })
       expect(noteListHeading).toBeInTheDocument()
     })
 
     describe('there should be a button with title of:', () => {
       it('"Cambiar idioma"', () => {
-        const changeLanguageButton = screen.getByRole('button', { name: /^cambiar idioma/i })
+        const changeLanguageButton = screen.getByRole('button', { name: /^cambiar idioma$/i })
         expect(changeLanguageButton).toBeInTheDocument()
       })
 
       it('"Nueva nota", which should be able to redirect to note detail page if no id', () => {
-        const addNoteButton = screen.getByRole('button', { name: /^nueva nota/i })
+        const addNoteButton = screen.getByRole('button', { name: /^nueva nota$/i })
         expect(addNoteButton).toBeInTheDocument()
         expect(addNoteButton).toHaveAttribute('href', '/notes')
       })
 
       describe('and an additional one with title of:', () => {
         it('"Modo día" if the current theme mode is "night"', () => {
-          const dayThemeButton = screen.getByRole('button', { name: /^modo día/i })
+          const dayThemeButton = screen.getByRole('button', { name: /^modo día$/i })
           expect(dayThemeButton).toBeInTheDocument()
         })
 
-        it('"Modo noche" otherwise', () => {
-          const dayThemeButton = screen.getByRole('button', { name: /^modo día/i })
-          fireEvent.click(dayThemeButton)
+        it('"Modo noche" otherwise', async () => {
+          const dayThemeButton = screen.getByRole('button', { name: /^modo día$/i })
+          await userEvent.click(dayThemeButton)
 
-          const nightThemeButton = screen.getByRole('button', { name: /^modo noche/i })
+          const nightThemeButton = await screen.findByRole('button', { name: /^modo noche$/i })
           expect(nightThemeButton).toBeInTheDocument()
         })
       })
