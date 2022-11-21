@@ -17,15 +17,15 @@ export const Wrapper = styled.div`
     transform: scale(0.9);
   }
 
-  @media ((hover: hover) and (pointer: fine)) {
+  @media (hover: hover) and (pointer: fine) {
     &:hover {
       cursor: pointer;
       opacity: 0.8;
     }
   }
 
-  @media (((not(hover)) or (not(pointer)) or (pointer: coarse))) and (orientation: landscape) {
-    width: 3rem;
-    height: 3rem;
+  @media (not(hover)), (not(pointer)), (pointer: coarse) and (orientation: landscape) {
+    width: 3.2rem;
+    height: 3.2rem;
   }
 `

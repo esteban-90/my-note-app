@@ -32,10 +32,10 @@ exports[`NoteList > when the language set is Spanish: > should match snapshot 1`
     </p>
   </div>
   <div
-    class="css-gosra1"
+    class="css-wo191d"
   />
   <button
-    class="css-1gs37er"
+    class="css-10lfmpz"
     style="bottom: 10.5rem;"
     title="Cambiar idioma"
   >
@@ -56,7 +56,7 @@ exports[`NoteList > when the language set is Spanish: > should match snapshot 1`
     </svg>
   </button>
   <button
-    class="css-1gs37er"
+    class="css-10lfmpz"
     style="bottom: 6rem;"
     title="Modo día"
   >
@@ -77,7 +77,7 @@ exports[`NoteList > when the language set is Spanish: > should match snapshot 1`
     </svg>
   </button>
   <a
-    class="css-1gs37er"
+    class="css-10lfmpz"
     href="/notes"
     role="button"
     style="bottom: 1.5rem;"
@@ -134,10 +134,10 @@ exports[`NoteList > when the language set is the one that comes by default (Engl
     </p>
   </div>
   <div
-    class="css-gosra1"
+    class="css-wo191d"
   />
   <button
-    class="css-1gs37er"
+    class="css-10lfmpz"
     style="bottom: 10.5rem;"
     title="Change language"
   >
@@ -158,7 +158,7 @@ exports[`NoteList > when the language set is the one that comes by default (Engl
     </svg>
   </button>
   <button
-    class="css-1gs37er"
+    class="css-10lfmpz"
     style="bottom: 6rem;"
     title="Day mode"
   >
@@ -179,7 +179,7 @@ exports[`NoteList > when the language set is the one that comes by default (Engl
     </svg>
   </button>
   <a
-    class="css-1gs37er"
+    class="css-10lfmpz"
     href="/notes"
     role="button"
     style="bottom: 1.5rem;"
@@ -236,11 +236,11 @@ exports[`NoteList > when there are more than zero notes: > should match snapshot
     </p>
   </div>
   <div
-    class="css-gosra1"
+    class="css-wo191d"
   >
     <a
-      data-testid="note-2kbd1527glaqr3xib"
-      href="/notes/note-2kbd1527glaqr3xib"
+      data-testid="note-xfj6bf8laqu2p7b"
+      href="/notes/note-xfj6bf8laqu2p7b"
       role="link"
     >
       <div
@@ -260,8 +260,8 @@ exports[`NoteList > when there are more than zero notes: > should match snapshot
       </div>
     </a>
     <a
-      data-testid="note-2kbd1527glaqr3xic"
-      href="/notes/note-2kbd1527glaqr3xic"
+      data-testid="note-xfj6bf8laqu2p7c"
+      href="/notes/note-xfj6bf8laqu2p7c"
       role="link"
     >
       <div
@@ -281,8 +281,8 @@ exports[`NoteList > when there are more than zero notes: > should match snapshot
       </div>
     </a>
     <a
-      data-testid="note-2kbd1527glaqr3xid"
-      href="/notes/note-2kbd1527glaqr3xid"
+      data-testid="note-xfj6bf8laqu2p7d"
+      href="/notes/note-xfj6bf8laqu2p7d"
       role="link"
     >
       <div
@@ -302,8 +302,8 @@ exports[`NoteList > when there are more than zero notes: > should match snapshot
       </div>
     </a>
     <a
-      data-testid="note-2kbd1527glaqr3xie"
-      href="/notes/note-2kbd1527glaqr3xie"
+      data-testid="note-xfj6bf8laqu2p7e"
+      href="/notes/note-xfj6bf8laqu2p7e"
       role="link"
     >
       <div
@@ -323,8 +323,8 @@ exports[`NoteList > when there are more than zero notes: > should match snapshot
       </div>
     </a>
     <a
-      data-testid="note-2kbd1527glaqr3xif"
-      href="/notes/note-2kbd1527glaqr3xif"
+      data-testid="note-xfj6bf8laqu2p7f"
+      href="/notes/note-xfj6bf8laqu2p7f"
       role="link"
     >
       <div
@@ -345,7 +345,7 @@ exports[`NoteList > when there are more than zero notes: > should match snapshot
     </a>
   </div>
   <button
-    class="css-1gs37er"
+    class="css-10lfmpz"
     style="bottom: 10.5rem;"
     title="Change language"
   >
@@ -366,7 +366,7 @@ exports[`NoteList > when there are more than zero notes: > should match snapshot
     </svg>
   </button>
   <button
-    class="css-1gs37er"
+    class="css-10lfmpz"
     style="bottom: 6rem;"
     title="Day mode"
   >
@@ -387,7 +387,7 @@ exports[`NoteList > when there are more than zero notes: > should match snapshot
     </svg>
   </button>
   <a
-    class="css-1gs37er"
+    class="css-10lfmpz"
     href="/notes"
     role="button"
     style="bottom: 1.5rem;"
@@ -444,10 +444,10 @@ exports[`NoteList > when there are no notes: > should match snapshot 1`] = `
     </p>
   </div>
   <div
-    class="css-gosra1"
+    class="css-wo191d"
   />
   <button
-    class="css-1gs37er"
+    class="css-10lfmpz"
     style="bottom: 10.5rem;"
     title="Change language"
   >
@@ -468,7 +468,7 @@ exports[`NoteList > when there are no notes: > should match snapshot 1`] = `
     </svg>
   </button>
   <button
-    class="css-1gs37er"
+    class="css-10lfmpz"
     style="bottom: 6rem;"
     title="Day mode"
   >
@@ -489,7 +489,7 @@ exports[`NoteList > when there are no notes: > should match snapshot 1`] = `
     </svg>
   </button>
   <a
-    class="css-1gs37er"
+    class="css-10lfmpz"
     href="/notes"
     role="button"
     style="bottom: 1.5rem;"

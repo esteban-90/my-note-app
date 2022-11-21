@@ -9,7 +9,7 @@ exports[`NoteDetail > creation of a new note: > should match snapshot 1`] = `
       class="css-1fz6r0x"
     >
       <svg
-        aria-labelledby="svg-inline--fa-title-ZTFAl8GDcAmM"
+        aria-labelledby="svg-inline--fa-title-ZG3BJHuqUPPX"
         class="svg-inline--fa fa-left-long fa-xl "
         data-icon="left-long"
         data-prefix="fas"
@@ -18,7 +18,7 @@ exports[`NoteDetail > creation of a new note: > should match snapshot 1`] = `
         xmlns="http://www.w3.org/2000/svg"
       >
         <title
-          id="svg-inline--fa-title-ZTFAl8GDcAmM"
+          id="svg-inline--fa-title-ZG3BJHuqUPPX"
         >
           Back to home
         </title>
@@ -28,7 +28,7 @@ exports[`NoteDetail > creation of a new note: > should match snapshot 1`] = `
         />
       </svg>
       <svg
-        aria-labelledby="svg-inline--fa-title-NQM0EZqUhDii"
+        aria-labelledby="svg-inline--fa-title-udGZkh7YUUdn"
         class="svg-inline--fa fa-check fa-xl "
         data-icon="check"
         data-prefix="fas"
@@ -37,7 +37,7 @@ exports[`NoteDetail > creation of a new note: > should match snapshot 1`] = `
         xmlns="http://www.w3.org/2000/svg"
       >
         <title
-          id="svg-inline--fa-title-NQM0EZqUhDii"
+          id="svg-inline--fa-title-udGZkh7YUUdn"
         >
           Add note
         </title>
@@ -64,7 +64,7 @@ exports[`NoteDetail > deletion of a note: > should match snapshot 1`] = `
       class="css-1fz6r0x"
     >
       <svg
-        aria-labelledby="svg-inline--fa-title-z8bx7cKj2Jlq"
+        aria-labelledby="svg-inline--fa-title-BEqbzk8lejMI"
         class="svg-inline--fa fa-left-long fa-xl "
         data-icon="left-long"
         data-prefix="fas"
@@ -73,7 +73,7 @@ exports[`NoteDetail > deletion of a note: > should match snapshot 1`] = `
         xmlns="http://www.w3.org/2000/svg"
       >
         <title
-          id="svg-inline--fa-title-z8bx7cKj2Jlq"
+          id="svg-inline--fa-title-BEqbzk8lejMI"
         >
           Back to home
         </title>
@@ -83,7 +83,7 @@ exports[`NoteDetail > deletion of a note: > should match snapshot 1`] = `
         />
       </svg>
       <svg
-        aria-labelledby="svg-inline--fa-title-CE24nDLcZRda"
+        aria-labelledby="svg-inline--fa-title-nzCEwKoWkMgQ"
         class="svg-inline--fa fa-trash-can fa-xl "
         data-icon="trash-can"
         data-prefix="fas"
@@ -92,7 +92,7 @@ exports[`NoteDetail > deletion of a note: > should match snapshot 1`] = `
         xmlns="http://www.w3.org/2000/svg"
       >
         <title
-          id="svg-inline--fa-title-CE24nDLcZRda"
+          id="svg-inline--fa-title-nzCEwKoWkMgQ"
         >
           Remove note
         </title>
@@ -122,7 +122,7 @@ exports[`NoteDetail > edition of an existing note: > should match snapshot 1`] =
       class="css-1fz6r0x"
     >
       <svg
-        aria-labelledby="svg-inline--fa-title-NrpUZr2JMqn9"
+        aria-labelledby="svg-inline--fa-title-ydvYrbnmmmq4"
         class="svg-inline--fa fa-left-long fa-xl "
         data-icon="left-long"
         data-prefix="fas"
@@ -131,7 +131,7 @@ exports[`NoteDetail > edition of an existing note: > should match snapshot 1`] =
         xmlns="http://www.w3.org/2000/svg"
       >
         <title
-          id="svg-inline--fa-title-NrpUZr2JMqn9"
+          id="svg-inline--fa-title-ydvYrbnmmmq4"
         >
           Back to home
         </title>
@@ -141,7 +141,7 @@ exports[`NoteDetail > edition of an existing note: > should match snapshot 1`] =
         />
       </svg>
       <svg
-        aria-labelledby="svg-inline--fa-title-8p7wdcrcwPL7"
+        aria-labelledby="svg-inline--fa-title-WcdFj0WgzdGj"
         class="svg-inline--fa fa-trash-can fa-xl "
         data-icon="trash-can"
         data-prefix="fas"
@@ -150,7 +150,7 @@ exports[`NoteDetail > edition of an existing note: > should match snapshot 1`] =
         xmlns="http://www.w3.org/2000/svg"
       >
         <title
-          id="svg-inline--fa-title-8p7wdcrcwPL7"
+          id="svg-inline--fa-title-WcdFj0WgzdGj"
         >
           Remove note
         </title>
@@ -195,7 +195,7 @@ exports[`NoteDetail > if url param is a valid id but the note associated with it
       />
     </svg>
     <a
-      class="css-1gs37er"
+      class="css-10lfmpz"
       href="/"
       style="bottom: 1.5rem;"
       title="Back to home"
@@ -244,7 +244,7 @@ exports[`NoteDetail > if url param is not a valid id: > should match snapshot 1`
       />
     </svg>
     <a
-      class="css-1gs37er"
+      class="css-10lfmpz"
       href="/"
       style="bottom: 1.5rem;"
       title="Back to home"

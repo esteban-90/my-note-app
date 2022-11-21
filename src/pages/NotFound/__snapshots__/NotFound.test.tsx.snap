@@ -24,7 +24,7 @@ exports[`NotFound > when the language set is Spanish: > should match snapshot 1`
       />
     </svg>
     <a
-      class="css-1gs37er"
+      class="css-10lfmpz"
       href="/"
       style="bottom: 1.5rem;"
       title="Volver a inicio"
@@ -73,7 +73,7 @@ exports[`NotFound > when the language set is the one that comes by default (Engl
       />
     </svg>
     <a
-      class="css-1gs37er"
+      class="css-10lfmpz"
       href="/"
       style="bottom: 1.5rem;"
       title="Back to home"
