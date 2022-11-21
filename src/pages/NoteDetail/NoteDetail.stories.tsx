@@ -1,4 +1,4 @@
-import type { ComponentStory, ComponentMeta } from '@storybook/react'
+import type { ComponentStoryObj, ComponentMeta } from '@storybook/react'
 import { Layout } from '@/components'
 import { mockNotes } from '@/mocks'
 import { NoteDetail } from './NoteDetail'
@@ -17,11 +17,7 @@ export default {
   ],
 } as ComponentMeta<typeof NoteDetail>
 
-const Template: ComponentStory<typeof NoteDetail> = () => <NoteDetail />
-
-export const NoteDetailWithoutContentExample = Template.bind({})
-
-NoteDetailWithoutContentExample.story = {
+export const NoteDetailWithoutContentExample: ComponentStoryObj<typeof NoteDetail> = {
   parameters: {
     reactRouter: {
       routePath: '/notes',
@@ -29,9 +25,7 @@ NoteDetailWithoutContentExample.story = {
   },
 }
 
-export const NoteDetailWithContentExample = Template.bind({})
-
-NoteDetailWithContentExample.story = {
+export const NoteDetailWithContentExample: ComponentStoryObj<typeof NoteDetail> = {
   parameters: {
     reactRouter: {
       routePath: '/notes/:id',
