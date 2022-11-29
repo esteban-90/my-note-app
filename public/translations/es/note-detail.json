@@ -1,0 +1,47 @@
+{
+  "messages": {
+    "add-note": {
+      "text": "¿Agregar nota?"
+    },
+
+    "update-note": {
+      "text": "¿Actualizar nota?"
+    },
+
+    "remove-note": {
+      "text": "¿Eliminar nota?"
+    },
+
+    "profanity-warn": {
+      "text": "¡No se permiten malas palabras!"
+    }
+  },
+
+  "buttons": {
+    "submit": {
+      "text": "Sí"
+    },
+
+    "cancel": {
+      "text": "No"
+    },
+
+    "confirm": {
+      "text": "De acuerdo"
+    }
+  },
+
+  "links": {
+    "go-back": {
+      "title": "Volver a inicio"
+    },
+
+    "add-note": {
+      "title": "Agregar nota"
+    },
+
+    "remove-note": {
+      "title": "Eliminar nota"
+    }
+  }
+}

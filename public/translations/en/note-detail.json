@@ -1,0 +1,47 @@
+{
+  "messages": {
+    "add-note": {
+      "text": "Add note?"
+    },
+
+    "update-note": {
+      "text": "Update note?"
+    },
+
+    "remove-note": {
+      "text": "Remove note?"
+    },
+
+    "profanity-warn": {
+      "text": "Profanity is not allowed!"
+    }
+  },
+
+  "buttons": {
+    "submit": {
+      "text": "Yes"
+    },
+
+    "cancel": {
+      "text": "No"
+    },
+
+    "confirm": {
+      "text": "OK"
+    }
+  },
+
+  "links": {
+    "go-back": {
+      "title": "Back to home"
+    },
+
+    "add-note": {
+      "title": "Add note"
+    },
+
+    "remove-note": {
+      "title": "Remove note"
+    }
+  }
+}

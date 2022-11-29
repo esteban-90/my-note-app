@@ -1,0 +1,21 @@
+{
+  "messages": {
+    "offline-ready": {
+      "text": "App ready to work offline"
+    },
+
+    "new-content": {
+      "text": "New content available, click on reload to update"
+    }
+  },
+
+  "buttons": {
+    "reload": {
+      "text": "Reload"
+    },
+
+    "close": {
+      "text": "Close"
+    }
+  }
+}

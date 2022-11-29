@@ -1,0 +1,25 @@
+{
+  "page": {
+    "heading": "Mis notas"
+  },
+
+  "buttons": {
+    "add-note": {
+      "title": "Nueva nota"
+    },
+
+    "change-language": {
+      "title": "Cambiar idioma"
+    },
+
+    "change-theme": {
+      "day-mode": {
+        "title": "Modo día"
+      },
+
+      "night-mode": {
+        "title": "Modo noche"
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "page": {
+    "heading": "Page not found"
+  },
+
+  "buttons": {
+    "go-back": {
+      "title": "Back to home"
+    }
+  }
+}

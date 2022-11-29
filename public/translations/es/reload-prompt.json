@@ -1,0 +1,21 @@
+{
+  "messages": {
+    "offline-ready": {
+      "text": "App lista para funcionar fuera de línea"
+    },
+
+    "new-content": {
+      "text": "Nuevo contenido disponible, click en recargar para actualizar"
+    }
+  },
+
+  "buttons": {
+    "reload": {
+      "text": "Recargar"
+    },
+
+    "close": {
+      "text": "Cerrar"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "page": {
+    "heading": "My notes"
+  },
+
+  "buttons": {
+    "add-note": {
+      "title": "New note"
+    },
+
+    "change-language": {
+      "title": "Change language"
+    },
+
+    "change-theme": {
+      "day-mode": {
+        "title": "Day mode"
+      },
+
+      "night-mode": {
+        "title": "Night mode"
+      }
+    }
+  }
+}

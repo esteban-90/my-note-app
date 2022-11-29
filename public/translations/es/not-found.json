@@ -1,0 +1,11 @@
+{
+  "page": {
+    "heading": "Página no encontrada"
+  },
+
+  "buttons": {
+    "go-back": {
+      "title": "Volver a inicio"
+    }
+  }
+}
