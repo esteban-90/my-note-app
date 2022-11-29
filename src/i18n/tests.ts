@@ -1,18 +1,21 @@
-import type { Resource } from 'i18next'
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
+import * as translations from '@/translations'
 import { ns, supportedLngs } from './common'
 
-const resources: Resource = {}
-
-for (const n of ns) {
-  for (const lng of supportedLngs) {
-    resources[lng] ??= {}
-    resources[lng] = {
-      ...resources[lng],
-      [n]: await import(`../../public/translations/${lng}/${n}.json`),
-    }
-  }
+const resources = {
+  [supportedLngs[0]]: {
+    [ns[0]]: translations.notFoundPageEN,
+    [ns[1]]: translations.noteDetailPageEN,
+    [ns[2]]: translations.noteListPageEN,
+    [ns[3]]: translations.reloadPromptEN,
+  },
+  [supportedLngs[1]]: {
+    [ns[0]]: translations.notFoundPageES,
+    [ns[1]]: translations.noteDetailPageES,
+    [ns[2]]: translations.noteListPageES,
+    [ns[3]]: translations.reloadPromptES,
+  },
 }
 
 i18n.use(initReactI18next).init({

@@ -1,6 +1,5 @@
 import type { StorybookViteConfig } from '@storybook/builder-vite'
 import tsConfigPaths from 'vite-tsconfig-paths'
-import topLevelAwait from 'vite-plugin-top-level-await'
 
 export default {
   stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
@@ -31,7 +30,7 @@ export default {
         ...config.optimizeDeps,
         include: config.optimizeDeps?.include?.concat('react-router-dom', 'vite'),
       },
-      plugins: config.plugins?.concat(tsConfigPaths(), topLevelAwait()),
+      plugins: config.plugins?.concat(tsConfigPaths()),
     }
   },
 } as StorybookViteConfig

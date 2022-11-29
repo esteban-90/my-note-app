@@ -26,3 +26,5 @@ notes.txt
 
 coverage
 *.lock
+
+storybook-static
