@@ -3,22 +3,22 @@
 exports[`NoteItem > should match snapshot 1`] = `
 <DocumentFragment>
   <a
-    data-testid="note-xfj6bf8laqu35dg"
-    href="/notes/note-xfj6bf8laqu35dg"
+    data-testid="note-xdai7uolb28ulbr"
+    href="/notes/note-xdai7uolb28ulbr"
     role="link"
   >
     <div
-      class="css-14m53i8"
+      class="css-1ki75lg"
     >
       <h3>
         Testing
       </h3>
       <p>
         <span>
-          December 17, 1995 at 3:24:05 AM
+          December 17, 1995 at 3:24:00 AM
         </span>
         <span>
-           Note item
+           Note
         </span>
       </p>
     </div>

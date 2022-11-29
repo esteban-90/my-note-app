@@ -1,6 +1,6 @@
-import type { Note, Language, Theme } from '@/types'
+import type { Theme } from '@emotion/react'
+import type { Note } from '@/types'
 import uniqid from 'uniqid'
-import { makeKey } from '@/helpers'
 
 let seconds = 0
 
@@ -12,22 +12,40 @@ export const makeMockNote = (content: string): Note => {
   }
 }
 
-const makeMockNotes = (quantity = 1): Note[] => {
+const makeMockNotes = (quantity: number) => {
   return new Array(quantity).fill(null).map((_, index) => makeMockNote(`Hello test ${index + 1}\nTesting ${index + 1}`))
 }
 
+export const mockNote = makeMockNote('Testing\nNote')
 export const mockNotes = makeMockNotes(5)
 
-export const mockNoteKey = makeKey('notes')
-export const mockLanguageKey = makeKey('language')
-export const mockThemeKey = makeKey('theme')
+const noteKey = 'notes'
+const themeKey = 'theme'
 
-export const mockENLanguage: Language = 'en-US'
-export const mockESLanguage: Language = 'es-PY'
+export const getNotes = () => {
+  const savedNotes = localStorage.getItem(noteKey) as string
+  const parsedNotes = JSON.parse(savedNotes) as Note[]
+  return parsedNotes
+}
 
-export const mockDayTheme: Theme = 'day'
-export const mockNightTheme: Theme = 'night'
+export const saveNotes = () => {
+  localStorage.setItem(noteKey, JSON.stringify(mockNotes))
+}
 
-export const formatMockDate = (date: string, locale: Language = 'en-US') => {
-  return new Date(date).toLocaleString(locale, { dateStyle: 'long', timeStyle: 'medium' })
+export const removeNotes = () => {
+  localStorage.removeItem(noteKey)
+}
+
+export const getTheme = () => {
+  const savedTheme = localStorage.getItem(themeKey) as Theme['themeName']
+  return savedTheme
+}
+
+export const saveTheme = () => {
+  const nightTheme: Theme['themeName'] = 'night'
+  localStorage.setItem(themeKey, JSON.stringify(nightTheme))
+}
+
+export const removeTheme = () => {
+  localStorage.removeItem(themeKey)
 }

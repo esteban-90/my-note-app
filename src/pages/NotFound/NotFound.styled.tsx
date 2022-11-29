@@ -4,7 +4,7 @@ import { centered } from '@/styles'
 export const Wrapper = styled.div`
   ${centered}
   flex-direction: column;
-  color: var(--color-main);
+  color: ${({ theme }) => theme.colorPalette.main};
   height: 85%;
 
   & h2 {

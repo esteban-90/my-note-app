@@ -1,7 +1,8 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from '@/App'
+import '@/i18n/app'
 import '@/icons'
+import App from '@/App'
 
 const rootElement = document.getElementById('root') as HTMLElement
 const root = createRoot(rootElement)

@@ -1,11 +1,11 @@
 import { customRender } from '@/tests'
-import { Button } from './Button'
+import { Loader } from './Loader'
 
-describe(Button.name, () => {
+describe(Loader.name, () => {
   let asFragment: () => DocumentFragment
 
   beforeEach(() => {
-    ;({ asFragment } = customRender(<Button icon='home' />))
+    ;({ asFragment } = customRender(<Loader />))
   })
 
   it('should match snapshot', () => {

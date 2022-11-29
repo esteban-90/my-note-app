@@ -1,7 +1,7 @@
 import type { FC } from 'react'
 import { useRef } from 'react'
-import { useIntl } from 'react-intl'
 import { useNavigate, useParams } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { confirm, force } from 'notie'
 import { useNotes } from '@/contexts'
@@ -9,9 +9,14 @@ import { hasBadWords } from '@/helpers'
 import { NotFound } from '@/pages/NotFound'
 import { Wrapper, Content, TextBox } from '@styled/NoteDetail'
 
+/**
+ * Page to create, edit or just view a note.
+ * @returns The page, or Note Found page if id parameter is invalid.
+ */
+
 export const NoteDetail: FC = () => {
   const { id = '' } = useParams()
-  const { formatMessage } = useIntl()
+  const { t } = useTranslation('note-detail')
   const navigate = useNavigate()
 
   const noteRef = useRef<HTMLTextAreaElement>(null)
@@ -21,20 +26,20 @@ export const NoteDetail: FC = () => {
   const note = getNote(id)
   const noteExists = !!note
 
-  const addNoteText = formatMessage({ id: 'note-detail.add-note.text' })
-  const updateNoteText = formatMessage({ id: 'note-detail.update-note.text' })
-  const removeNoteText = formatMessage({ id: 'note-detail.remove-note.text' })
+  const addNoteText = t('messages.add-note.text')
+  const updateNoteText = t('messages.update-note.text')
+  const removeNoteText = t('messages.remove-note.text')
 
-  const submitText = formatMessage({ id: 'note-detail.submit.text' })
-  const cancelText = formatMessage({ id: 'note-detail.cancel.text' })
+  const submitText = t('buttons.submit.text')
+  const cancelText = t('buttons.cancel.text')
   const options = { submitText, cancelText }
 
-  const profanityText = formatMessage({ id: 'note-detail.profanity.text' })
-  const profanityConfirm = formatMessage({ id: 'note-detail.profanity.confirm' })
+  const profanityText = t('messages.profanity-warn.text')
+  const profanityConfirm = t('buttons.confirm.text')
 
-  const goBackTitle = formatMessage({ id: 'note-detail.go-back.title' })
-  const addNoteTitle = formatMessage({ id: 'note-detail.add-note.title' })
-  const removeNoteTitle = formatMessage({ id: 'note-detail.remove-note.title' })
+  const goBackTitle = t('links.go-back.title')
+  const addNoteTitle = t('links.add-note.title')
+  const removeNoteTitle = t('links.remove-note.title')
 
   const warn = () => {
     force({ text: profanityText, type: 'error', buttonText: profanityConfirm }, () => {

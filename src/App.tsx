@@ -1,7 +1,9 @@
 import type { FC } from 'react'
+import { Suspense } from 'react'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
-import { Header, Layout } from '@/components'
-import { NoteProvider, ThemeProvider, LanguageProvider } from '@/contexts'
+import { Header, Loader } from '@/components'
+import { NoteProvider, ThemeProvider } from '@/contexts'
+import { Layout } from '@/layout'
 import { NoteDetail, NoteList, NotFound } from '@/pages'
 import { ReloadPrompt } from '@/pwa'
 import { GlobalStyles } from '@/styles'
@@ -24,15 +26,15 @@ const App: FC = () => {
     <>
       <GlobalStyles />
       <ThemeProvider>
-        <LanguageProvider>
-          <ReloadPrompt />
-          <Layout>
+        <Layout>
+          <Suspense fallback={<Loader />}>
             <Header />
             <NoteProvider>
               <RouterProvider router={router} />
             </NoteProvider>
-          </Layout>
-        </LanguageProvider>
+            <ReloadPrompt />
+          </Suspense>
+        </Layout>
       </ThemeProvider>
     </>
   )

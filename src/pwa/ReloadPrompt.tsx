@@ -1,16 +1,15 @@
 /* eslint-disable import/no-unresolved */
 import type { FC } from 'react'
 import { useRegisterSW } from 'virtual:pwa-register/react'
-import { useIntl } from 'react-intl'
+import { useTranslation } from 'react-i18next'
 import { Wrapper, Toast, Message, Button } from './ReloadPrompt.styled'
 
 export const ReloadPrompt: FC = () => {
-  const { formatMessage } = useIntl()
-
-  const offlineReadyText = formatMessage({ id: 'reload-prompt.offline-ready.text' })
-  const newContentText = formatMessage({ id: 'reload-prompt.new-content.text' })
-  const reloadButtonText = formatMessage({ id: 'reload-prompt.reload-button.text' })
-  const closeButtonText = formatMessage({ id: 'reload-prompt.close-button.text' })
+  const { t } = useTranslation('reload-prompt')
+  const offlineReadyText = t('messages.offline-ready.text')
+  const newContentText = t('messages.new-content.text')
+  const reloadButtonText = t('buttons.reload.text')
+  const closeButtonText = t('buttons.close.text')
 
   const {
     offlineReady: [offlineReady, setOfflineReady],

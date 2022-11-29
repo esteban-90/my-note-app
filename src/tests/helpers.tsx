@@ -1,7 +1,9 @@
 import type { FC, ReactElement, PropsWithChildren } from 'react'
 import type { RenderOptions } from '@testing-library/react'
 import { render } from '@testing-library/react'
-import { NoteProvider, ThemeProvider, LanguageProvider } from '@/contexts'
+import { I18nextProvider } from 'react-i18next'
+import testConfig from '@/i18n/tests'
+import { NoteProvider, ThemeProvider } from '@/contexts'
 import { GlobalStyles } from '@/styles'
 
 const Wrapper: FC<PropsWithChildren> = ({ children }): JSX.Element => {
@@ -9,9 +11,9 @@ const Wrapper: FC<PropsWithChildren> = ({ children }): JSX.Element => {
     <>
       <GlobalStyles />
       <ThemeProvider>
-        <LanguageProvider>
-          <NoteProvider>{children}</NoteProvider>
-        </LanguageProvider>
+        <NoteProvider>
+          <I18nextProvider i18n={testConfig}>{children}</I18nextProvider>
+        </NoteProvider>
       </ThemeProvider>
     </>
   )

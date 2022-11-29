@@ -1,18 +1,19 @@
 import React from 'react'
 import type { Parameters, DecoratorFn } from '@storybook/react'
 import { withRouter } from 'storybook-addon-react-router-v6'
-import { NoteProvider, ThemeProvider, LanguageProvider } from '../src/contexts'
-import { mockNotes, mockNoteKey } from '../src/mocks'
+import i18n from './i18next'
+import { NoteProvider, ThemeProvider } from '../src/contexts'
+import { Layout } from '../src/layout'
+import { saveNotes } from '../src/mocks'
 import { GlobalStyles } from '../src/styles'
 import '../src/icons'
 
 export const parameters: Parameters = {
-  actions: { argTypesRegex: '^on[A-Z].*' },
-  controls: {
-    matchers: {
-      color: /(background|color)$/i,
-      date: /Date$/,
-    },
+  i18n,
+  locale: 'en',
+  locales: {
+    en: 'English',
+    es: 'Español',
   },
 }
 
@@ -28,21 +29,15 @@ const withGlobalStyles: DecoratorFn = (Story) => {
 const withThemeProvider: DecoratorFn = (Story) => {
   return (
     <ThemeProvider>
-      <Story />
+      <Layout>
+        <Story />
+      </Layout>
     </ThemeProvider>
   )
 }
 
-const withLanguageProvider: DecoratorFn = (Story) => {
-  return (
-    <LanguageProvider>
-      <Story />
-    </LanguageProvider>
-  )
-}
-
 const withNoteProvider: DecoratorFn = (Story) => {
-  localStorage.setItem(mockNoteKey, JSON.stringify(mockNotes))
+  saveNotes()
   return (
     <NoteProvider>
       <Story />
@@ -50,10 +45,4 @@ const withNoteProvider: DecoratorFn = (Story) => {
   )
 }
 
-export const decorators: DecoratorFn[] = [
-  withRouter,
-  withGlobalStyles,
-  withThemeProvider,
-  withLanguageProvider,
-  withNoteProvider,
-]
+export const decorators: DecoratorFn[] = [withGlobalStyles, withThemeProvider, withNoteProvider, withRouter]

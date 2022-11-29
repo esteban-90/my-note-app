@@ -1,27 +1,29 @@
 import type { FC, PropsWithChildren } from 'react'
-import type { Theme, ThemeUtils } from '@/types'
-import { createContext, useContext } from 'react'
+import type { Theme } from '@emotion/react'
+import { ThemeProvider as Provider } from '@emotion/react'
 import useLocalStorage from 'use-local-storage'
-import { makeKey } from '@/helpers'
+import { Themes } from '@/styles'
 
-const defaultValues: ThemeUtils = {
-  theme: matchMedia('prefers-color-scheme: dark').matches ? 'night' : 'day',
-  changeTheme: () => undefined,
-}
+const defaultValue: Theme['themeName'] = matchMedia('prefers-color-scheme: dark').matches ? 'night' : 'day'
 
-const context = createContext<ThemeUtils>(defaultValues)
+/**
+ * Component for providing theme to children.
+ * @returns The provider.
+ */
 
 export const ThemeProvider: FC<PropsWithChildren> = ({ children }) => {
-  const [theme, setTheme] = useLocalStorage<Theme>(makeKey('theme'), defaultValues.theme)
+  const [savedTheme, setSavedTheme] = useLocalStorage('theme', defaultValue)
+  const currentTheme = Themes[savedTheme]
 
-  const changeTheme = () => {
-    setTheme((previousTheme) => (previousTheme === 'night' ? 'day' : 'night'))
+  const toggleTheme = () => {
+    setSavedTheme((previousTheme) => (previousTheme === 'night' ? 'day' : 'night'))
   }
 
-  const { Provider } = context
-  const utils: ThemeUtils = { theme, changeTheme }
+  const value: Theme = {
+    themeName: currentTheme.themeName,
+    colorPalette: currentTheme.colorPalette,
+    toggleTheme,
+  }
 
-  return <Provider value={utils}>{children}</Provider>
+  return <Provider theme={value}>{children}</Provider>
 }
-
-export const useTheme = () => useContext<ThemeUtils>(context)

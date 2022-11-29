@@ -1,5 +1,5 @@
-import { getTitle, getBody } from '@/helpers'
-import { mockNoteKey, mockNotes, formatMockDate } from '@/mocks'
+import { getTitle, getDate, getBody } from '@/helpers'
+import { mockNotes, saveNotes, removeNotes } from '@/mocks'
 import { screen, render, configure } from '@/tests'
 import { NoteProvider, useNotes } from './Notes'
 
@@ -14,7 +14,7 @@ describe(NoteProvider.name, () => {
           <li key={id}>
             <p>{getTitle(content)}</p>
             <p>{getBody(content)}</p>
-            <p>{formatMockDate(createdAt)}</p>
+            <p>{getDate(createdAt)}</p>
           </li>
         ))}
       </ul>
@@ -29,7 +29,7 @@ describe(NoteProvider.name, () => {
 
   beforeAll(() => {
     configure({ throwSuggestions: true })
-    localStorage.setItem(mockNoteKey, JSON.stringify(mockNotes))
+    saveNotes()
   })
 
   beforeEach(() => {
@@ -37,7 +37,7 @@ describe(NoteProvider.name, () => {
   })
 
   afterAll(() => {
-    localStorage.removeItem(mockNoteKey)
+    removeNotes()
   })
 
   it('should match snapshot', () => {
@@ -54,7 +54,7 @@ describe(NoteProvider.name, () => {
       const noteBodyElement = screen.getByText(noteBody, { trim: false })
       expect(noteBodyElement).toBeInTheDocument()
 
-      const noteDate = formatMockDate(createdAt)
+      const noteDate = getDate(createdAt)
       const noteDateElement = screen.getByText(noteDate)
       expect(noteDateElement).toBeInTheDocument()
     })

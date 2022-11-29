@@ -11,7 +11,6 @@ export default defineConfig({
     react(),
     tsConfigPaths(),
     VitePWA({
-      registerType: 'autoUpdate',
       manifest: {
         name: 'Note App',
         short_name: 'Note App',
@@ -55,5 +54,6 @@ export default defineConfig({
     globals: true,
     reporters: 'verbose',
     setupFiles: './src/tests/setup',
+    silent: true,
   },
 })

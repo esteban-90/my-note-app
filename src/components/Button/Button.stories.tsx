@@ -5,6 +5,12 @@ import { Button } from './Button'
 export default {
   title: 'Components/Button',
   component: Button,
+  args: {
+    style: {
+      top: '10%',
+      left: '10%',
+    },
+  },
   argTypes: {
     icon: { control: false },
     component: { control: false },

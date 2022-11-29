@@ -3,7 +3,7 @@
 exports[`Button > should match snapshot 1`] = `
 <DocumentFragment>
   <button
-    class="css-10lfmpz"
+    class="css-1qofjy"
   >
     <svg
       aria-hidden="true"

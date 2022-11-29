@@ -3,11 +3,11 @@
 exports[`Layout > should match snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="night css-10j4kk1"
+    class="css-1tya718"
     data-testid="app-layout"
   >
     <div
-      class="css-14g8731"
+      class="css-1ye3ylc"
     />
   </div>
 </DocumentFragment>

@@ -1,12 +1,11 @@
 import { MemoryRouter } from 'react-router-dom'
-import { getTitle, getBody } from '@/helpers'
-import { formatMockDate, makeMockNote } from '@/mocks'
+import { getTitle, getDate, getBody } from '@/helpers'
+import { mockNote } from '@/mocks'
 import { screen, customRender } from '@/tests'
 import { NoteItem } from './NoteItem'
 
 describe(NoteItem.name, () => {
   let asFragment: () => DocumentFragment
-  const mockNote = makeMockNote('Testing\nNote item')
 
   const UI = (
     <MemoryRouter>
@@ -31,16 +30,16 @@ describe(NoteItem.name, () => {
       expect(noteTitleElement).toBeInTheDocument()
     })
 
+    it('date', () => {
+      const noteDate = getDate(createdAt)
+      const noteDateElement = screen.getByText(noteDate)
+      expect(noteDateElement).toBeInTheDocument()
+    })
+
     it('body', () => {
       const noteBody = getBody(content)
       const noteBodyElement = screen.getByText(noteBody, { trim: false })
       expect(noteBodyElement).toBeInTheDocument()
-    })
-
-    it('date', () => {
-      const noteDate = formatMockDate(createdAt)
-      const noteDateElement = screen.getByText(noteDate)
-      expect(noteDateElement).toBeInTheDocument()
     })
   })
 })

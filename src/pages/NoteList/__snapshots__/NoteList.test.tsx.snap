@@ -1,12 +1,12 @@
 // Vitest Snapshot v1
 
-exports[`NoteList > when the language set is Spanish: > should match snapshot 1`] = `
+exports[`NoteList > when the language is changed to Spanish: > should match snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-irlo6v"
+    class="css-1ro0zb0"
   >
     <h2
-      class="css-1kiihh0"
+      class="css-1552s8d"
     >
       <svg
         aria-hidden="true"
@@ -26,7 +26,7 @@ exports[`NoteList > when the language set is Spanish: > should match snapshot 1`
        Mis notas
     </h2>
     <p
-      class="css-1bgf1q4"
+      class="css-1dqcoz4"
     >
       0
     </p>
@@ -35,7 +35,7 @@ exports[`NoteList > when the language set is Spanish: > should match snapshot 1`
     class="css-wo191d"
   />
   <button
-    class="css-10lfmpz"
+    class="css-1qofjy"
     style="bottom: 10.5rem;"
     title="Cambiar idioma"
   >
@@ -56,7 +56,7 @@ exports[`NoteList > when the language set is Spanish: > should match snapshot 1`
     </svg>
   </button>
   <button
-    class="css-10lfmpz"
+    class="css-1qofjy"
     style="bottom: 6rem;"
     title="Modo día"
   >
@@ -77,7 +77,7 @@ exports[`NoteList > when the language set is Spanish: > should match snapshot 1`
     </svg>
   </button>
   <a
-    class="css-10lfmpz"
+    class="css-1qofjy"
     href="/notes"
     role="button"
     style="bottom: 1.5rem;"
@@ -105,10 +105,10 @@ exports[`NoteList > when the language set is Spanish: > should match snapshot 1`
 exports[`NoteList > when the language set is the one that comes by default (English): > should match snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-irlo6v"
+    class="css-1ro0zb0"
   >
     <h2
-      class="css-1kiihh0"
+      class="css-1552s8d"
     >
       <svg
         aria-hidden="true"
@@ -128,7 +128,7 @@ exports[`NoteList > when the language set is the one that comes by default (Engl
        My notes
     </h2>
     <p
-      class="css-1bgf1q4"
+      class="css-1dqcoz4"
     >
       0
     </p>
@@ -137,7 +137,7 @@ exports[`NoteList > when the language set is the one that comes by default (Engl
     class="css-wo191d"
   />
   <button
-    class="css-10lfmpz"
+    class="css-1qofjy"
     style="bottom: 10.5rem;"
     title="Change language"
   >
@@ -158,7 +158,7 @@ exports[`NoteList > when the language set is the one that comes by default (Engl
     </svg>
   </button>
   <button
-    class="css-10lfmpz"
+    class="css-1qofjy"
     style="bottom: 6rem;"
     title="Day mode"
   >
@@ -179,7 +179,7 @@ exports[`NoteList > when the language set is the one that comes by default (Engl
     </svg>
   </button>
   <a
-    class="css-10lfmpz"
+    class="css-1qofjy"
     href="/notes"
     role="button"
     style="bottom: 1.5rem;"
@@ -207,10 +207,10 @@ exports[`NoteList > when the language set is the one that comes by default (Engl
 exports[`NoteList > when there are more than zero notes: > should match snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-irlo6v"
+    class="css-1ro0zb0"
   >
     <h2
-      class="css-1kiihh0"
+      class="css-1552s8d"
     >
       <svg
         aria-hidden="true"
@@ -230,7 +230,7 @@ exports[`NoteList > when there are more than zero notes: > should match snapshot
        My notes
     </h2>
     <p
-      class="css-1bgf1q4"
+      class="css-1dqcoz4"
     >
       5
     </p>
@@ -239,19 +239,19 @@ exports[`NoteList > when there are more than zero notes: > should match snapshot
     class="css-wo191d"
   >
     <a
-      data-testid="note-xfj6bf8laqu2p7b"
-      href="/notes/note-xfj6bf8laqu2p7b"
+      data-testid="note-xdai7uolb28u8qc"
+      href="/notes/note-xdai7uolb28u8qc"
       role="link"
     >
       <div
-        class="css-14m53i8"
+        class="css-1ki75lg"
       >
         <h3>
           Hello test 1
         </h3>
         <p>
           <span>
-            December 17, 1995 at 3:24:00 AM
+            December 17, 1995 at 3:24:01 AM
           </span>
           <span>
              Testing 1
@@ -260,19 +260,19 @@ exports[`NoteList > when there are more than zero notes: > should match snapshot
       </div>
     </a>
     <a
-      data-testid="note-xfj6bf8laqu2p7c"
-      href="/notes/note-xfj6bf8laqu2p7c"
+      data-testid="note-xdai7uolb28u8qd"
+      href="/notes/note-xdai7uolb28u8qd"
       role="link"
     >
       <div
-        class="css-14m53i8"
+        class="css-1ki75lg"
       >
         <h3>
           Hello test 2
         </h3>
         <p>
           <span>
-            December 17, 1995 at 3:24:01 AM
+            December 17, 1995 at 3:24:02 AM
           </span>
           <span>
              Testing 2
@@ -281,19 +281,19 @@ exports[`NoteList > when there are more than zero notes: > should match snapshot
       </div>
     </a>
     <a
-      data-testid="note-xfj6bf8laqu2p7d"
-      href="/notes/note-xfj6bf8laqu2p7d"
+      data-testid="note-xdai7uolb28u8qe"
+      href="/notes/note-xdai7uolb28u8qe"
       role="link"
     >
       <div
-        class="css-14m53i8"
+        class="css-1ki75lg"
       >
         <h3>
           Hello test 3
         </h3>
         <p>
           <span>
-            December 17, 1995 at 3:24:02 AM
+            December 17, 1995 at 3:24:03 AM
           </span>
           <span>
              Testing 3
@@ -302,19 +302,19 @@ exports[`NoteList > when there are more than zero notes: > should match snapshot
       </div>
     </a>
     <a
-      data-testid="note-xfj6bf8laqu2p7e"
-      href="/notes/note-xfj6bf8laqu2p7e"
+      data-testid="note-xdai7uolb28u8qf"
+      href="/notes/note-xdai7uolb28u8qf"
       role="link"
     >
       <div
-        class="css-14m53i8"
+        class="css-1ki75lg"
       >
         <h3>
           Hello test 4
         </h3>
         <p>
           <span>
-            December 17, 1995 at 3:24:03 AM
+            December 17, 1995 at 3:24:04 AM
           </span>
           <span>
              Testing 4
@@ -323,19 +323,19 @@ exports[`NoteList > when there are more than zero notes: > should match snapshot
       </div>
     </a>
     <a
-      data-testid="note-xfj6bf8laqu2p7f"
-      href="/notes/note-xfj6bf8laqu2p7f"
+      data-testid="note-xdai7uolb28u8qg"
+      href="/notes/note-xdai7uolb28u8qg"
       role="link"
     >
       <div
-        class="css-14m53i8"
+        class="css-1ki75lg"
       >
         <h3>
           Hello test 5
         </h3>
         <p>
           <span>
-            December 17, 1995 at 3:24:04 AM
+            December 17, 1995 at 3:24:05 AM
           </span>
           <span>
              Testing 5
@@ -345,7 +345,7 @@ exports[`NoteList > when there are more than zero notes: > should match snapshot
     </a>
   </div>
   <button
-    class="css-10lfmpz"
+    class="css-1qofjy"
     style="bottom: 10.5rem;"
     title="Change language"
   >
@@ -366,7 +366,7 @@ exports[`NoteList > when there are more than zero notes: > should match snapshot
     </svg>
   </button>
   <button
-    class="css-10lfmpz"
+    class="css-1qofjy"
     style="bottom: 6rem;"
     title="Day mode"
   >
@@ -387,7 +387,7 @@ exports[`NoteList > when there are more than zero notes: > should match snapshot
     </svg>
   </button>
   <a
-    class="css-10lfmpz"
+    class="css-1qofjy"
     href="/notes"
     role="button"
     style="bottom: 1.5rem;"
@@ -415,10 +415,10 @@ exports[`NoteList > when there are more than zero notes: > should match snapshot
 exports[`NoteList > when there are no notes: > should match snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-irlo6v"
+    class="css-1ro0zb0"
   >
     <h2
-      class="css-1kiihh0"
+      class="css-1552s8d"
     >
       <svg
         aria-hidden="true"
@@ -438,7 +438,7 @@ exports[`NoteList > when there are no notes: > should match snapshot 1`] = `
        My notes
     </h2>
     <p
-      class="css-1bgf1q4"
+      class="css-1dqcoz4"
     >
       0
     </p>
@@ -447,7 +447,7 @@ exports[`NoteList > when there are no notes: > should match snapshot 1`] = `
     class="css-wo191d"
   />
   <button
-    class="css-10lfmpz"
+    class="css-1qofjy"
     style="bottom: 10.5rem;"
     title="Change language"
   >
@@ -468,7 +468,7 @@ exports[`NoteList > when there are no notes: > should match snapshot 1`] = `
     </svg>
   </button>
   <button
-    class="css-10lfmpz"
+    class="css-1qofjy"
     style="bottom: 6rem;"
     title="Day mode"
   >
@@ -489,7 +489,7 @@ exports[`NoteList > when there are no notes: > should match snapshot 1`] = `
     </svg>
   </button>
   <a
-    class="css-10lfmpz"
+    class="css-1qofjy"
     href="/notes"
     role="button"
     style="bottom: 1.5rem;"

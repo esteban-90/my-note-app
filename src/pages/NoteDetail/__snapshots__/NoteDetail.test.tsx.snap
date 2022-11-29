@@ -6,10 +6,10 @@ exports[`NoteDetail > creation of a new note: > should match snapshot 1`] = `
     class="css-1ubh0lm"
   >
     <div
-      class="css-1fz6r0x"
+      class="css-qc8xmq"
     >
       <svg
-        aria-labelledby="svg-inline--fa-title-ZG3BJHuqUPPX"
+        aria-labelledby="svg-inline--fa-title-wgFpgx1rTohk"
         class="svg-inline--fa fa-left-long fa-xl "
         data-icon="left-long"
         data-prefix="fas"
@@ -18,7 +18,7 @@ exports[`NoteDetail > creation of a new note: > should match snapshot 1`] = `
         xmlns="http://www.w3.org/2000/svg"
       >
         <title
-          id="svg-inline--fa-title-ZG3BJHuqUPPX"
+          id="svg-inline--fa-title-wgFpgx1rTohk"
         >
           Back to home
         </title>
@@ -28,7 +28,7 @@ exports[`NoteDetail > creation of a new note: > should match snapshot 1`] = `
         />
       </svg>
       <svg
-        aria-labelledby="svg-inline--fa-title-udGZkh7YUUdn"
+        aria-labelledby="svg-inline--fa-title-mfCPI8xuzPoA"
         class="svg-inline--fa fa-check fa-xl "
         data-icon="check"
         data-prefix="fas"
@@ -37,7 +37,7 @@ exports[`NoteDetail > creation of a new note: > should match snapshot 1`] = `
         xmlns="http://www.w3.org/2000/svg"
       >
         <title
-          id="svg-inline--fa-title-udGZkh7YUUdn"
+          id="svg-inline--fa-title-mfCPI8xuzPoA"
         >
           Add note
         </title>
@@ -49,7 +49,7 @@ exports[`NoteDetail > creation of a new note: > should match snapshot 1`] = `
     </div>
     <textarea
       aria-label="note content"
-      class="css-my340b"
+      class="css-vhid4f"
     />
   </div>
 </DocumentFragment>
@@ -61,10 +61,10 @@ exports[`NoteDetail > deletion of a note: > should match snapshot 1`] = `
     class="css-1ubh0lm"
   >
     <div
-      class="css-1fz6r0x"
+      class="css-qc8xmq"
     >
       <svg
-        aria-labelledby="svg-inline--fa-title-BEqbzk8lejMI"
+        aria-labelledby="svg-inline--fa-title-FKdY20FZuUqq"
         class="svg-inline--fa fa-left-long fa-xl "
         data-icon="left-long"
         data-prefix="fas"
@@ -73,7 +73,7 @@ exports[`NoteDetail > deletion of a note: > should match snapshot 1`] = `
         xmlns="http://www.w3.org/2000/svg"
       >
         <title
-          id="svg-inline--fa-title-BEqbzk8lejMI"
+          id="svg-inline--fa-title-FKdY20FZuUqq"
         >
           Back to home
         </title>
@@ -83,7 +83,7 @@ exports[`NoteDetail > deletion of a note: > should match snapshot 1`] = `
         />
       </svg>
       <svg
-        aria-labelledby="svg-inline--fa-title-nzCEwKoWkMgQ"
+        aria-labelledby="svg-inline--fa-title-Wz3Wy3uTP000"
         class="svg-inline--fa fa-trash-can fa-xl "
         data-icon="trash-can"
         data-prefix="fas"
@@ -92,7 +92,7 @@ exports[`NoteDetail > deletion of a note: > should match snapshot 1`] = `
         xmlns="http://www.w3.org/2000/svg"
       >
         <title
-          id="svg-inline--fa-title-nzCEwKoWkMgQ"
+          id="svg-inline--fa-title-Wz3Wy3uTP000"
         >
           Remove note
         </title>
@@ -104,7 +104,7 @@ exports[`NoteDetail > deletion of a note: > should match snapshot 1`] = `
     </div>
     <textarea
       aria-label="note content"
-      class="css-my340b"
+      class="css-vhid4f"
     >
       Hello test 1
 Testing 1
@@ -119,10 +119,10 @@ exports[`NoteDetail > edition of an existing note: > should match snapshot 1`] =
     class="css-1ubh0lm"
   >
     <div
-      class="css-1fz6r0x"
+      class="css-qc8xmq"
     >
       <svg
-        aria-labelledby="svg-inline--fa-title-ydvYrbnmmmq4"
+        aria-labelledby="svg-inline--fa-title-doIToxEVv1l3"
         class="svg-inline--fa fa-left-long fa-xl "
         data-icon="left-long"
         data-prefix="fas"
@@ -131,7 +131,7 @@ exports[`NoteDetail > edition of an existing note: > should match snapshot 1`] =
         xmlns="http://www.w3.org/2000/svg"
       >
         <title
-          id="svg-inline--fa-title-ydvYrbnmmmq4"
+          id="svg-inline--fa-title-doIToxEVv1l3"
         >
           Back to home
         </title>
@@ -141,7 +141,7 @@ exports[`NoteDetail > edition of an existing note: > should match snapshot 1`] =
         />
       </svg>
       <svg
-        aria-labelledby="svg-inline--fa-title-WcdFj0WgzdGj"
+        aria-labelledby="svg-inline--fa-title-aR9xNOHF1Jz9"
         class="svg-inline--fa fa-trash-can fa-xl "
         data-icon="trash-can"
         data-prefix="fas"
@@ -150,7 +150,7 @@ exports[`NoteDetail > edition of an existing note: > should match snapshot 1`] =
         xmlns="http://www.w3.org/2000/svg"
       >
         <title
-          id="svg-inline--fa-title-WcdFj0WgzdGj"
+          id="svg-inline--fa-title-aR9xNOHF1Jz9"
         >
           Remove note
         </title>
@@ -162,7 +162,7 @@ exports[`NoteDetail > edition of an existing note: > should match snapshot 1`] =
     </div>
     <textarea
       aria-label="note content"
-      class="css-my340b"
+      class="css-vhid4f"
     >
       Hello test 1
 Testing 1
@@ -174,7 +174,7 @@ Testing 1
 exports[`NoteDetail > if url param is a valid id but the note associated with it doesn't exist: > should match snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-1ev01vr"
+    class="css-1n2qccw"
   >
     <h2>
       Page not found
@@ -195,7 +195,7 @@ exports[`NoteDetail > if url param is a valid id but the note associated with it
       />
     </svg>
     <a
-      class="css-10lfmpz"
+      class="css-1qofjy"
       href="/"
       style="bottom: 1.5rem;"
       title="Back to home"
@@ -223,7 +223,7 @@ exports[`NoteDetail > if url param is a valid id but the note associated with it
 exports[`NoteDetail > if url param is not a valid id: > should match snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-1ev01vr"
+    class="css-1n2qccw"
   >
     <h2>
       Page not found
@@ -244,7 +244,7 @@ exports[`NoteDetail > if url param is not a valid id: > should match snapshot 1`
       />
     </svg>
     <a
-      class="css-10lfmpz"
+      class="css-1qofjy"
       href="/"
       style="bottom: 1.5rem;"
       title="Back to home"

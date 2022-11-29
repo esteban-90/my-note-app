@@ -1,19 +1,9 @@
 import type { ComponentStory, ComponentMeta } from '@storybook/react'
-import { Layout } from '@/components'
 import { NotFound } from './NotFound'
 
 export default {
   title: 'Pages/Not Found',
   component: NotFound,
-  decorators: [
-    (Story) => {
-      return (
-        <Layout>
-          <Story />
-        </Layout>
-      )
-    },
-  ],
   parameters: {
     reactRouter: {
       routePath: '/test',

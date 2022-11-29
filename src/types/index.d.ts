@@ -1,55 +1,49 @@
 /**
- * Note object to be saved to storage
+ * Note to be saved in local storage.
  */
-export type Note = {
-  /** Unique identifier */
+export interface Note {
+  /**
+   * Unique identifier for each note, is assigned automatically.
+   */
   id: string
-  /** Content of the note */
+  /**
+   * The content that the user writes.
+   */
   content: string
-  /** Date of creation */
+  /**
+   * The date of creation, is assigned automatically.
+   */
   createdAt: string
 }
 
 /**
- * Utilities for notes
+ * Utilities for working with notes and local storage.
  */
-export type NoteUtils = {
-  /** Array of saved notes */
+export interface NoteUtils {
+  /**
+   * Array of saved notes.
+   */
   notes: Note[]
-  /** Gets a note from storage */
+  /**
+   * Retrieves -or not- a note based on its identifier.
+   * @param id The identifier corresponding to that note or an empty string.
+   * @returns The note if exists, undefined otherwise.
+   */
   getNote: (id: string) => Note | undefined
-  /** Saves a note in storage */
+  /**
+   * Saves a new note receiving its content from the user and assigning it an identifier and a date of creation.
+   * @param content The content for the new note.
+   */
   addNote: (content: string) => void
-  /** Updates a previously saved note */
+  /**
+   * Updates an existing note based on its identifier.
+   * @param id The identifier corresponding to the note which will be updated.
+   * @param content The updated content for that note.
+   */
   updateNote: (id: string, content: string) => void
-  /** Removes a note from storage */
+  /**
+   * Removes an existing note based on its identifier.
+   * @param id The identifier corresponding to the note which will be removed.
+   */
   removeNote: (id: string) => void
-}
-
-/**
- * Theme string to be saved to storage
- */
-export type Theme = 'night' | 'day'
-
-/**
- * Utilities for themes
- */
-export type ThemeUtils = {
-  /** Saved theme as string */
-  theme: Theme
-  /** Changes the theme and saves it in storage */
-  changeTheme: () => void
-}
-
-/**
- * Language string to be saved to storage
- */
-export type Language = 'en-US' | 'es-PY'
-
-/**
- * Utilities for languages
- */
-export type LanguageUtils = {
-  language: Language
-  changeLanguage: () => void
 }

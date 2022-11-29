@@ -1,5 +1,5 @@
-import { hasBadWords, getBody, getTitle, makeKey } from '@/helpers'
-import { makeMockNote } from '@/mocks'
+import { hasBadWords, getBody, getDate, getTitle } from '@/helpers'
+import { makeMockNote, mockNote } from '@/mocks'
 
 describe('helpers test cases:', () => {
   const mockContentPart1 = 'this part should be the title'
@@ -23,6 +23,22 @@ describe('helpers test cases:', () => {
         const { content } = makeMockNote(`${mockContentPart1} ${mockContentPart2}\n...`)
         const title = getTitle(content)
         expect(title).toBe(mockContentPart1)
+      })
+    })
+  })
+
+  describe(getDate.name, () => {
+    describe('should get the date in correct format in:', () => {
+      it('English', () => {
+        const date = getDate(mockNote.createdAt)
+        const result = 'December 17, 1995 at 3:24:00 AM'
+        expect(date).toBe(result)
+      })
+
+      it('Spanish', () => {
+        const date = getDate(mockNote.createdAt, 'es')
+        const result = '17 de diciembre de 1995, 3:24:00'
+        expect(date).toBe(result)
       })
     })
   })
@@ -67,22 +83,6 @@ describe('helpers test cases:', () => {
           const { content: goodContent } = makeMockNote('¡qué hermoso día!')
           expect(hasBadWords(goodContent)).toBe(false)
         })
-      })
-    })
-  })
-
-  describe(makeKey.name, () => {
-    describe('should return:', () => {
-      it('the correct storage key for notes', () => {
-        expect(makeKey('notes')).toBe('note-app:notes')
-      })
-
-      it('the correct storage key for language', () => {
-        expect(makeKey('language')).toBe('note-app:language')
-      })
-
-      it('the correct storage key for theme', () => {
-        expect(makeKey('theme')).toBe('note-app:theme')
       })
     })
   })

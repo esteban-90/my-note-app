@@ -1,11 +1,11 @@
-import { screen, render } from '@/tests'
+import { screen, customRender } from '@/tests'
 import { Layout } from './Layout'
 
 describe(Layout.name, () => {
   let asFragment: () => DocumentFragment
 
   beforeEach(() => {
-    ;({ asFragment } = render(<Layout />))
+    ;({ asFragment } = customRender(<Layout />))
   })
 
   it('should match snapshot', () => {

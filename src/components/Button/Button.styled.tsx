@@ -4,13 +4,13 @@ import { centered } from '@/styles'
 export const Wrapper = styled.div`
   position: absolute;
   right: 1rem;
-  background: var(--color-main);
+  background: ${({ theme }) => theme.colorPalette.main};
   border: none;
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 50%;
   ${centered}
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 10px ${({ theme }) => theme.colorPalette.border};
   transition: opacity transform 800ms;
 
   &:active {

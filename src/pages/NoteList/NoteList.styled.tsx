@@ -4,17 +4,22 @@ import { centered } from '@/styles'
 export const Header = styled.div`
   ${centered}
   justify-content: space-between;
-  color: var(--color-main);
+  color: ${({ theme }) => theme.colorPalette.main};
   padding: 0 1rem;
   font-weight: 700;
 `
 
 export const Title = styled.h2`
   font-size: 1.5rem;
+
+  &::selection {
+    color: ${({ theme }) => theme.colorPalette.background.content};
+    background-color: ${({ theme }) => theme.colorPalette.main};
+  }
 `
 
 export const Count = styled.p`
-  color: var(--color-gray);
+  color: ${({ theme }) => theme.colorPalette.text.accent2};
   font-size: 1.2rem;
 `
 

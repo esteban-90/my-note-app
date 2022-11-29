@@ -11,6 +11,7 @@ export default {
     '@storybook/addon-interactions',
     '@storybook/addon-a11y',
     'storybook-addon-react-router-v6',
+    'storybook-react-i18next',
   ],
 
   core: {

@@ -1,14 +1,6 @@
 import { MemoryRouter, Routes, Route } from 'react-router-dom'
-import { getTitle, getBody } from '@/helpers'
-import {
-  mockNoteKey,
-  mockNotes,
-  mockLanguageKey,
-  mockESLanguage,
-  mockThemeKey,
-  mockNightTheme,
-  formatMockDate,
-} from '@/mocks'
+import { getTitle, getDate, getBody } from '@/helpers'
+import { mockNotes, saveNotes, removeNotes, saveTheme, removeTheme } from '@/mocks'
 import { screen, customRender, userEvent, configure } from '@/tests'
 import { NoteList } from './NoteList'
 
@@ -47,17 +39,13 @@ describe(NoteList.name, () => {
   describe('when there are more than zero notes:', () => {
     const counterValue = mockNotes.length
 
-    beforeAll(() => {
-      localStorage.setItem(mockNoteKey, JSON.stringify(mockNotes))
-    })
+    beforeAll(saveNotes)
 
     beforeEach(() => {
       ;({ asFragment } = customRender(UI))
     })
 
-    afterAll(() => {
-      localStorage.removeItem(mockNoteKey)
-    })
+    afterAll(removeNotes)
 
     it('should match snapshot', () => {
       expect(asFragment()).toMatchSnapshot()
@@ -69,7 +57,7 @@ describe(NoteList.name, () => {
         const noteTitleElement = screen.getByRole('heading', { name: new RegExp(noteTitle, 'i') })
         expect(noteTitleElement).toBeInTheDocument()
 
-        const noteDate = formatMockDate(createdAt)
+        const noteDate = getDate(createdAt)
         const noteDateElement = screen.getByText(noteDate)
         expect(noteDateElement).toBeInTheDocument()
 
@@ -137,22 +125,19 @@ describe(NoteList.name, () => {
     })
   })
 
-  describe('when the language set is Spanish:', () => {
-    beforeAll(() => {
-      localStorage.setItem(mockLanguageKey, JSON.stringify(mockESLanguage))
-      localStorage.setItem(mockThemeKey, JSON.stringify(mockNightTheme))
-    })
+  describe('when the language is changed to Spanish:', () => {
+    beforeAll(saveTheme)
 
     beforeEach(() => {
       ;({ asFragment } = customRender(UI))
     })
 
-    afterAll(() => {
-      localStorage.removeItem(mockLanguageKey)
-      localStorage.removeItem(mockThemeKey)
-    })
+    afterAll(removeTheme)
 
-    it('should match snapshot', () => {
+    it('should match snapshot', async () => {
+      const changeLanguageButton = screen.getByRole('button', { name: /change language/i })
+      await userEvent.click(changeLanguageButton)
+
       expect(asFragment()).toMatchSnapshot()
     })
 

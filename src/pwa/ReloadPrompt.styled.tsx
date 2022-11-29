@@ -18,17 +18,17 @@ export const Toast = styled.div`
   z-index: 1;
   text-align: left;
   box-shadow: 3px 4px 5px 0 #8885;
-  background-color: var(--color-main);
+  background-color: ${({ theme }) => theme.colorPalette.main};
   text-align: center;
 `
 
 export const Message = styled.div`
   margin-bottom: 8px;
-  color: var(--color-white);
+  color: ${({ theme }) => theme.colorPalette.border};
 `
 
 export const Button = styled.button`
-  border: 1px solid var(--color-border);
+  border: 1px solid ${({ theme }) => theme.colorPalette.border};
   outline: none;
   margin-right: 5px;
   border-radius: 2px;

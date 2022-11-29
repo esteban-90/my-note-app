@@ -2,13 +2,11 @@
 
 exports[`ThemeProvider > should match snapshot 1`] = `
 <DocumentFragment>
-  <div
-    class="night"
-    role="presentation"
-  >
-    <button>
-      Change theme
-    </button>
-  </div>
+  <p>
+    night
+  </p>
+  <button>
+    Change theme
+  </button>
 </DocumentFragment>
 `;

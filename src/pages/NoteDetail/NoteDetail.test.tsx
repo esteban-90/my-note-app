@@ -1,6 +1,5 @@
-import type { Note } from '@/types'
 import { MemoryRouter, Routes, Route } from 'react-router-dom'
-import { mockNoteKey, mockNotes } from '@/mocks'
+import { mockNotes, getNotes, saveNotes, removeNotes } from '@/mocks'
 import { screen, customRender, userEvent, configure } from '@/tests'
 import { NoteDetail } from './NoteDetail'
 
@@ -123,11 +122,10 @@ describe(NoteDetail.name, () => {
 
       expect(navigator.vibrate).toHaveBeenCalled()
 
-      const savedNotes = localStorage.getItem(mockNoteKey) as string
-      const [parsedNote] = JSON.parse(savedNotes) as Note[]
-      expect(parsedNote.content).toBe(goodNoteContent)
+      const [{ content }] = getNotes()
+      expect(content).toBe(goodNoteContent)
 
-      localStorage.removeItem(mockNoteKey)
+      removeNotes()
     })
 
     it("should succeed if the user doesn't write bad words and go back link is clicked", async () => {
@@ -147,11 +145,10 @@ describe(NoteDetail.name, () => {
 
       expect(navigator.vibrate).toHaveBeenCalled()
 
-      const savedNotes = localStorage.getItem(mockNoteKey) as string
-      const [parsedNote] = JSON.parse(savedNotes) as Note[]
-      expect(parsedNote.content).toBe(goodNoteContent)
+      const [{ content }] = getNotes()
+      expect(content).toBe(goodNoteContent)
 
-      localStorage.removeItem(mockNoteKey)
+      removeNotes()
     })
 
     it('should fail if the user writes bad words', async () => {
@@ -171,9 +168,8 @@ describe(NoteDetail.name, () => {
 
       expect(navigator.vibrate).toHaveBeenCalled()
 
-      const savedNotes = localStorage.getItem(mockNoteKey) as string
-      const parsedNotes = JSON.parse(savedNotes) as Note[]
-      expect(parsedNotes.find(({ content }) => content === badNoteContent)).toBeUndefined()
+      const notes = getNotes()
+      expect(notes.find(({ content }) => content === badNoteContent)).toBeUndefined()
     })
 
     it("should fail if there's no content and add note link is clicked", async () => {
@@ -184,9 +180,8 @@ describe(NoteDetail.name, () => {
       const addLink = screen.getByText(/^add note$/i)
       await userEvent.click(addLink)
 
-      const savedNotes = localStorage.getItem(mockNoteKey) as string
-      const parsedNotes = JSON.parse(savedNotes) as Note[]
-      expect(parsedNotes).toHaveLength(0)
+      const notes = getNotes()
+      expect(notes).toHaveLength(0)
     })
 
     it("should fail if there's already content but cancel button is clicked", async () => {
@@ -202,9 +197,8 @@ describe(NoteDetail.name, () => {
       const cancelButton = await screen.findByText(/^no$/i)
       await userEvent.click(cancelButton)
 
-      const savedNotes = localStorage.getItem(mockNoteKey) as string
-      const parsedNotes = JSON.parse(savedNotes) as Note[]
-      expect(parsedNotes).toHaveLength(0)
+      const notes = getNotes()
+      expect(notes).toHaveLength(0)
     })
   })
 
@@ -224,13 +218,11 @@ describe(NoteDetail.name, () => {
     })
 
     beforeEach(() => {
-      localStorage.setItem(mockNoteKey, JSON.stringify(mockNotes))
+      saveNotes()
       ;({ asFragment } = customRender(UI))
     })
 
-    afterEach(() => {
-      localStorage.removeItem(mockNoteKey)
-    })
+    afterEach(removeNotes)
 
     it('should match snapshot', () => {
       expect(asFragment()).toMatchSnapshot()
@@ -272,9 +264,8 @@ describe(NoteDetail.name, () => {
 
       expect(navigator.vibrate).toHaveBeenCalled()
 
-      const savedNotes = localStorage.getItem(mockNoteKey) as string
-      const [{ content: editedNoteContent }] = JSON.parse(savedNotes) as Note[]
-      expect(editedNoteContent).toBe(contentToEdit + goodNoteContent)
+      const [{ content }] = getNotes()
+      expect(content).toBe(contentToEdit + goodNoteContent)
     })
 
     it('should fail if the previous content is the same as the user has typed', async () => {
@@ -285,9 +276,8 @@ describe(NoteDetail.name, () => {
       const homeLink = screen.getByText(/^back to home$/i)
       await userEvent.click(homeLink)
 
-      const savedNotes = localStorage.getItem(mockNoteKey) as string
-      const parsedNotes = JSON.parse(savedNotes) as Note[]
-      expect(parsedNotes.find(({ content }) => content === contentToEdit)).not.toBeUndefined()
+      const notes = getNotes()
+      expect(notes.find(({ content }) => content === contentToEdit)).not.toBeUndefined()
     })
 
     it('should fail if the user writes bad words', async () => {
@@ -307,9 +297,8 @@ describe(NoteDetail.name, () => {
 
       expect(navigator.vibrate).toHaveBeenCalled()
 
-      const savedNotes = localStorage.getItem(mockNoteKey) as string
-      const parsedNotes = JSON.parse(savedNotes) as Note[]
-      expect(parsedNotes.find(({ content }) => content.includes(badNoteContent))).toBeUndefined()
+      const notes = getNotes()
+      expect(notes.find(({ content }) => content.includes(badNoteContent))).toBeUndefined()
     })
   })
 
@@ -329,13 +318,11 @@ describe(NoteDetail.name, () => {
     })
 
     beforeEach(() => {
-      localStorage.setItem(mockNoteKey, JSON.stringify(mockNotes))
+      saveNotes()
       ;({ asFragment } = customRender(UI))
     })
 
-    afterEach(() => {
-      localStorage.removeItem(mockNoteKey)
-    })
+    afterEach(removeNotes)
 
     it('should match snapshot', () => {
       expect(asFragment()).toMatchSnapshot()
@@ -353,8 +340,7 @@ describe(NoteDetail.name, () => {
 
       expect(navigator.vibrate).toHaveBeenCalled()
 
-      const savedNotes = localStorage.getItem(mockNoteKey) as string
-      const noteIds = (JSON.parse(savedNotes) as Note[]).map(({ id }) => id)
+      const noteIds = getNotes().map(({ id }) => id)
       expect(noteIds).not.toContain(idToDelete)
     })
 
@@ -373,8 +359,7 @@ describe(NoteDetail.name, () => {
 
       expect(navigator.vibrate).toHaveBeenCalled()
 
-      const savedNotes = localStorage.getItem(mockNoteKey) as string
-      const noteIds = (JSON.parse(savedNotes) as Note[]).map(({ id }) => id)
+      const noteIds = getNotes().map(({ id }) => id)
       expect(noteIds).not.toContain(idToDelete)
     })
   })

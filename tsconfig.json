@@ -21,7 +21,6 @@
       "@styled/*": [
         "components/*/Button.styled.tsx",
         "components/*/Header.styled.tsx",
-        "components/*/Layout.styled.tsx",
         "components/*/NoteItem.styled.tsx",
         "pages/*/NoteDetail.styled.tsx",
         "pages/*/NoteList.styled.tsx",
