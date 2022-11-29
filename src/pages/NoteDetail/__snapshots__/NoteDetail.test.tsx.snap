@@ -9,7 +9,7 @@ exports[`NoteDetail > creation of a new note: > should match snapshot 1`] = `
       class="css-qc8xmq"
     >
       <svg
-        aria-labelledby="svg-inline--fa-title-wgFpgx1rTohk"
+        aria-labelledby="svg-inline--fa-title-Ct7nU8KUasoO"
         class="svg-inline--fa fa-left-long fa-xl "
         data-icon="left-long"
         data-prefix="fas"
@@ -18,7 +18,7 @@ exports[`NoteDetail > creation of a new note: > should match snapshot 1`] = `
         xmlns="http://www.w3.org/2000/svg"
       >
         <title
-          id="svg-inline--fa-title-wgFpgx1rTohk"
+          id="svg-inline--fa-title-Ct7nU8KUasoO"
         >
           Back to home
         </title>
@@ -28,7 +28,7 @@ exports[`NoteDetail > creation of a new note: > should match snapshot 1`] = `
         />
       </svg>
       <svg
-        aria-labelledby="svg-inline--fa-title-mfCPI8xuzPoA"
+        aria-labelledby="svg-inline--fa-title-cosDYD7Ruo6C"
         class="svg-inline--fa fa-check fa-xl "
         data-icon="check"
         data-prefix="fas"
@@ -37,7 +37,7 @@ exports[`NoteDetail > creation of a new note: > should match snapshot 1`] = `
         xmlns="http://www.w3.org/2000/svg"
       >
         <title
-          id="svg-inline--fa-title-mfCPI8xuzPoA"
+          id="svg-inline--fa-title-cosDYD7Ruo6C"
         >
           Add note
         </title>
@@ -64,7 +64,7 @@ exports[`NoteDetail > deletion of a note: > should match snapshot 1`] = `
       class="css-qc8xmq"
     >
       <svg
-        aria-labelledby="svg-inline--fa-title-FKdY20FZuUqq"
+        aria-labelledby="svg-inline--fa-title-vunvjsxXc7AK"
         class="svg-inline--fa fa-left-long fa-xl "
         data-icon="left-long"
         data-prefix="fas"
@@ -73,7 +73,7 @@ exports[`NoteDetail > deletion of a note: > should match snapshot 1`] = `
         xmlns="http://www.w3.org/2000/svg"
       >
         <title
-          id="svg-inline--fa-title-FKdY20FZuUqq"
+          id="svg-inline--fa-title-vunvjsxXc7AK"
         >
           Back to home
         </title>
@@ -83,7 +83,7 @@ exports[`NoteDetail > deletion of a note: > should match snapshot 1`] = `
         />
       </svg>
       <svg
-        aria-labelledby="svg-inline--fa-title-Wz3Wy3uTP000"
+        aria-labelledby="svg-inline--fa-title-23hLgDZMwflm"
         class="svg-inline--fa fa-trash-can fa-xl "
         data-icon="trash-can"
         data-prefix="fas"
@@ -92,7 +92,7 @@ exports[`NoteDetail > deletion of a note: > should match snapshot 1`] = `
         xmlns="http://www.w3.org/2000/svg"
       >
         <title
-          id="svg-inline--fa-title-Wz3Wy3uTP000"
+          id="svg-inline--fa-title-23hLgDZMwflm"
         >
           Remove note
         </title>
@@ -122,7 +122,7 @@ exports[`NoteDetail > edition of an existing note: > should match snapshot 1`] =
       class="css-qc8xmq"
     >
       <svg
-        aria-labelledby="svg-inline--fa-title-doIToxEVv1l3"
+        aria-labelledby="svg-inline--fa-title-LTtTytAHNpSC"
         class="svg-inline--fa fa-left-long fa-xl "
         data-icon="left-long"
         data-prefix="fas"
@@ -131,7 +131,7 @@ exports[`NoteDetail > edition of an existing note: > should match snapshot 1`] =
         xmlns="http://www.w3.org/2000/svg"
       >
         <title
-          id="svg-inline--fa-title-doIToxEVv1l3"
+          id="svg-inline--fa-title-LTtTytAHNpSC"
         >
           Back to home
         </title>
@@ -141,7 +141,7 @@ exports[`NoteDetail > edition of an existing note: > should match snapshot 1`] =
         />
       </svg>
       <svg
-        aria-labelledby="svg-inline--fa-title-aR9xNOHF1Jz9"
+        aria-labelledby="svg-inline--fa-title-NxYnYJ0AI6hU"
         class="svg-inline--fa fa-trash-can fa-xl "
         data-icon="trash-can"
         data-prefix="fas"
@@ -150,7 +150,7 @@ exports[`NoteDetail > edition of an existing note: > should match snapshot 1`] =
         xmlns="http://www.w3.org/2000/svg"
       >
         <title
-          id="svg-inline--fa-title-aR9xNOHF1Jz9"
+          id="svg-inline--fa-title-NxYnYJ0AI6hU"
         >
           Remove note
         </title>

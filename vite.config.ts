@@ -56,7 +56,4 @@ export default defineConfig({
     setupFiles: './src/tests/setup',
     silent: true,
   },
-  build: {
-    target: 'esnext',
-  },
 })

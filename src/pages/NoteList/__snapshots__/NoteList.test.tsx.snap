@@ -239,8 +239,8 @@ exports[`NoteList > when there are more than zero notes: > should match snapshot
     class="css-wo191d"
   >
     <a
-      data-testid="note-xdai7uolb28u8qc"
-      href="/notes/note-xdai7uolb28u8qc"
+      data-testid="note-8d5lli5zolb2jnahy"
+      href="/notes/note-8d5lli5zolb2jnahy"
       role="link"
     >
       <div
@@ -260,8 +260,8 @@ exports[`NoteList > when there are more than zero notes: > should match snapshot
       </div>
     </a>
     <a
-      data-testid="note-xdai7uolb28u8qd"
-      href="/notes/note-xdai7uolb28u8qd"
+      data-testid="note-8d5lli5zolb2jnahz"
+      href="/notes/note-8d5lli5zolb2jnahz"
       role="link"
     >
       <div
@@ -281,8 +281,8 @@ exports[`NoteList > when there are more than zero notes: > should match snapshot
       </div>
     </a>
     <a
-      data-testid="note-xdai7uolb28u8qe"
-      href="/notes/note-xdai7uolb28u8qe"
+      data-testid="note-8d5lli5zolb2jnai0"
+      href="/notes/note-8d5lli5zolb2jnai0"
       role="link"
     >
       <div
@@ -302,8 +302,8 @@ exports[`NoteList > when there are more than zero notes: > should match snapshot
       </div>
     </a>
     <a
-      data-testid="note-xdai7uolb28u8qf"
-      href="/notes/note-xdai7uolb28u8qf"
+      data-testid="note-8d5lli5zolb2jnai1"
+      href="/notes/note-8d5lli5zolb2jnai1"
       role="link"
     >
       <div
@@ -323,8 +323,8 @@ exports[`NoteList > when there are more than zero notes: > should match snapshot
       </div>
     </a>
     <a
-      data-testid="note-xdai7uolb28u8qg"
-      href="/notes/note-xdai7uolb28u8qg"
+      data-testid="note-8d5lli5zolb2jnai2"
+      href="/notes/note-8d5lli5zolb2jnai2"
       role="link"
     >
       <div
