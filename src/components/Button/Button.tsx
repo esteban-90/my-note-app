@@ -2,7 +2,7 @@ import type { FC, HTMLAttributes, ElementType } from 'react'
 import type { LinkProps } from 'react-router-dom'
 import type { FontAwesomeIconProps } from '@fortawesome/react-fontawesome'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Wrapper } from '@styled/Button'
+import { Wrapper } from './Button.styled'
 
 interface ButtonProps extends HTMLAttributes<HTMLElement> {
   component?: ElementType

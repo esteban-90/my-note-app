@@ -1,1 +1,1 @@
-export { default } from '../src/i18n/tests'
+export { i18nInstance as default } from '../src/i18n/tests'

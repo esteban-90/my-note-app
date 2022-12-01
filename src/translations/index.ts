@@ -1,8 +1,0 @@
-export { default as notFoundPageEN } from '../../public/translations/en/not-found.json'
-export { default as noteDetailPageEN } from '../../public/translations/en/note-detail.json'
-export { default as noteListPageEN } from '../../public/translations/en/note-list.json'
-export { default as reloadPromptEN } from '../../public/translations/en/reload-prompt.json'
-export { default as notFoundPageES } from '../../public/translations/es/not-found.json'
-export { default as noteDetailPageES } from '../../public/translations/es/note-detail.json'
-export { default as noteListPageES } from '../../public/translations/es/note-list.json'
-export { default as reloadPromptES } from '../../public/translations/es/reload-prompt.json'

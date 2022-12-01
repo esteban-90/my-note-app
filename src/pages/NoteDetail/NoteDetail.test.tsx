@@ -1,6 +1,6 @@
 import { MemoryRouter, Routes, Route } from 'react-router-dom'
 import { mockNotes, getNotes, saveNotes, removeNotes } from '@/mocks'
-import { screen, customRender, userEvent, configure } from '@/tests'
+import { screen, render, userEvent, configure } from '@/tests'
 import { NoteDetail } from './NoteDetail'
 
 describe(NoteDetail.name, () => {
@@ -25,7 +25,7 @@ describe(NoteDetail.name, () => {
     })
 
     beforeEach(() => {
-      ;({ asFragment } = customRender(UI))
+      ;({ asFragment } = render(UI))
     })
 
     it('should match snapshot', () => {
@@ -52,7 +52,7 @@ describe(NoteDetail.name, () => {
     })
 
     beforeEach(() => {
-      ;({ asFragment } = customRender(UI))
+      ;({ asFragment } = render(UI))
     })
 
     it('should match snapshot', () => {
@@ -79,7 +79,7 @@ describe(NoteDetail.name, () => {
     })
 
     beforeEach(() => {
-      ;({ asFragment } = customRender(UI))
+      ;({ asFragment } = render(UI))
     })
 
     it('should match snapshot', () => {
@@ -219,7 +219,7 @@ describe(NoteDetail.name, () => {
 
     beforeEach(() => {
       saveNotes()
-      ;({ asFragment } = customRender(UI))
+      ;({ asFragment } = render(UI))
     })
 
     afterEach(removeNotes)
@@ -319,7 +319,7 @@ describe(NoteDetail.name, () => {
 
     beforeEach(() => {
       saveNotes()
-      ;({ asFragment } = customRender(UI))
+      ;({ asFragment } = render(UI))
     })
 
     afterEach(removeNotes)

@@ -7,7 +7,7 @@ import { confirm, force } from 'notie'
 import { useNotes } from '@/contexts'
 import { hasBadWords } from '@/helpers'
 import { NotFound } from '@/pages/NotFound'
-import { Wrapper, Content, TextBox } from '@styled/NoteDetail'
+import { Wrapper, Content, TextBox } from './NoteDetail.styled'
 
 /**
  * Page to create, edit or just view a note.

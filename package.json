@@ -12,11 +12,11 @@
     "test:coverage": "vitest -u --coverage",
     "lint": "eslint src/**/*.{js,jsx,ts,tsx}",
     "lint:fix": "eslint src/**/*.{js,jsx,ts,tsx} --fix",
-    "format": "prettier --write src/**/*.{js,jsx,ts,tsx,css,md,json} --config ./.prettierrc",
+    "format": "prettier --write src/**/*.{js,jsx,ts,tsx,css,md,json} index.html --config .prettierrc",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "generate-assets": "pwa-asset-generator ./src/logo.svg ./public/assets -i ./index.html -t png -e -f -w -o false",
-    "check-deps": "dpdm --no-warning ./src/main.tsx"
+    "generate-assets": "rm public/assets/* && pwa-asset-generator src/logo.svg public/assets -i index.html -t png -e -f -w -o false",
+    "check-deps": "dpdm --no-warning src/main.tsx"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",

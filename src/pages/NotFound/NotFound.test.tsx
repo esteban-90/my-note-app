@@ -1,5 +1,5 @@
 import { MemoryRouter, Routes, Route } from 'react-router-dom'
-import { screen, customRender, configure } from '@/tests'
+import { screen, render, configure } from '@/tests'
 import { NotFound } from './NotFound'
 
 describe(NotFound.name, () => {
@@ -18,7 +18,7 @@ describe(NotFound.name, () => {
   })
 
   beforeEach(() => {
-    ;({ asFragment } = customRender(UI))
+    ;({ asFragment } = render(UI))
   })
 
   it('should match snapshot', () => {

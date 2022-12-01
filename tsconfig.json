@@ -16,18 +16,8 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "baseUrl": "./src",
-    "paths": {
-      "@/*": ["*"],
-      "@styled/*": [
-        "components/*/Button.styled.tsx",
-        "components/*/Header.styled.tsx",
-        "components/*/NoteItem.styled.tsx",
-        "pages/*/NoteDetail.styled.tsx",
-        "pages/*/NoteList.styled.tsx",
-        "pages/*/NotFound.styled.tsx"
-      ]
-    }
+    "paths": { "@/*": ["*"] }
   },
-  "include": ["src", "src/tests/setup.ts"],
+  "include": ["./src", "./src/tests/setup.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

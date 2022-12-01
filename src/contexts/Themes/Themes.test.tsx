@@ -1,6 +1,6 @@
 import { useTheme } from '@emotion/react'
 import { getTheme, removeTheme } from '@/mocks'
-import { screen, render, userEvent, configure } from '@/tests'
+import { screen, contextRender, userEvent, configure } from '@/tests'
 import { ThemeProvider } from './Themes'
 
 describe(ThemeProvider.name, () => {
@@ -28,7 +28,7 @@ describe(ThemeProvider.name, () => {
   })
 
   beforeEach(() => {
-    ;({ asFragment } = render(UI))
+    ;({ asFragment } = contextRender(UI))
   })
 
   it('should match snapshot', () => {

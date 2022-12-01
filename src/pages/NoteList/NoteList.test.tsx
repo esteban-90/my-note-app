@@ -1,7 +1,7 @@
 import { MemoryRouter, Routes, Route } from 'react-router-dom'
 import { getTitle, getDate, getBody } from '@/helpers'
 import { mockNotes, saveNotes, removeNotes, saveTheme, removeTheme } from '@/mocks'
-import { screen, customRender, userEvent, configure } from '@/tests'
+import { screen, render, userEvent, configure, changeLanguage } from '@/tests'
 import { NoteList } from './NoteList'
 
 describe(NoteList.name, () => {
@@ -23,7 +23,7 @@ describe(NoteList.name, () => {
 
   describe('when there are no notes:', () => {
     beforeEach(() => {
-      ;({ asFragment } = customRender(UI))
+      ;({ asFragment } = render(UI))
     })
 
     it('should match snapshot', () => {
@@ -42,7 +42,7 @@ describe(NoteList.name, () => {
     beforeAll(saveNotes)
 
     beforeEach(() => {
-      ;({ asFragment } = customRender(UI))
+      ;({ asFragment } = render(UI))
     })
 
     afterAll(removeNotes)
@@ -84,7 +84,7 @@ describe(NoteList.name, () => {
 
   describe('when the language set is the one that comes by default (English):', () => {
     beforeEach(() => {
-      ;({ asFragment } = customRender(UI))
+      ;({ asFragment } = render(UI))
     })
 
     it('should match snapshot', () => {
@@ -126,18 +126,18 @@ describe(NoteList.name, () => {
   })
 
   describe('when the language is changed to Spanish:', () => {
-    beforeAll(saveTheme)
+    beforeAll(() => {
+      saveTheme()
+      changeLanguage('es')
+    })
 
     beforeEach(() => {
-      ;({ asFragment } = customRender(UI))
+      ;({ asFragment } = render(UI))
     })
 
     afterAll(removeTheme)
 
-    it('should match snapshot', async () => {
-      const changeLanguageButton = screen.getByRole('button', { name: /change language/i })
-      await userEvent.click(changeLanguageButton)
-
+    it('should match snapshot', () => {
       expect(asFragment()).toMatchSnapshot()
     })
 

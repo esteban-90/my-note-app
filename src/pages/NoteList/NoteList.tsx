@@ -5,7 +5,7 @@ import { useTheme } from '@emotion/react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { NoteItem, Button } from '@/components'
 import { useNotes } from '@/contexts'
-import { Header, Title, Count, List } from '@styled/NoteList'
+import { Header, Title, Count, List } from './NoteList.styled'
 
 /**
  * Page for showing a list of notes previously saved, or an empty list if there are no notes yet,

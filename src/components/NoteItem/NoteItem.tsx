@@ -3,7 +3,7 @@ import type { Note } from '@/types'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { getTitle, getDate, getBody } from '@/helpers'
-import { Wrapper } from '@styled/NoteItem'
+import { Wrapper } from './NoteItem.styled'
 
 export const NoteItem: FC<Note> = ({ id, content, createdAt }) => {
   const {

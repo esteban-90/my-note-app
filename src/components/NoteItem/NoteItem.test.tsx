@@ -1,7 +1,7 @@
 import { MemoryRouter } from 'react-router-dom'
 import { getTitle, getDate, getBody } from '@/helpers'
 import { mockNote } from '@/mocks'
-import { screen, customRender } from '@/tests'
+import { screen, render } from '@/tests'
 import { NoteItem } from './NoteItem'
 
 describe(NoteItem.name, () => {
@@ -14,7 +14,7 @@ describe(NoteItem.name, () => {
   )
 
   beforeEach(() => {
-    ;({ asFragment } = customRender(UI))
+    ;({ asFragment } = render(UI))
   })
 
   it('should match snapshot', () => {

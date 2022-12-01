@@ -1,29 +1,28 @@
-import i18n from 'i18next'
+import type { Resource } from 'i18next'
+import { createInstance } from 'i18next'
 import { initReactI18next } from 'react-i18next'
-import * as translations from '@/translations'
-import { ns, supportedLngs } from './common'
+import { ns, supportedLngs } from './app'
 
-const resources = {
-  [supportedLngs[0]]: {
-    [ns[0]]: translations.notFoundPageEN,
-    [ns[1]]: translations.noteDetailPageEN,
-    [ns[2]]: translations.noteListPageEN,
-    [ns[3]]: translations.reloadPromptEN,
-  },
-  [supportedLngs[1]]: {
-    [ns[0]]: translations.notFoundPageES,
-    [ns[1]]: translations.noteDetailPageES,
-    [ns[2]]: translations.noteListPageES,
-    [ns[3]]: translations.reloadPromptES,
-  },
-}
+const resources: Resource = {}
+export const i18nInstance = createInstance()
 
-i18n.use(initReactI18next).init({
+void (async () => {
+  for (const n of ns) {
+    for (const lng of supportedLngs) {
+      resources[lng] ??= {}
+      resources[lng] = {
+        ...resources[lng],
+        [n]: await import(`../../public/translations/${lng}/${n}.json`),
+      }
+    }
+  }
+})()
+
+i18nInstance.use(initReactI18next).init({
   ns,
   supportedLngs,
   fallbackLng: supportedLngs[0],
+  lng: supportedLngs[0],
   react: { useSuspense: false },
   resources,
 })
-
-export default i18n

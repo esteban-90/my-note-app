@@ -1,5 +1,5 @@
 import type { FC } from 'react'
-import { Wrapper } from '@styled/Header'
+import { Wrapper } from './Header.styled'
 
 export const Header: FC = () => {
   return (

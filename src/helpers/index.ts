@@ -31,7 +31,7 @@ export const getTitle = (noteContent: string) => {
  * @param locale The language locale.
  * @returns The formatted date.
  */
-export const getDate = (noteCreation: string, locale = 'en') => {
+export const getDate = (noteCreation: string, locale: 'en' | 'es' = 'en') => {
   return new Date(noteCreation).toLocaleString(locale, { dateStyle: 'long', timeStyle: 'medium' })
 }
 

@@ -1,6 +1,6 @@
 import { getTitle, getDate, getBody } from '@/helpers'
 import { mockNotes, saveNotes, removeNotes } from '@/mocks'
-import { screen, render, configure } from '@/tests'
+import { screen, contextRender, configure } from '@/tests'
 import { NoteProvider, useNotes } from './Notes'
 
 describe(NoteProvider.name, () => {
@@ -33,7 +33,7 @@ describe(NoteProvider.name, () => {
   })
 
   beforeEach(() => {
-    ;({ asFragment } = render(UI))
+    ;({ asFragment } = contextRender(UI))
   })
 
   afterAll(() => {

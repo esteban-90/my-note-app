@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Button } from '@/components'
-import { Wrapper } from '@styled/NotFound'
+import { Wrapper } from './NotFound.styled'
 
 /**
  * Page to display if the user tries to go to a page that doesn't exist either because it corresponds

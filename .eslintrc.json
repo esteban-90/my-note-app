@@ -24,7 +24,6 @@
     "react/react-in-jsx-scope": "off",
     "quotes": ["error", "single", { "avoidEscape": true }],
     "capitalized-comments": "warn",
-    "consistent-return": "error",
     "default-case": "warn",
     "dot-notation": "error",
     "eqeqeq": "error",
