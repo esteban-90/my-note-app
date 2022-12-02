@@ -1,7 +1,7 @@
 import type { FC } from 'react'
 import { Suspense } from 'react'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
-import { Header, Loader } from '@/components'
+import { Header } from '@/components'
 import { NoteProvider, ThemeProvider } from '@/contexts'
 import { Layout } from '@/layout'
 import { NoteDetail, NoteList, NotFound } from '@/pages'
@@ -23,20 +23,18 @@ const router = createBrowserRouter(routes)
 
 const App: FC = () => {
   return (
-    <>
+    <Suspense fallback={null}>
       <GlobalStyles />
       <ThemeProvider>
         <Layout>
-          <Suspense fallback={<Loader />}>
-            <Header />
-            <NoteProvider>
-              <RouterProvider router={router} />
-            </NoteProvider>
-            <ReloadPrompt />
-          </Suspense>
+          <Header />
+          <NoteProvider>
+            <RouterProvider router={router} />
+          </NoteProvider>
+          <ReloadPrompt />
         </Layout>
       </ThemeProvider>
-    </>
+    </Suspense>
   )
 }
 
