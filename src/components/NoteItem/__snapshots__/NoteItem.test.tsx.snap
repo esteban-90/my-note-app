@@ -1,10 +1,10 @@
 // Vitest Snapshot v1
 
-exports[`NoteItem > should match snapshot 1`] = `
+exports[`NOTE ITEM: > should match snapshot 1`] = `
 <DocumentFragment>
   <a
-    data-testid="note-8d5lli8bglb4bzpda"
-    href="/notes/note-8d5lli8bglb4bzpda"
+    data-testid="note-xelq9kglb6gpv00"
+    href="/notes/note-xelq9kglb6gpv00"
     role="link"
   >
     <div

@@ -1,6 +1,6 @@
 // Vitest Snapshot v1
 
-exports[`ThemeProvider > should match snapshot 1`] = `
+exports[`THEME PROVIDER: > should match snapshot 1`] = `
 <DocumentFragment>
   <p>
     night

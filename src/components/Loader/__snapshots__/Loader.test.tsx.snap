@@ -1,6 +1,6 @@
 // Vitest Snapshot v1
 
-exports[`Loader > should match snapshot 1`] = `
+exports[`LOADER: > should match snapshot 1`] = `
 <DocumentFragment>
   <svg
     aria-busy="true"

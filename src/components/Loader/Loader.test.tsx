@@ -1,11 +1,11 @@
-import { render } from '@/tests'
+import { render, setName } from '@/tests'
 import { Loader } from './Loader'
 
-describe(Loader.name, () => {
+describe(setName(Loader), () => {
   let asFragment: () => DocumentFragment
 
   beforeEach(() => {
-    ;({ asFragment } = render(<Loader />))
+    void ({ asFragment } = render(<Loader />))
   })
 
   it('should match snapshot', () => {

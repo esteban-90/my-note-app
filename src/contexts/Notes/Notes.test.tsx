@@ -1,9 +1,9 @@
 import { getTitle, getDate, getBody } from '@/helpers'
 import { mockNotes, saveNotes, removeNotes } from '@/mocks'
-import { screen, contextRender, configure } from '@/tests'
+import { screen, contextRender, suggestQueries, setName } from '@/tests'
 import { NoteProvider, useNotes } from './Notes'
 
-describe(NoteProvider.name, () => {
+describe(setName(NoteProvider), () => {
   let asFragment: () => DocumentFragment
 
   const Child = () => {
@@ -28,17 +28,15 @@ describe(NoteProvider.name, () => {
   )
 
   beforeAll(() => {
-    configure({ throwSuggestions: true })
+    suggestQueries()
     saveNotes()
   })
 
   beforeEach(() => {
-    ;({ asFragment } = contextRender(UI))
+    void ({ asFragment } = contextRender(UI))
   })
 
-  afterAll(() => {
-    removeNotes()
-  })
+  afterAll(removeNotes)
 
   it('should match snapshot', () => {
     expect(asFragment()).toMatchSnapshot()

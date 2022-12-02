@@ -1,11 +1,11 @@
-import { screen, render } from '@/tests'
+import { screen, render, setName } from '@/tests'
 import { Header } from './Header'
 
-describe(Header.name, () => {
+describe(setName(Header), () => {
   let asFragment: () => DocumentFragment
 
   beforeEach(() => {
-    ;({ asFragment } = render(<Header />))
+    void ({ asFragment } = render(<Header />))
   })
 
   it('should match snapshot', () => {

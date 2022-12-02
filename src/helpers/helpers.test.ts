@@ -1,11 +1,12 @@
 import { hasBadWords, getBody, getDate, getTitle } from '@/helpers'
 import { makeMockNote, mockNote } from '@/mocks'
+import { setName } from '@/tests'
 
-describe('helpers test cases:', () => {
+describe('Helpers test cases:', () => {
   const mockContentPart1 = 'this part should be the title'
   const mockContentPart2 = 'and this the body'
 
-  describe(getTitle.name, () => {
+  describe(setName(getTitle), () => {
     describe('should get the title from a note by retrieving:', () => {
       it('its content until the first line break', () => {
         const { content } = makeMockNote(`${mockContentPart1}\n${mockContentPart2}`)
@@ -27,7 +28,7 @@ describe('helpers test cases:', () => {
     })
   })
 
-  describe(getDate.name, () => {
+  describe(setName(getDate), () => {
     describe('should get the date in correct format in:', () => {
       it('English', () => {
         const date = getDate(mockNote.createdAt)
@@ -43,7 +44,7 @@ describe('helpers test cases:', () => {
     })
   })
 
-  describe(getBody.name, () => {
+  describe(setName(getBody), () => {
     describe('should get the body from a note by retrieving:', () => {
       it('its content after the first line break', () => {
         const { content } = makeMockNote(`${mockContentPart1}\n${mockContentPart2}`)
@@ -59,7 +60,7 @@ describe('helpers test cases:', () => {
     })
   })
 
-  describe(hasBadWords.name, () => {
+  describe(setName(hasBadWords), () => {
     describe('should return:', () => {
       describe('"true" if there are profane words in:', () => {
         it('English', () => {

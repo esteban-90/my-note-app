@@ -1,6 +1,6 @@
 // Vitest Snapshot v1
 
-exports[`Layout > should match snapshot 1`] = `
+exports[`LAYOUT: > should match snapshot 1`] = `
 <DocumentFragment>
   <div
     class="css-1tya718"

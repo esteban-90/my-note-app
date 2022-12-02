@@ -1,11 +1,11 @@
-import { render } from '@/tests'
+import { render, setName } from '@/tests'
 import { Button } from './Button'
 
-describe(Button.name, () => {
+describe(setName(Button), () => {
   let asFragment: () => DocumentFragment
 
   beforeEach(() => {
-    ;({ asFragment } = render(<Button icon='home' />))
+    void ({ asFragment } = render(<Button icon='home' />))
   })
 
   it('should match snapshot', () => {

@@ -1,6 +1,6 @@
 // Vitest Snapshot v1
 
-exports[`Button > should match snapshot 1`] = `
+exports[`BUTTON: > should match snapshot 1`] = `
 <DocumentFragment>
   <button
     class="css-1qofjy"

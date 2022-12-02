@@ -7,7 +7,7 @@ import { Themes } from '@/styles'
 const defaultValue: Theme['themeName'] = matchMedia('prefers-color-scheme: dark').matches ? 'night' : 'day'
 
 /**
- * Component for providing theme to children.
+ * Component for providing theme to app.
  * @returns The provider.
  */
 

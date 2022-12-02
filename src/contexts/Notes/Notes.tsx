@@ -19,8 +19,8 @@ const defaultValue: NoteUtils = {
 const context = createContext(defaultValue)
 
 /**
- * Component for providing notes to children
- * @returns The provider
+ * Component for providing notes to app.
+ * @returns The provider.
  */
 
 export const NoteProvider: FC<PropsWithChildren> = ({ children }) => {

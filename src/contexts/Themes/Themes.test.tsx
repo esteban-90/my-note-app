@@ -1,14 +1,13 @@
 import { useTheme } from '@emotion/react'
 import { getTheme, removeTheme } from '@/mocks'
-import { screen, contextRender, userEvent, configure } from '@/tests'
+import { screen, contextRender, userEvent, suggestQueries, setName } from '@/tests'
 import { ThemeProvider } from './Themes'
 
-describe(ThemeProvider.name, () => {
+describe(setName(ThemeProvider), () => {
   let asFragment: () => DocumentFragment
 
   const Child = () => {
     const { themeName, toggleTheme } = useTheme()
-
     return (
       <>
         <p>{themeName}</p>
@@ -23,29 +22,19 @@ describe(ThemeProvider.name, () => {
     </ThemeProvider>
   )
 
-  beforeAll(() => {
-    configure({ throwSuggestions: true })
-  })
+  beforeAll(suggestQueries)
 
   beforeEach(() => {
-    ;({ asFragment } = contextRender(UI))
+    void ({ asFragment } = contextRender(UI))
   })
+
+  afterAll(removeTheme)
 
   it('should match snapshot', () => {
     expect(asFragment()).toMatchSnapshot()
   })
 
-  it('should provide a specific theme at a time to child elements and save it to storage', () => {
-    const themedElement = screen.getByText('night')
-    expect(themedElement).toBeInTheDocument()
-
-    const savedTheme = getTheme()
-    expect(savedTheme).not.toBeNull()
-    expect(savedTheme).not.toContain('day')
-    expect(savedTheme).toContain('night')
-  })
-
-  it('should be able to change theme and save it to storage with the new value', async () => {
+  it('should be able to provide "day" theme and save it in local storage', async () => {
     const button = screen.getByRole('button', { name: /^change theme$/i })
     await userEvent.click(button)
 
@@ -56,7 +45,18 @@ describe(ThemeProvider.name, () => {
     expect(savedTheme).not.toBeNull()
     expect(savedTheme).not.toContain('night')
     expect(savedTheme).toContain('day')
+  })
 
-    removeTheme()
+  it('should be able to provide "night" theme and save it in local storage', async () => {
+    const button = screen.getByRole('button', { name: /^change theme$/i })
+    await userEvent.click(button)
+
+    const themedElement = await screen.findByText('night')
+    expect(themedElement).toBeInTheDocument()
+
+    const savedTheme = getTheme()
+    expect(savedTheme).not.toBeNull()
+    expect(savedTheme).not.toContain('day')
+    expect(savedTheme).toContain('night')
   })
 })

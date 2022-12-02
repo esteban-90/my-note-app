@@ -1,6 +1,6 @@
 // Vitest Snapshot v1
 
-exports[`NoteProvider > should match snapshot 1`] = `
+exports[`NOTE PROVIDER: > should match snapshot 1`] = `
 <DocumentFragment>
   <ul>
     <li>

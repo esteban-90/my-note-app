@@ -1,34 +1,36 @@
 import { MemoryRouter, Routes, Route } from 'react-router-dom'
 import { getTitle, getDate, getBody } from '@/helpers'
-import { mockNotes, saveNotes, removeNotes, saveTheme, removeTheme } from '@/mocks'
-import { screen, render, userEvent, configure, changeLanguage } from '@/tests'
+import { mockNotes, saveNotes, removeNotes, saveTheme } from '@/mocks'
+import { screen, render, userEvent, suggestQueries, switchToEN, switchToES, setName } from '@/tests'
 import { NoteList } from './NoteList'
 
-describe(NoteList.name, () => {
+describe(setName(NoteList), () => {
   let asFragment: () => DocumentFragment
 
-  const UI = (
-    <MemoryRouter>
-      <Routes>
-        <Route path='/'>
-          <Route index element={<NoteList />} />
-        </Route>
-      </Routes>
-    </MemoryRouter>
-  )
+  const renderUI = () => {
+    const UI = (
+      <MemoryRouter>
+        <Routes>
+          <Route path='/'>
+            <Route index element={<NoteList />} />
+          </Route>
+        </Routes>
+      </MemoryRouter>
+    )
 
-  beforeAll(() => {
-    configure({ throwSuggestions: true })
-  })
+    void ({ asFragment } = render(UI))
+  }
+
+  const matchSnapshot = () => {
+    expect(asFragment()).toMatchSnapshot()
+  }
+
+  beforeAll(suggestQueries)
 
   describe('when there are no notes:', () => {
-    beforeEach(() => {
-      ;({ asFragment } = render(UI))
-    })
+    beforeEach(renderUI)
 
-    it('should match snapshot', () => {
-      expect(asFragment()).toMatchSnapshot()
-    })
+    it('should match snapshot', matchSnapshot)
 
     it('there should be a counter with value of "0"', () => {
       const counter = screen.getByText(/^0$/)
@@ -40,16 +42,10 @@ describe(NoteList.name, () => {
     const counterValue = mockNotes.length
 
     beforeAll(saveNotes)
-
-    beforeEach(() => {
-      ;({ asFragment } = render(UI))
-    })
-
+    beforeEach(renderUI)
     afterAll(removeNotes)
 
-    it('should match snapshot', () => {
-      expect(asFragment()).toMatchSnapshot()
-    })
+    it('should match snapshot', matchSnapshot)
 
     it('they should be rendered', () => {
       mockNotes.forEach(({ content, createdAt }) => {
@@ -82,14 +78,12 @@ describe(NoteList.name, () => {
     })
   })
 
-  describe('when the language set is the one that comes by default (English):', () => {
-    beforeEach(() => {
-      ;({ asFragment } = render(UI))
-    })
+  describe('when the language set is English:', () => {
+    beforeAll(switchToEN)
+    beforeEach(renderUI)
+    afterAll(saveTheme)
 
-    it('should match snapshot', () => {
-      expect(asFragment()).toMatchSnapshot()
-    })
+    it('should match snapshot', matchSnapshot)
 
     it('there should be a title with value of "My notes"', () => {
       const noteListHeading = screen.getByRole('heading', { name: /^my notes$/i })
@@ -125,21 +119,11 @@ describe(NoteList.name, () => {
     })
   })
 
-  describe('when the language is changed to Spanish:', () => {
-    beforeAll(() => {
-      saveTheme()
-      changeLanguage('es')
-    })
+  describe('when the language set is Spanish:', () => {
+    beforeAll(switchToES)
+    beforeEach(renderUI)
 
-    beforeEach(() => {
-      ;({ asFragment } = render(UI))
-    })
-
-    afterAll(removeTheme)
-
-    it('should match snapshot', () => {
-      expect(asFragment()).toMatchSnapshot()
-    })
+    it('should match snapshot', matchSnapshot)
 
     it('there should be a title with value of "Mis notas"', () => {
       const noteListHeading = screen.getByRole('heading', { name: /^mis notas$/i })

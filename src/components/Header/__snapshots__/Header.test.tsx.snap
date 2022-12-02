@@ -1,6 +1,6 @@
 // Vitest Snapshot v1
 
-exports[`Header > should match snapshot 1`] = `
+exports[`HEADER: > should match snapshot 1`] = `
 <DocumentFragment>
   <div
     class="css-1399pzr"
