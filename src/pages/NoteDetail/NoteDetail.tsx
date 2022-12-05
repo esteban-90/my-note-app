@@ -41,23 +41,31 @@ export const NoteDetail: FC = () => {
   const addNoteTitle = t('links.add-note.title')
   const removeNoteTitle = t('links.remove-note.title')
 
+  const { vibrate } = navigator
+
+  /**
+   * Displays a warning in case of profanity.
+   */
   const warn = () => {
     force({ text: profanityText, type: 'error', buttonText: profanityConfirm }, () => {
-      navigator.vibrate(100)
+      vibrate(100)
       navigate(-1)
     })
   }
 
+  /**
+   * Wrapper function for addNote().
+   */
   const add = () => {
-    const addedNoteContent = noteRef.current?.value.trim()
+    const content = noteRef.current?.value.trim()
 
-    if (addedNoteContent) {
-      if (!hasBadWords(addedNoteContent)) {
+    if (content) {
+      if (!hasBadWords(content)) {
         confirm(
           { text: addNoteText, ...options },
           () => {
-            navigator.vibrate(100)
-            addNote(addedNoteContent)
+            vibrate(100)
+            addNote(content)
             navigate(-1)
           },
           () => navigate(-1)
@@ -70,17 +78,20 @@ export const NoteDetail: FC = () => {
     }
   }
 
+  /**
+   * Wrapper function for updateNote().
+   */
   const update = () => {
-    const updatedNoteContent = noteRef.current?.value.trim()
+    const content = noteRef.current?.value.trim()
 
-    if (updatedNoteContent) {
-      if (!hasBadWords(updatedNoteContent)) {
-        if (updatedNoteContent !== note?.content) {
+    if (content) {
+      if (!hasBadWords(content)) {
+        if (content !== note?.content) {
           confirm(
             { text: updateNoteText, ...options },
             () => {
-              navigator.vibrate(100)
-              updateNote(id, updatedNoteContent)
+              vibrate(100)
+              updateNote(id, content)
               navigate(-1)
             },
             () => navigate(-1)
@@ -96,14 +107,20 @@ export const NoteDetail: FC = () => {
     }
   }
 
+  /**
+   * Wrapper function for removeNote().
+   */
   const remove = () => {
     confirm({ text: removeNoteText, ...options }, () => {
-      navigator.vibrate(100)
+      vibrate(100)
       removeNote(id)
       navigate(-1)
     })
   }
 
+  /**
+   * Calls add() or update() depending if note is new or not.
+   */
   const goBack = () => {
     if (noteIsNew) add()
     else update()
