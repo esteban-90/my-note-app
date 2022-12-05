@@ -3,6 +3,7 @@ name: 'CI'
 on:
   push:
     branches: [main]
+
   pull_request:
     branches: [main]
 
@@ -11,26 +12,29 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
-      - uses: actions/setup-node@v3
+      - name: Setup Node version
+        uses: actions/setup-node@v3
         with:
           node-version: 16
 
       - name: Install dependencies
         run: yarn
 
-      - name: Run eslint
+      - name: Run Eslint
         run: yarn lint
 
-      - name: Run prettier
+      - name: Run Prettier
         run: yarn format
 
-      - name: Run tests
+      - name: Run Tests
         run: yarn test
 
       - name: Publish to Chromatic
         uses: chromaui/action@v1
-
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
