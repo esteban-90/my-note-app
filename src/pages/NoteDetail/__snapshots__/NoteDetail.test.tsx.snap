@@ -9,7 +9,7 @@ exports[`NOTE DETAIL: > when the language set is English: > creation of a note: 
       class="css-qc8xmq"
     >
       <svg
-        aria-labelledby="svg-inline--fa-title-NCdPr5nlztIR"
+        aria-labelledby="svg-inline--fa-title-VVJEGKNiSEhj"
         class="svg-inline--fa fa-left-long fa-xl "
         data-icon="left-long"
         data-prefix="fas"
@@ -18,7 +18,7 @@ exports[`NOTE DETAIL: > when the language set is English: > creation of a note: 
         xmlns="http://www.w3.org/2000/svg"
       >
         <title
-          id="svg-inline--fa-title-NCdPr5nlztIR"
+          id="svg-inline--fa-title-VVJEGKNiSEhj"
         >
           Back to home
         </title>
@@ -28,7 +28,7 @@ exports[`NOTE DETAIL: > when the language set is English: > creation of a note: 
         />
       </svg>
       <svg
-        aria-labelledby="svg-inline--fa-title-k4m5VvhHZmEd"
+        aria-labelledby="svg-inline--fa-title-6tEabG0arpMj"
         class="svg-inline--fa fa-check fa-xl "
         data-icon="check"
         data-prefix="fas"
@@ -37,7 +37,7 @@ exports[`NOTE DETAIL: > when the language set is English: > creation of a note: 
         xmlns="http://www.w3.org/2000/svg"
       >
         <title
-          id="svg-inline--fa-title-k4m5VvhHZmEd"
+          id="svg-inline--fa-title-6tEabG0arpMj"
         >
           Add note
         </title>
@@ -64,7 +64,7 @@ exports[`NOTE DETAIL: > when the language set is English: > deletion of a note: 
       class="css-qc8xmq"
     >
       <svg
-        aria-labelledby="svg-inline--fa-title-LJrJVfBXD6s1"
+        aria-labelledby="svg-inline--fa-title-PJnB1iqzpXNs"
         class="svg-inline--fa fa-left-long fa-xl "
         data-icon="left-long"
         data-prefix="fas"
@@ -73,7 +73,7 @@ exports[`NOTE DETAIL: > when the language set is English: > deletion of a note: 
         xmlns="http://www.w3.org/2000/svg"
       >
         <title
-          id="svg-inline--fa-title-LJrJVfBXD6s1"
+          id="svg-inline--fa-title-PJnB1iqzpXNs"
         >
           Back to home
         </title>
@@ -83,7 +83,7 @@ exports[`NOTE DETAIL: > when the language set is English: > deletion of a note: 
         />
       </svg>
       <svg
-        aria-labelledby="svg-inline--fa-title-kcpbW1TOFace"
+        aria-labelledby="svg-inline--fa-title-Fe8SYRODM4Jp"
         class="svg-inline--fa fa-trash-can fa-xl "
         data-icon="trash-can"
         data-prefix="fas"
@@ -92,7 +92,7 @@ exports[`NOTE DETAIL: > when the language set is English: > deletion of a note: 
         xmlns="http://www.w3.org/2000/svg"
       >
         <title
-          id="svg-inline--fa-title-kcpbW1TOFace"
+          id="svg-inline--fa-title-Fe8SYRODM4Jp"
         >
           Remove note
         </title>
@@ -122,7 +122,7 @@ exports[`NOTE DETAIL: > when the language set is English: > edition of a note: >
       class="css-qc8xmq"
     >
       <svg
-        aria-labelledby="svg-inline--fa-title-X4r72GkbSiwy"
+        aria-labelledby="svg-inline--fa-title-1k7VB1aleVf1"
         class="svg-inline--fa fa-left-long fa-xl "
         data-icon="left-long"
         data-prefix="fas"
@@ -131,7 +131,7 @@ exports[`NOTE DETAIL: > when the language set is English: > edition of a note: >
         xmlns="http://www.w3.org/2000/svg"
       >
         <title
-          id="svg-inline--fa-title-X4r72GkbSiwy"
+          id="svg-inline--fa-title-1k7VB1aleVf1"
         >
           Back to home
         </title>
@@ -141,7 +141,7 @@ exports[`NOTE DETAIL: > when the language set is English: > edition of a note: >
         />
       </svg>
       <svg
-        aria-labelledby="svg-inline--fa-title-e6XpOXQEjJiv"
+        aria-labelledby="svg-inline--fa-title-S68qmfFfaHo1"
         class="svg-inline--fa fa-trash-can fa-xl "
         data-icon="trash-can"
         data-prefix="fas"
@@ -150,7 +150,7 @@ exports[`NOTE DETAIL: > when the language set is English: > edition of a note: >
         xmlns="http://www.w3.org/2000/svg"
       >
         <title
-          id="svg-inline--fa-title-e6XpOXQEjJiv"
+          id="svg-inline--fa-title-S68qmfFfaHo1"
         >
           Remove note
         </title>
@@ -278,7 +278,7 @@ exports[`NOTE DETAIL: > when the language set is Spanish: > creation of a note: 
       class="css-qc8xmq"
     >
       <svg
-        aria-labelledby="svg-inline--fa-title-6SUlc40ceaPS"
+        aria-labelledby="svg-inline--fa-title-upSwOjBofw5t"
         class="svg-inline--fa fa-left-long fa-xl "
         data-icon="left-long"
         data-prefix="fas"
@@ -287,7 +287,7 @@ exports[`NOTE DETAIL: > when the language set is Spanish: > creation of a note: 
         xmlns="http://www.w3.org/2000/svg"
       >
         <title
-          id="svg-inline--fa-title-6SUlc40ceaPS"
+          id="svg-inline--fa-title-upSwOjBofw5t"
         >
           Volver a inicio
         </title>
@@ -297,7 +297,7 @@ exports[`NOTE DETAIL: > when the language set is Spanish: > creation of a note: 
         />
       </svg>
       <svg
-        aria-labelledby="svg-inline--fa-title-8bec7YUzmyRK"
+        aria-labelledby="svg-inline--fa-title-LTobYPQ6YEQh"
         class="svg-inline--fa fa-check fa-xl "
         data-icon="check"
         data-prefix="fas"
@@ -306,7 +306,7 @@ exports[`NOTE DETAIL: > when the language set is Spanish: > creation of a note: 
         xmlns="http://www.w3.org/2000/svg"
       >
         <title
-          id="svg-inline--fa-title-8bec7YUzmyRK"
+          id="svg-inline--fa-title-LTobYPQ6YEQh"
         >
           Agregar nota
         </title>
@@ -333,7 +333,7 @@ exports[`NOTE DETAIL: > when the language set is Spanish: > deletion of a note: 
       class="css-qc8xmq"
     >
       <svg
-        aria-labelledby="svg-inline--fa-title-7IJkdBrAdrwB"
+        aria-labelledby="svg-inline--fa-title-oP4h1liDws1Q"
         class="svg-inline--fa fa-left-long fa-xl "
         data-icon="left-long"
         data-prefix="fas"
@@ -342,7 +342,7 @@ exports[`NOTE DETAIL: > when the language set is Spanish: > deletion of a note: 
         xmlns="http://www.w3.org/2000/svg"
       >
         <title
-          id="svg-inline--fa-title-7IJkdBrAdrwB"
+          id="svg-inline--fa-title-oP4h1liDws1Q"
         >
           Volver a inicio
         </title>
@@ -352,7 +352,7 @@ exports[`NOTE DETAIL: > when the language set is Spanish: > deletion of a note: 
         />
       </svg>
       <svg
-        aria-labelledby="svg-inline--fa-title-RKCVMuAWCMcc"
+        aria-labelledby="svg-inline--fa-title-fN3Ll0XJHoRI"
         class="svg-inline--fa fa-trash-can fa-xl "
         data-icon="trash-can"
         data-prefix="fas"
@@ -361,7 +361,7 @@ exports[`NOTE DETAIL: > when the language set is Spanish: > deletion of a note: 
         xmlns="http://www.w3.org/2000/svg"
       >
         <title
-          id="svg-inline--fa-title-RKCVMuAWCMcc"
+          id="svg-inline--fa-title-fN3Ll0XJHoRI"
         >
           Eliminar nota
         </title>
@@ -391,7 +391,7 @@ exports[`NOTE DETAIL: > when the language set is Spanish: > edition of a note: >
       class="css-qc8xmq"
     >
       <svg
-        aria-labelledby="svg-inline--fa-title-T5QAqle4snMm"
+        aria-labelledby="svg-inline--fa-title-m8arOyWlm16P"
         class="svg-inline--fa fa-left-long fa-xl "
         data-icon="left-long"
         data-prefix="fas"
@@ -400,7 +400,7 @@ exports[`NOTE DETAIL: > when the language set is Spanish: > edition of a note: >
         xmlns="http://www.w3.org/2000/svg"
       >
         <title
-          id="svg-inline--fa-title-T5QAqle4snMm"
+          id="svg-inline--fa-title-m8arOyWlm16P"
         >
           Volver a inicio
         </title>
@@ -410,7 +410,7 @@ exports[`NOTE DETAIL: > when the language set is Spanish: > edition of a note: >
         />
       </svg>
       <svg
-        aria-labelledby="svg-inline--fa-title-lYQwawXrOiMc"
+        aria-labelledby="svg-inline--fa-title-Fszi26qPXCIG"
         class="svg-inline--fa fa-trash-can fa-xl "
         data-icon="trash-can"
         data-prefix="fas"
@@ -419,7 +419,7 @@ exports[`NOTE DETAIL: > when the language set is Spanish: > edition of a note: >
         xmlns="http://www.w3.org/2000/svg"
       >
         <title
-          id="svg-inline--fa-title-lYQwawXrOiMc"
+          id="svg-inline--fa-title-Fszi26qPXCIG"
         >
           Eliminar nota
         </title>

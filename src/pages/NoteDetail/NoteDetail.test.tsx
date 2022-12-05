@@ -143,7 +143,7 @@ describe(setName(NoteDetail), () => {
           const confirmButton = await screen.findByText(/^yes$/i)
           await userEvent.click(confirmButton)
 
-          expect(navigator.vibrate).toHaveBeenCalled()
+          expect(navigator.vibrate).toHaveBeenCalledWith(100)
 
           const [createdNote] = getNotes()
           expect(createdNote.content).toBe(goodContent)
@@ -166,7 +166,7 @@ describe(setName(NoteDetail), () => {
           const confirmButton = await screen.findByText(/^yes$/i)
           await userEvent.click(confirmButton)
 
-          expect(navigator.vibrate).toHaveBeenCalled()
+          expect(navigator.vibrate).toHaveBeenCalledWith(100)
 
           const [createdNote] = getNotes()
           expect(createdNote.content).toBe(goodContent)
@@ -191,7 +191,7 @@ describe(setName(NoteDetail), () => {
           const profanityConfirm = await screen.findByText(/^ok$/i)
           await userEvent.click(profanityConfirm)
 
-          expect(navigator.vibrate).toHaveBeenCalled()
+          expect(navigator.vibrate).toHaveBeenCalledWith(100)
 
           const notes = getNotes()
           expect(notes.find((note) => note.content === badContent)).toBeUndefined()
@@ -272,7 +272,7 @@ describe(setName(NoteDetail), () => {
           const confirmButton = await screen.findByText(/^yes$/i)
           await userEvent.click(confirmButton)
 
-          expect(navigator.vibrate).toHaveBeenCalled()
+          expect(navigator.vibrate).toHaveBeenCalledWith(100)
 
           const [editedNote] = getNotes()
           expect(editedNote.content).toBe(content + goodContent)
@@ -307,7 +307,7 @@ describe(setName(NoteDetail), () => {
           const profanityConfirm = await screen.findByText(/^ok$/i)
           await userEvent.click(profanityConfirm)
 
-          expect(navigator.vibrate).toHaveBeenCalled()
+          expect(navigator.vibrate).toHaveBeenCalledWith(100)
 
           const notes = getNotes()
           expect(notes.find((note) => note.content.includes(badContent))).toBeUndefined()
@@ -333,7 +333,7 @@ describe(setName(NoteDetail), () => {
           const confirmButton = await screen.findByText(/^yes$/i)
           await userEvent.click(confirmButton)
 
-          expect(navigator.vibrate).toHaveBeenCalled()
+          expect(navigator.vibrate).toHaveBeenCalledWith(100)
 
           const noteIds = getNotes().map((note) => note.id)
           expect(noteIds).not.toContain(id)
@@ -352,7 +352,7 @@ describe(setName(NoteDetail), () => {
           const confirmButton = await screen.findByText(/^yes$/i)
           await userEvent.click(confirmButton)
 
-          expect(navigator.vibrate).toHaveBeenCalled()
+          expect(navigator.vibrate).toHaveBeenCalledWith(100)
 
           const noteIds = getNotes().map((note) => note.id)
           expect(noteIds).not.toContain(id)
@@ -433,7 +433,7 @@ describe(setName(NoteDetail), () => {
           const confirmButton = await screen.findByText(/^sí$/i)
           await userEvent.click(confirmButton)
 
-          expect(navigator.vibrate).toHaveBeenCalled()
+          expect(navigator.vibrate).toHaveBeenCalledWith(100)
 
           const [createdNote] = getNotes()
           expect(createdNote.content).toBe(goodContent)
@@ -456,7 +456,7 @@ describe(setName(NoteDetail), () => {
           const confirmButton = await screen.findByText(/^sí$/i)
           await userEvent.click(confirmButton)
 
-          expect(navigator.vibrate).toHaveBeenCalled()
+          expect(navigator.vibrate).toHaveBeenCalledWith(100)
 
           const [createdNote] = getNotes()
           expect(createdNote.content).toBe(goodContent)
@@ -481,7 +481,7 @@ describe(setName(NoteDetail), () => {
           const profanityConfirm = await screen.findByText(/^de acuerdo$/i)
           await userEvent.click(profanityConfirm)
 
-          expect(navigator.vibrate).toHaveBeenCalled()
+          expect(navigator.vibrate).toHaveBeenCalledWith(100)
 
           const notes = getNotes()
           expect(notes.find((note) => note.content === badContent)).toBeUndefined()
@@ -562,7 +562,7 @@ describe(setName(NoteDetail), () => {
           const confirmButton = await screen.findByText(/^sí$/i)
           await userEvent.click(confirmButton)
 
-          expect(navigator.vibrate).toHaveBeenCalled()
+          expect(navigator.vibrate).toHaveBeenCalledWith(100)
 
           const [editedNote] = getNotes()
           expect(editedNote.content).toBe(content + goodContent)
@@ -597,7 +597,7 @@ describe(setName(NoteDetail), () => {
           const profanityConfirm = await screen.findByText(/^de acuerdo$/i)
           await userEvent.click(profanityConfirm)
 
-          expect(navigator.vibrate).toHaveBeenCalled()
+          expect(navigator.vibrate).toHaveBeenCalledWith(100)
 
           const notes = getNotes()
           expect(notes.find((note) => note.content.includes(badContent))).toBeUndefined()
@@ -623,7 +623,7 @@ describe(setName(NoteDetail), () => {
           const confirmButton = await screen.findByText(/^sí$/i)
           await userEvent.click(confirmButton)
 
-          expect(navigator.vibrate).toHaveBeenCalled()
+          expect(navigator.vibrate).toHaveBeenCalledWith(100)
 
           const noteIds = getNotes().map((note) => note.id)
           expect(noteIds).not.toContain(id)
@@ -642,7 +642,7 @@ describe(setName(NoteDetail), () => {
           const confirmButton = await screen.findByText(/^sí$/i)
           await userEvent.click(confirmButton)
 
-          expect(navigator.vibrate).toHaveBeenCalled()
+          expect(navigator.vibrate).toHaveBeenCalledWith(100)
 
           const noteIds = getNotes().map((note) => note.id)
           expect(noteIds).not.toContain(id)

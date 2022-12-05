@@ -41,15 +41,16 @@ export const NoteDetail: FC = () => {
   const addNoteTitle = t('links.add-note.title')
   const removeNoteTitle = t('links.remove-note.title')
 
-  const { vibrate } = navigator
+  const makeShake = () => navigator.vibrate(100)
+  const goBack = () => navigate(-1)
 
   /**
    * Displays a warning in case of profanity.
    */
   const warn = () => {
     force({ text: profanityText, type: 'error', buttonText: profanityConfirm }, () => {
-      vibrate(100)
-      navigate(-1)
+      makeShake()
+      goBack()
     })
   }
 
@@ -64,17 +65,17 @@ export const NoteDetail: FC = () => {
         confirm(
           { text: addNoteText, ...options },
           () => {
-            vibrate(100)
+            makeShake()
             addNote(content)
-            navigate(-1)
+            goBack()
           },
-          () => navigate(-1)
+          goBack
         )
       } else {
         warn()
       }
     } else {
-      navigate(-1)
+      goBack()
     }
   }
 
@@ -90,14 +91,14 @@ export const NoteDetail: FC = () => {
           confirm(
             { text: updateNoteText, ...options },
             () => {
-              vibrate(100)
+              makeShake()
               updateNote(id, content)
-              navigate(-1)
+              goBack()
             },
-            () => navigate(-1)
+            goBack
           )
         } else {
-          navigate(-1)
+          goBack()
         }
       } else {
         warn()
@@ -112,24 +113,16 @@ export const NoteDetail: FC = () => {
    */
   const remove = () => {
     confirm({ text: removeNoteText, ...options }, () => {
-      vibrate(100)
+      makeShake()
       removeNote(id)
-      navigate(-1)
+      goBack()
     })
-  }
-
-  /**
-   * Calls add() or update() depending if note is new or not.
-   */
-  const goBack = () => {
-    if (noteIsNew) add()
-    else update()
   }
 
   return noteIsNew || noteExists ? (
     <Wrapper>
       <Content>
-        <FontAwesomeIcon icon='left-long' size='xl' onClick={goBack} title={goBackTitle} />
+        <FontAwesomeIcon icon='left-long' size='xl' onClick={noteIsNew ? add : update} title={goBackTitle} />
         <FontAwesomeIcon
           icon={noteIsNew ? 'check' : 'trash-can'}
           size='xl'
