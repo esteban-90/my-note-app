@@ -2,6 +2,8 @@ import type { ComponentStoryObj, ComponentMeta } from '@storybook/react'
 import { Link } from 'react-router-dom'
 import { Button } from './Button'
 
+const argType = { control: false }
+
 export default {
   title: 'Components/Button',
   component: Button,
@@ -12,9 +14,10 @@ export default {
     },
   },
   argTypes: {
-    icon: { control: false },
-    component: { control: false },
-    to: { control: false },
+    style: argType,
+    icon: argType,
+    component: argType,
+    to: argType,
   },
 } as ComponentMeta<typeof Button>
 

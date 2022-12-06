@@ -1,21 +1,12 @@
 import React from 'react'
 import type { Parameters, DecoratorFn } from '@storybook/react'
 import { withRouter } from 'storybook-addon-react-router-v6'
-import i18n from './i18next'
 import { NoteProvider, ThemeProvider } from '../src/contexts'
+import { i18nInstance } from '../src/i18n/tests'
 import { Layout } from '../src/layout'
 import { saveNotes } from '../src/mocks'
 import { GlobalStyles } from '../src/styles'
 import '../src/icons'
-
-export const parameters: Parameters = {
-  i18n,
-  locale: 'en',
-  locales: {
-    en: 'English',
-    es: 'Español',
-  },
-}
 
 const withGlobalStyles: DecoratorFn = (Story) => {
   return (
@@ -45,4 +36,13 @@ const withNoteProvider: DecoratorFn = (Story) => {
   )
 }
 
-export const decorators: DecoratorFn[] = [withGlobalStyles, withThemeProvider, withNoteProvider, withRouter]
+export const decorators = [withGlobalStyles, withThemeProvider, withNoteProvider, withRouter]
+
+export const parameters: Parameters = {
+  i18n: i18nInstance,
+  locale: i18nInstance.resolvedLanguage,
+  locales: {
+    en: 'English',
+    es: 'Español',
+  },
+}
