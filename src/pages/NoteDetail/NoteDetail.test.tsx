@@ -6,6 +6,7 @@ import { NoteDetail } from './NoteDetail'
 describe(setName(NoteDetail), () => {
   let asFragment: () => DocumentFragment
   let UI: JSX.Element
+  // 👇 this first one will be used.
   const [{ id, content }] = mockNotes
 
   const setRouterWithInvalidID = () => {
@@ -177,7 +178,7 @@ describe(setName(NoteDetail), () => {
 
       describe('should fail:', () => {
         it('if the user writes bad words', async () => {
-          const badContent = 'Fucking title\nShit'
+          const badContent = 'ash0le'
 
           const textBox = screen.getByRole('textbox')
           await userEvent.type(textBox, badContent)
@@ -194,7 +195,8 @@ describe(setName(NoteDetail), () => {
           expect(navigator.vibrate).toHaveBeenCalledWith(100)
 
           const notes = getNotes()
-          expect(notes.find((note) => note.content === badContent)).toBeUndefined()
+          const badNote = notes.find((note) => note.content === badContent)
+          expect(badNote).toBeUndefined()
         })
 
         it("if there's no content and add note link is clicked", async () => {
@@ -293,7 +295,7 @@ describe(setName(NoteDetail), () => {
         })
 
         it('if the user writes bad words', async () => {
-          const badContent = ' fuck!'
+          const badContent = ' shit'
 
           const textBox = screen.getByRole('textbox')
           await userEvent.type(textBox, badContent)
@@ -310,7 +312,8 @@ describe(setName(NoteDetail), () => {
           expect(navigator.vibrate).toHaveBeenCalledWith(100)
 
           const notes = getNotes()
-          expect(notes.find((note) => note.content.includes(badContent))).toBeUndefined()
+          const badNote = notes.find((note) => note.content.includes(badContent))
+          expect(badNote).toBeUndefined()
         })
       })
     })
@@ -467,7 +470,7 @@ describe(setName(NoteDetail), () => {
 
       describe('should fail:', () => {
         it('if the user writes bad words', async () => {
-          const badContent = 'Título pendej0\n'
+          const badContent = 'pendej0'
 
           const textBox = screen.getByRole('textbox')
           await userEvent.type(textBox, badContent)
@@ -484,7 +487,8 @@ describe(setName(NoteDetail), () => {
           expect(navigator.vibrate).toHaveBeenCalledWith(100)
 
           const notes = getNotes()
-          expect(notes.find((note) => note.content === badContent)).toBeUndefined()
+          const badNote = notes.find((note) => note.content === badContent)
+          expect(badNote).toBeUndefined()
         })
 
         it("if there's no content and add note link is clicked", async () => {
@@ -583,7 +587,7 @@ describe(setName(NoteDetail), () => {
         })
 
         it('if the user writes bad words', async () => {
-          const badContent = ' ¡mierda!'
+          const badContent = ' mierda'
 
           const textBox = screen.getByRole('textbox')
           await userEvent.type(textBox, badContent)
@@ -600,7 +604,8 @@ describe(setName(NoteDetail), () => {
           expect(navigator.vibrate).toHaveBeenCalledWith(100)
 
           const notes = getNotes()
-          expect(notes.find((note) => note.content.includes(badContent))).toBeUndefined()
+          const badNote = notes.find((note) => note.content.includes(badContent))
+          expect(badNote).toBeUndefined()
         })
       })
     })

@@ -64,12 +64,12 @@ describe('Helpers test cases:', () => {
     describe('should return:', () => {
       describe('"true" if there are profane words in:', () => {
         it('English', () => {
-          const { content: badContent } = makeMockNote('this shit is expected to be profane')
+          const { content: badContent } = makeMockNote('fucking note')
           expect(hasBadWords(badContent)).toBe(true)
         })
 
         it('Spanish', () => {
-          const { content: badContent } = makeMockNote('esta mierda debe retornar true')
+          const { content: badContent } = makeMockNote('put4 nota')
           expect(hasBadWords(badContent)).toBe(true)
         })
       })
