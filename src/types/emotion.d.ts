@@ -9,11 +9,11 @@ declare module '@emotion/react' {
      * Theme name corresponding to two possible modes (day or night)
      * which will be saved in local storage.
      */
-    themeName: 'night' | 'day'
+    readonly themeName: 'night' | 'day'
     /**
      * Colors for day and night modes.
      */
-    colorPalette: {
+    readonly colorPalette: {
       main: string
       border: string
       background: {
@@ -29,6 +29,6 @@ declare module '@emotion/react' {
     /**
      * Function to change theme mode between day and night.
      */
-    toggleTheme?: () => void
+    readonly toggleTheme?: () => void
   }
 }
