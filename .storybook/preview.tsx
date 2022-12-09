@@ -40,9 +40,9 @@ export const decorators = [withGlobalStyles, withThemeProvider, withNoteProvider
 
 export const parameters: Parameters = {
   i18n: i18nInstance,
-  locale: i18nInstance.resolvedLanguage,
   locales: {
     en: 'English',
     es: 'Español',
   },
+  layout: 'fullscreen',
 }
