@@ -1,5 +1,5 @@
-import React from 'react'
 import type { Parameters, DecoratorFn } from '@storybook/react'
+import React from 'react'
 import { withRouter } from 'storybook-addon-react-router-v6'
 import { NoteProvider, ThemeProvider } from '../src/contexts'
 import { i18nInstance } from '../src/i18n/tests'
