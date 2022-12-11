@@ -6,8 +6,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { confirm, force } from 'notie'
 import { useNotes } from '@/contexts'
 import { hasBadWords } from '@/helpers'
-// eslint-disable-next-line capitalized-comments
-// import NotFound from '@/pages/NotFound'
 import { Wrapper, Content, TextBox } from './NoteDetail.styled'
 
 /**
