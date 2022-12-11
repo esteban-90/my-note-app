@@ -1,1 +1,1 @@
-export * from './NoteDetail'
+export { NoteDetail as default } from './NoteDetail'
