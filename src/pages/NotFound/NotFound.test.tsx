@@ -34,10 +34,9 @@ describe(setName(NotFound), () => {
       expect(notFoundHeading).toBeInTheDocument()
     })
 
-    it('should render a link with title of "Back to home"', () => {
-      const homeLink = screen.getByRole('link', { name: /^back to home$/i })
-      expect(homeLink).toBeInTheDocument()
-      expect(homeLink).toHaveAttribute('href', '/')
+    it('should render a link with title of "Back"', () => {
+      const backLink = screen.getByRole('button', { name: /^back$/i })
+      expect(backLink).toBeInTheDocument()
     })
   })
 
@@ -52,10 +51,9 @@ describe(setName(NotFound), () => {
       expect(notFoundHeading).toBeInTheDocument()
     })
 
-    it('should render a link with title of "Volver a inicio"', () => {
-      const homeLink = screen.getByRole('link', { name: /^volver a inicio$/i })
-      expect(homeLink).toBeInTheDocument()
-      expect(homeLink).toHaveAttribute('href', '/')
+    it('should render a link with title of "Atrás"', () => {
+      const backLink = screen.getByRole('button', { name: /^atrás$/i })
+      expect(backLink).toBeInTheDocument()
     })
   })
 })

@@ -1,5 +1,5 @@
 import type { FC } from 'react'
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Button } from '@/components'
@@ -12,6 +12,9 @@ import { Wrapper } from './NotFound.styled'
  */
 
 export const NotFound: FC = () => {
+  const navigate = useNavigate()
+  const goBack = () => navigate(-1)
+
   const { t } = useTranslation('not-found')
   const pageHeading = t('page.heading')
   const goBackTitle = t('buttons.go-back.title')
@@ -20,7 +23,7 @@ export const NotFound: FC = () => {
     <Wrapper>
       <h2>{pageHeading}</h2>
       <FontAwesomeIcon icon='face-sad-tear' size='5x' fade />
-      <Button icon='house' component={Link} to='/' title={goBackTitle} style={{ bottom: '1.5rem' }} />
+      <Button icon='arrow-left' title={goBackTitle} style={{ bottom: '1.5rem' }} onClick={goBack} />
     </Wrapper>
   )
 }

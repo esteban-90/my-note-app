@@ -9,7 +9,7 @@ exports[`NOTE DETAIL: > when the language set is English: > creation of a note: 
       class="css-qc8xmq"
     >
       <svg
-        aria-labelledby="svg-inline--fa-title-OUpbeP5vJQJz"
+        aria-labelledby="svg-inline--fa-title-Z3prXSAKkycC"
         class="svg-inline--fa fa-left-long fa-xl "
         data-icon="left-long"
         data-prefix="fas"
@@ -18,7 +18,7 @@ exports[`NOTE DETAIL: > when the language set is English: > creation of a note: 
         xmlns="http://www.w3.org/2000/svg"
       >
         <title
-          id="svg-inline--fa-title-OUpbeP5vJQJz"
+          id="svg-inline--fa-title-Z3prXSAKkycC"
         >
           Back to home
         </title>
@@ -28,7 +28,7 @@ exports[`NOTE DETAIL: > when the language set is English: > creation of a note: 
         />
       </svg>
       <svg
-        aria-labelledby="svg-inline--fa-title-YbXUeWG25qrr"
+        aria-labelledby="svg-inline--fa-title-B0XqwgmT36rG"
         class="svg-inline--fa fa-check fa-xl "
         data-icon="check"
         data-prefix="fas"
@@ -37,7 +37,7 @@ exports[`NOTE DETAIL: > when the language set is English: > creation of a note: 
         xmlns="http://www.w3.org/2000/svg"
       >
         <title
-          id="svg-inline--fa-title-YbXUeWG25qrr"
+          id="svg-inline--fa-title-B0XqwgmT36rG"
         >
           Add note
         </title>
@@ -64,7 +64,7 @@ exports[`NOTE DETAIL: > when the language set is English: > deletion of a note: 
       class="css-qc8xmq"
     >
       <svg
-        aria-labelledby="svg-inline--fa-title-YeJ0cFPB5T1r"
+        aria-labelledby="svg-inline--fa-title-5aVJ9fLhfYtR"
         class="svg-inline--fa fa-left-long fa-xl "
         data-icon="left-long"
         data-prefix="fas"
@@ -73,7 +73,7 @@ exports[`NOTE DETAIL: > when the language set is English: > deletion of a note: 
         xmlns="http://www.w3.org/2000/svg"
       >
         <title
-          id="svg-inline--fa-title-YeJ0cFPB5T1r"
+          id="svg-inline--fa-title-5aVJ9fLhfYtR"
         >
           Back to home
         </title>
@@ -83,7 +83,7 @@ exports[`NOTE DETAIL: > when the language set is English: > deletion of a note: 
         />
       </svg>
       <svg
-        aria-labelledby="svg-inline--fa-title-jvv6kBf4rxYh"
+        aria-labelledby="svg-inline--fa-title-9hWXyRN8ny8Z"
         class="svg-inline--fa fa-trash-can fa-xl "
         data-icon="trash-can"
         data-prefix="fas"
@@ -92,7 +92,7 @@ exports[`NOTE DETAIL: > when the language set is English: > deletion of a note: 
         xmlns="http://www.w3.org/2000/svg"
       >
         <title
-          id="svg-inline--fa-title-jvv6kBf4rxYh"
+          id="svg-inline--fa-title-9hWXyRN8ny8Z"
         >
           Remove note
         </title>
@@ -122,7 +122,7 @@ exports[`NOTE DETAIL: > when the language set is English: > edition of a note: >
       class="css-qc8xmq"
     >
       <svg
-        aria-labelledby="svg-inline--fa-title-exIAJ5m91I0d"
+        aria-labelledby="svg-inline--fa-title-WSPa8Z5UeQN7"
         class="svg-inline--fa fa-left-long fa-xl "
         data-icon="left-long"
         data-prefix="fas"
@@ -131,7 +131,7 @@ exports[`NOTE DETAIL: > when the language set is English: > edition of a note: >
         xmlns="http://www.w3.org/2000/svg"
       >
         <title
-          id="svg-inline--fa-title-exIAJ5m91I0d"
+          id="svg-inline--fa-title-WSPa8Z5UeQN7"
         >
           Back to home
         </title>
@@ -141,7 +141,7 @@ exports[`NOTE DETAIL: > when the language set is English: > edition of a note: >
         />
       </svg>
       <svg
-        aria-labelledby="svg-inline--fa-title-QsdlccpFLWFA"
+        aria-labelledby="svg-inline--fa-title-uXdg8qxei7gI"
         class="svg-inline--fa fa-trash-can fa-xl "
         data-icon="trash-can"
         data-prefix="fas"
@@ -150,7 +150,7 @@ exports[`NOTE DETAIL: > when the language set is English: > edition of a note: >
         xmlns="http://www.w3.org/2000/svg"
       >
         <title
-          id="svg-inline--fa-title-QsdlccpFLWFA"
+          id="svg-inline--fa-title-uXdg8qxei7gI"
         >
           Remove note
         </title>
@@ -171,104 +171,6 @@ Testing 1
 </DocumentFragment>
 `;
 
-exports[`NOTE DETAIL: > when the language set is English: > with bad url param: > if it's a valid id but the note associated with it has been removed: > should match snapshot 1`] = `
-<DocumentFragment>
-  <div
-    class="css-1n2qccw"
-  >
-    <h2>
-      Page not found
-    </h2>
-    <svg
-      aria-hidden="true"
-      class="svg-inline--fa fa-face-sad-tear fa-fade fa-5x "
-      data-icon="face-sad-tear"
-      data-prefix="fas"
-      focusable="false"
-      role="img"
-      viewBox="0 0 512 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M0 256C0 397.4 114.6 512 256 512s256-114.6 256-256S397.4 0 256 0S0 114.6 0 256zm240 80c0-8.8 7.2-16 16-16c45 0 85.6 20.5 115.7 53.1c6 6.5 5.6 16.6-.9 22.6s-16.6 5.6-22.6-.9c-25-27.1-57.4-42.9-92.3-42.9c-8.8 0-16-7.2-16-16zm-80 80c-26.5 0-48-21-48-47c0-20 28.6-60.4 41.6-77.7c3.2-4.4 9.6-4.4 12.8 0C179.6 308.6 208 349 208 369c0 26-21.5 47-48 47zM303.6 208c0-17.7 14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32s-32-14.3-32-32zm-128 32c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z"
-        fill="currentColor"
-      />
-    </svg>
-    <a
-      class="css-1qofjy"
-      href="/"
-      style="bottom: 1.5rem;"
-      title="Back to home"
-    >
-      <svg
-        aria-hidden="true"
-        class="svg-inline--fa fa-house fa-inverse fa-xl "
-        data-icon="house"
-        data-prefix="fas"
-        focusable="false"
-        role="img"
-        viewBox="0 0 576 512"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"
-          fill="currentColor"
-        />
-      </svg>
-    </a>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`NOTE DETAIL: > when the language set is English: > with bad url param: > if it's not a valid id: > should match snapshot 1`] = `
-<DocumentFragment>
-  <div
-    class="css-1n2qccw"
-  >
-    <h2>
-      Page not found
-    </h2>
-    <svg
-      aria-hidden="true"
-      class="svg-inline--fa fa-face-sad-tear fa-fade fa-5x "
-      data-icon="face-sad-tear"
-      data-prefix="fas"
-      focusable="false"
-      role="img"
-      viewBox="0 0 512 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M0 256C0 397.4 114.6 512 256 512s256-114.6 256-256S397.4 0 256 0S0 114.6 0 256zm240 80c0-8.8 7.2-16 16-16c45 0 85.6 20.5 115.7 53.1c6 6.5 5.6 16.6-.9 22.6s-16.6 5.6-22.6-.9c-25-27.1-57.4-42.9-92.3-42.9c-8.8 0-16-7.2-16-16zm-80 80c-26.5 0-48-21-48-47c0-20 28.6-60.4 41.6-77.7c3.2-4.4 9.6-4.4 12.8 0C179.6 308.6 208 349 208 369c0 26-21.5 47-48 47zM303.6 208c0-17.7 14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32s-32-14.3-32-32zm-128 32c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z"
-        fill="currentColor"
-      />
-    </svg>
-    <a
-      class="css-1qofjy"
-      href="/"
-      style="bottom: 1.5rem;"
-      title="Back to home"
-    >
-      <svg
-        aria-hidden="true"
-        class="svg-inline--fa fa-house fa-inverse fa-xl "
-        data-icon="house"
-        data-prefix="fas"
-        focusable="false"
-        role="img"
-        viewBox="0 0 576 512"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"
-          fill="currentColor"
-        />
-      </svg>
-    </a>
-  </div>
-</DocumentFragment>
-`;
-
 exports[`NOTE DETAIL: > when the language set is Spanish: > creation of a note: > should match snapshot 1`] = `
 <DocumentFragment>
   <div
@@ -278,7 +180,7 @@ exports[`NOTE DETAIL: > when the language set is Spanish: > creation of a note: 
       class="css-qc8xmq"
     >
       <svg
-        aria-labelledby="svg-inline--fa-title-NYLO3krCwui4"
+        aria-labelledby="svg-inline--fa-title-qIsGJTR3qbzv"
         class="svg-inline--fa fa-left-long fa-xl "
         data-icon="left-long"
         data-prefix="fas"
@@ -287,7 +189,7 @@ exports[`NOTE DETAIL: > when the language set is Spanish: > creation of a note: 
         xmlns="http://www.w3.org/2000/svg"
       >
         <title
-          id="svg-inline--fa-title-NYLO3krCwui4"
+          id="svg-inline--fa-title-qIsGJTR3qbzv"
         >
           Volver a inicio
         </title>
@@ -297,7 +199,7 @@ exports[`NOTE DETAIL: > when the language set is Spanish: > creation of a note: 
         />
       </svg>
       <svg
-        aria-labelledby="svg-inline--fa-title-aGakhQ6EuePW"
+        aria-labelledby="svg-inline--fa-title-vSSyzlitaYue"
         class="svg-inline--fa fa-check fa-xl "
         data-icon="check"
         data-prefix="fas"
@@ -306,7 +208,7 @@ exports[`NOTE DETAIL: > when the language set is Spanish: > creation of a note: 
         xmlns="http://www.w3.org/2000/svg"
       >
         <title
-          id="svg-inline--fa-title-aGakhQ6EuePW"
+          id="svg-inline--fa-title-vSSyzlitaYue"
         >
           Agregar nota
         </title>
@@ -333,7 +235,7 @@ exports[`NOTE DETAIL: > when the language set is Spanish: > deletion of a note: 
       class="css-qc8xmq"
     >
       <svg
-        aria-labelledby="svg-inline--fa-title-FSPYGJrvHxjv"
+        aria-labelledby="svg-inline--fa-title-o6DcnWsptWnM"
         class="svg-inline--fa fa-left-long fa-xl "
         data-icon="left-long"
         data-prefix="fas"
@@ -342,7 +244,7 @@ exports[`NOTE DETAIL: > when the language set is Spanish: > deletion of a note: 
         xmlns="http://www.w3.org/2000/svg"
       >
         <title
-          id="svg-inline--fa-title-FSPYGJrvHxjv"
+          id="svg-inline--fa-title-o6DcnWsptWnM"
         >
           Volver a inicio
         </title>
@@ -352,7 +254,7 @@ exports[`NOTE DETAIL: > when the language set is Spanish: > deletion of a note: 
         />
       </svg>
       <svg
-        aria-labelledby="svg-inline--fa-title-OZkj0odYU52V"
+        aria-labelledby="svg-inline--fa-title-47MYvZUf7seO"
         class="svg-inline--fa fa-trash-can fa-xl "
         data-icon="trash-can"
         data-prefix="fas"
@@ -361,7 +263,7 @@ exports[`NOTE DETAIL: > when the language set is Spanish: > deletion of a note: 
         xmlns="http://www.w3.org/2000/svg"
       >
         <title
-          id="svg-inline--fa-title-OZkj0odYU52V"
+          id="svg-inline--fa-title-47MYvZUf7seO"
         >
           Eliminar nota
         </title>
@@ -391,7 +293,7 @@ exports[`NOTE DETAIL: > when the language set is Spanish: > edition of a note: >
       class="css-qc8xmq"
     >
       <svg
-        aria-labelledby="svg-inline--fa-title-vI0PLu7ulRoi"
+        aria-labelledby="svg-inline--fa-title-HFRefDdeZYsb"
         class="svg-inline--fa fa-left-long fa-xl "
         data-icon="left-long"
         data-prefix="fas"
@@ -400,7 +302,7 @@ exports[`NOTE DETAIL: > when the language set is Spanish: > edition of a note: >
         xmlns="http://www.w3.org/2000/svg"
       >
         <title
-          id="svg-inline--fa-title-vI0PLu7ulRoi"
+          id="svg-inline--fa-title-HFRefDdeZYsb"
         >
           Volver a inicio
         </title>
@@ -410,7 +312,7 @@ exports[`NOTE DETAIL: > when the language set is Spanish: > edition of a note: >
         />
       </svg>
       <svg
-        aria-labelledby="svg-inline--fa-title-GBCywmseM6TP"
+        aria-labelledby="svg-inline--fa-title-n633mEcatKml"
         class="svg-inline--fa fa-trash-can fa-xl "
         data-icon="trash-can"
         data-prefix="fas"
@@ -419,7 +321,7 @@ exports[`NOTE DETAIL: > when the language set is Spanish: > edition of a note: >
         xmlns="http://www.w3.org/2000/svg"
       >
         <title
-          id="svg-inline--fa-title-GBCywmseM6TP"
+          id="svg-inline--fa-title-n633mEcatKml"
         >
           Eliminar nota
         </title>
@@ -436,104 +338,6 @@ exports[`NOTE DETAIL: > when the language set is Spanish: > edition of a note: >
       Hello test 1
 Testing 1
     </textarea>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`NOTE DETAIL: > when the language set is Spanish: > with bad url param: > if it's a valid id but the note associated with it has been removed: > should match snapshot 1`] = `
-<DocumentFragment>
-  <div
-    class="css-1n2qccw"
-  >
-    <h2>
-      Página no encontrada
-    </h2>
-    <svg
-      aria-hidden="true"
-      class="svg-inline--fa fa-face-sad-tear fa-fade fa-5x "
-      data-icon="face-sad-tear"
-      data-prefix="fas"
-      focusable="false"
-      role="img"
-      viewBox="0 0 512 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M0 256C0 397.4 114.6 512 256 512s256-114.6 256-256S397.4 0 256 0S0 114.6 0 256zm240 80c0-8.8 7.2-16 16-16c45 0 85.6 20.5 115.7 53.1c6 6.5 5.6 16.6-.9 22.6s-16.6 5.6-22.6-.9c-25-27.1-57.4-42.9-92.3-42.9c-8.8 0-16-7.2-16-16zm-80 80c-26.5 0-48-21-48-47c0-20 28.6-60.4 41.6-77.7c3.2-4.4 9.6-4.4 12.8 0C179.6 308.6 208 349 208 369c0 26-21.5 47-48 47zM303.6 208c0-17.7 14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32s-32-14.3-32-32zm-128 32c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z"
-        fill="currentColor"
-      />
-    </svg>
-    <a
-      class="css-1qofjy"
-      href="/"
-      style="bottom: 1.5rem;"
-      title="Volver a inicio"
-    >
-      <svg
-        aria-hidden="true"
-        class="svg-inline--fa fa-house fa-inverse fa-xl "
-        data-icon="house"
-        data-prefix="fas"
-        focusable="false"
-        role="img"
-        viewBox="0 0 576 512"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"
-          fill="currentColor"
-        />
-      </svg>
-    </a>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`NOTE DETAIL: > when the language set is Spanish: > with bad url param: > if it's not a valid id: > should match snapshot 1`] = `
-<DocumentFragment>
-  <div
-    class="css-1n2qccw"
-  >
-    <h2>
-      Página no encontrada
-    </h2>
-    <svg
-      aria-hidden="true"
-      class="svg-inline--fa fa-face-sad-tear fa-fade fa-5x "
-      data-icon="face-sad-tear"
-      data-prefix="fas"
-      focusable="false"
-      role="img"
-      viewBox="0 0 512 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M0 256C0 397.4 114.6 512 256 512s256-114.6 256-256S397.4 0 256 0S0 114.6 0 256zm240 80c0-8.8 7.2-16 16-16c45 0 85.6 20.5 115.7 53.1c6 6.5 5.6 16.6-.9 22.6s-16.6 5.6-22.6-.9c-25-27.1-57.4-42.9-92.3-42.9c-8.8 0-16-7.2-16-16zm-80 80c-26.5 0-48-21-48-47c0-20 28.6-60.4 41.6-77.7c3.2-4.4 9.6-4.4 12.8 0C179.6 308.6 208 349 208 369c0 26-21.5 47-48 47zM303.6 208c0-17.7 14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32s-32-14.3-32-32zm-128 32c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z"
-        fill="currentColor"
-      />
-    </svg>
-    <a
-      class="css-1qofjy"
-      href="/"
-      style="bottom: 1.5rem;"
-      title="Volver a inicio"
-    >
-      <svg
-        aria-hidden="true"
-        class="svg-inline--fa fa-house fa-inverse fa-xl "
-        data-icon="house"
-        data-prefix="fas"
-        focusable="false"
-        role="img"
-        viewBox="0 0 576 512"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"
-          fill="currentColor"
-        />
-      </svg>
-    </a>
   </div>
 </DocumentFragment>
 `;

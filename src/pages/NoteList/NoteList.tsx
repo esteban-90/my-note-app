@@ -45,12 +45,7 @@ export const NoteList: FC = () => {
           <NoteItem key={note.id} {...note} />
         ))}
       </List>
-      <Button
-        icon='language'
-        title={changeLanguageTitle}
-        onClick={handleChangeLanguage}
-        style={{ bottom: '10.5rem' }}
-      />
+      <Button icon='globe' title={changeLanguageTitle} onClick={handleChangeLanguage} style={{ bottom: '10.5rem' }} />
       <Button
         icon={themeName === 'night' ? 'sun' : 'moon'}
         title={themeName === 'night' ? dayModeTitle : nightModeTitle}

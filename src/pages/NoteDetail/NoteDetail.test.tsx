@@ -9,30 +9,6 @@ describe(setName(NoteDetail), () => {
   // 👇 this first one will be used.
   const [{ id, content }] = mockNotes
 
-  const setRouterWithInvalidID = () => {
-    UI = (
-      <MemoryRouter initialEntries={['/notes/test']}>
-        <Routes>
-          <Route path='notes'>
-            <Route path=':id' element={<NoteDetail />} />
-          </Route>
-        </Routes>
-      </MemoryRouter>
-    )
-  }
-
-  const setRouterWithRemovedID = () => {
-    UI = (
-      <MemoryRouter initialEntries={['/notes/note-la9l6ikp']}>
-        <Routes>
-          <Route path='notes'>
-            <Route path=':id' element={<NoteDetail />} />
-          </Route>
-        </Routes>
-      </MemoryRouter>
-    )
-  }
-
   const setRouterWithoutID = () => {
     UI = (
       <MemoryRouter initialEntries={['/notes']}>
@@ -74,32 +50,6 @@ describe(setName(NoteDetail), () => {
 
   describe('when the language set is English:', () => {
     beforeAll(switchToEN)
-
-    describe('with bad url param:', () => {
-      describe("if it's not a valid id:", () => {
-        beforeAll(setRouterWithInvalidID)
-        beforeEach(renderUI)
-
-        it('should match snapshot', matchSnapshot)
-
-        it('should display Not Found page', () => {
-          const notFoundHeading = screen.getByRole('heading', { name: /^page not found$/i })
-          expect(notFoundHeading).toBeInTheDocument()
-        })
-      })
-
-      describe("if it's a valid id but the note associated with it has been removed:", () => {
-        beforeAll(setRouterWithRemovedID)
-        beforeEach(renderUI)
-
-        it('should match snapshot', matchSnapshot)
-
-        it('should display Not Found page', () => {
-          const notFoundHeading = screen.getByRole('heading', { name: /^page not found$/i })
-          expect(notFoundHeading).toBeInTheDocument()
-        })
-      })
-    })
 
     describe('creation of a note:', () => {
       beforeAll(setRouterWithoutID)
@@ -366,32 +316,6 @@ describe(setName(NoteDetail), () => {
 
   describe('when the language set is Spanish:', () => {
     beforeAll(switchToES)
-
-    describe('with bad url param:', () => {
-      describe("if it's not a valid id:", () => {
-        beforeAll(setRouterWithInvalidID)
-        beforeEach(renderUI)
-
-        it('should match snapshot', matchSnapshot)
-
-        it('should display Not Found page', () => {
-          const notFoundHeading = screen.getByRole('heading', { name: /^página no encontrada$/i })
-          expect(notFoundHeading).toBeInTheDocument()
-        })
-      })
-
-      describe("if it's a valid id but the note associated with it has been removed:", () => {
-        beforeAll(setRouterWithRemovedID)
-        beforeEach(renderUI)
-
-        it('should match snapshot', matchSnapshot)
-
-        it('should display Not Found page', () => {
-          const notFoundHeading = screen.getByRole('heading', { name: /^página no encontrada$/i })
-          expect(notFoundHeading).toBeInTheDocument()
-        })
-      })
-    })
 
     describe('creation of a note:', () => {
       beforeAll(setRouterWithoutID)

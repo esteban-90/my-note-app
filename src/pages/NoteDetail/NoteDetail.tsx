@@ -1,12 +1,13 @@
 import type { FC } from 'react'
 import { useRef } from 'react'
-import { useNavigate, useParams } from 'react-router-dom'
+import { useNavigate, useParams, Navigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { confirm, force } from 'notie'
 import { useNotes } from '@/contexts'
 import { hasBadWords } from '@/helpers'
-import NotFound from '@/pages/NotFound'
+// eslint-disable-next-line capitalized-comments
+// import NotFound from '@/pages/NotFound'
 import { Wrapper, Content, TextBox } from './NoteDetail.styled'
 
 /**
@@ -133,6 +134,6 @@ export const NoteDetail: FC = () => {
       <TextBox aria-label='note content' defaultValue={note?.content} autoFocus={noteIsNew} ref={noteRef} />
     </Wrapper>
   ) : (
-    <NotFound />
+    <Navigate to='/not-found' replace />
   )
 }

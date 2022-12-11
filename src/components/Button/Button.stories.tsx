@@ -46,16 +46,16 @@ export const NightModeButtonExample: ComponentStoryObj<typeof Button> = {
 
 export const LanguageButtonExample: ComponentStoryObj<typeof Button> = {
   args: {
-    icon: 'language',
+    icon: 'globe',
     title: 'Change language',
   },
 }
 
 export const HomeButtonExample: ComponentStoryObj<typeof Button> = {
   args: {
-    icon: 'house',
+    icon: 'arrow-left',
     component: Link,
     to: '/',
-    title: 'Back to home',
+    title: 'Back',
   },
 }
