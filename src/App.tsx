@@ -1,7 +1,7 @@
 import type { FC } from 'react'
 import { Suspense, lazy } from 'react'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
-import { Header } from '@/components'
+import { Header, Loader } from '@/components'
 import { NoteProvider, ThemeProvider } from '@/contexts'
 import { Layout } from '@/layout'
 import { ReloadPrompt } from '@/pwa'
@@ -31,7 +31,7 @@ const App: FC = () => {
       <ThemeProvider>
         <Layout>
           <Header />
-          <Suspense fallback={null}>
+          <Suspense fallback={<Loader />}>
             <NoteProvider>
               <RouterProvider router={router} />
             </NoteProvider>
