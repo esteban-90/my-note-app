@@ -10,19 +10,19 @@ declare module 'i18next' {
       /**
        * Translations for Not Found page.
        */
-      'not-found': typeof notFoundPageNS
+      readonly 'not-found': typeof notFoundPageNS
       /**
        * Translations for Note Detail page.
        */
-      'note-detail': typeof noteDetailPageNS
+      readonly 'note-detail': typeof noteDetailPageNS
       /**
-       * Tranlations for Note List page.
+       * Translations for Note List page.
        */
-      'note-list': typeof noteListPageNS
+      readonly 'note-list': typeof noteListPageNS
       /**
-       * Tranlations for Reload Prompt component.
+       * Translations for Reload Prompt component.
        */
-      'reload-prompt': typeof reloadPromptNS
+      readonly 'reload-prompt': typeof reloadPromptNS
     }
   }
 }
