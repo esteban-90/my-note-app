@@ -6,7 +6,7 @@ import { i18nInstance } from '@/i18n/tests'
 import { NoteProvider, ThemeProvider } from '@/contexts'
 import { GlobalStyles } from '@/styles'
 
-const Wrapper: FC<PropsWithChildren> = ({ children }): JSX.Element => {
+const Wrapper: FC<PropsWithChildren> = ({ children }) => {
   return (
     <>
       <GlobalStyles />

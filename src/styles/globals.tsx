@@ -3,7 +3,7 @@ import { Global, css } from '@emotion/react'
 import { setOptions } from 'notie'
 import normalize from 'normalize.css'
 import notie from 'notie/dist/notie.min.css'
-import { Acme } from '@/fonts'
+import { AcmeRegular } from '@/fonts'
 
 setOptions({ overlayOpacity: 0, positions: { confirm: 'bottom', force: 'bottom' } })
 
@@ -13,7 +13,7 @@ const styles = css`
 
   @font-face {
     font-family: Acme;
-    src: url(${Acme});
+    src: url(${AcmeRegular});
   }
 
   * {

@@ -1,1 +1,1 @@
-export { default as Acme } from './Acme-Regular.ttf'
+export { default as AcmeRegular } from './Acme-Regular.ttf'
