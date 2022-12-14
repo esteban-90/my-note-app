@@ -47,6 +47,7 @@ export default defineConfig({
           },
         ],
       },
+      includeAssets: '/fonts/Acme-Regular.ttf',
     }),
   ],
   test: {
