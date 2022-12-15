@@ -18,7 +18,7 @@ export default defineConfig({
         background_color: '#1f2124',
         description: 'Note keeping application made in React and Vite',
         display: 'fullscreen',
-        orientation: 'portrait',
+        orientation: 'natural',
         start_url: '/',
         icons: [
           {
