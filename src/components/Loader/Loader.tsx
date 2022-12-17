@@ -1,15 +1,19 @@
 import type { FC } from 'react'
-import { MagnifyingGlass } from 'react-loader-spinner'
+import { useTheme } from '@emotion/react'
+import { CirclesWithBar } from 'react-loader-spinner'
 
 export const Loader: FC = () => {
+  const { colorPalette } = useTheme()
+
   return (
-    <MagnifyingGlass
-      height='5rem'
-      width='5rem'
-      ariaLabel='app loader'
+    <CirclesWithBar
+      height='6rem'
+      width='6rem'
+      ariaLabel='loading indicator'
       wrapperClass='loader'
-      glassColor='transparent'
-      color='#f68657'
+      barColor={colorPalette.main}
+      outerCircleColor={colorPalette.text.accent1}
+      innerCircleColor={colorPalette.text.accent2}
     />
   )
 }
