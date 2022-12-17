@@ -51,7 +51,7 @@ export const LanguageButtonExample: ComponentStoryObj<typeof Button> = {
   },
 }
 
-export const HomeButtonExample: ComponentStoryObj<typeof Button> = {
+export const GoBackButtonExample: ComponentStoryObj<typeof Button> = {
   args: {
     icon: 'arrow-left',
     component: Link,

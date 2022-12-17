@@ -6,6 +6,10 @@ export default {
   title: 'Components/Note Item',
   component: NoteItem,
   args: mockNotes[0],
+  argTypes: {
+    id: { control: false },
+    createdAt: { control: false },
+  },
 } as ComponentMeta<typeof NoteItem>
 
 const Template: ComponentStory<typeof NoteItem> = (args) => <NoteItem {...args} />
