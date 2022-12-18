@@ -3,10 +3,12 @@ import { useRef } from 'react'
 import { useNavigate, useParams, Navigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { confirm, force } from 'notie'
+import { setOptions, confirm, force } from 'notie'
 import { useNotes } from '@/contexts'
 import { hasBadWords } from '@/helpers'
 import { Wrapper, Content, TextBox } from './NoteDetail.styled'
+
+setOptions({ overlayOpacity: 0, positions: { confirm: 'bottom', force: 'bottom' } })
 
 /**
  * Page to create, edit or just view a note.
@@ -58,7 +60,6 @@ export const NoteDetail: FC = () => {
    */
   const add = () => {
     const content = noteRef.current?.value.trim()
-
     if (content) {
       if (!hasBadWords(content)) {
         confirm(
@@ -83,7 +84,6 @@ export const NoteDetail: FC = () => {
    */
   const update = () => {
     const content = noteRef.current?.value.trim()
-
     if (content) {
       if (!hasBadWords(content)) {
         if (content !== note?.content) {

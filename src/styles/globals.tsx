@@ -1,10 +1,7 @@
 import type { FC } from 'react'
 import { Global, css } from '@emotion/react'
-import { setOptions } from 'notie'
 import normalize from 'normalize.css'
 import notie from 'notie/dist/notie.min.css'
-
-setOptions({ overlayOpacity: 0, positions: { confirm: 'bottom', force: 'bottom' } })
 
 const styles = css`
   ${normalize}
@@ -35,10 +32,7 @@ const styles = css`
     width: 480px;
     left: 50%;
     transform: translateX(-50%);
-  }
-
-  .notie-background-info {
-    background-color: #f68657;
+    font-size: 1.2rem;
   }
 
   .loader {
